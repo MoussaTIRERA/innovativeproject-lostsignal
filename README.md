@@ -1,4 +1,4 @@
-innovativeprojects-lostsignal
+innovativeproject-lostsignal
 =============================
 
 Innovative Projects - Lost signal
