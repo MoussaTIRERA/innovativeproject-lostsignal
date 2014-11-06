@@ -1,0 +1,20 @@
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes.dex : \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/com/vliesaputra/cordova/plugins/DeviceInformation.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/com/phonegap/helloworld/HelloWorld.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/com/phonegap/helloworld/R$attr.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/com/phonegap/helloworld/R$xml.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/com/phonegap/helloworld/R$string.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/com/phonegap/helloworld/R$drawable.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/com/phonegap/helloworld/BuildConfig.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/com/phonegap/helloworld/R.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener$1.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/org/apache/cordova/vibration/Vibration.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/nl/nielsad/cordova/wifiscanner/WifiListener$Status.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/nl/nielsad/cordova/wifiscanner/WifiListener.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/nl/nielsad/cordova/wifiscanner/WifiListener$2.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/classes/nl/nielsad/cordova/wifiscanner/WifiListener$1.class \
+/home/afro/Projekt/LostSignal/platforms/android/ant-build/dexedLibs/classes-3554e894e3810c8e194e8156b7f65f18.jar \
