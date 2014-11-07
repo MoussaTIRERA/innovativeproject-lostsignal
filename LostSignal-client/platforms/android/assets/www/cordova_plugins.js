@@ -64,6 +64,32 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/com.badrit.MacAddress/www/MacAddress.js",
+        "id": "com.badrit.MacAddress.MacAddress",
+        "clobbers": [
+            "window.MacAddress"
+        ]
+    },
+    {
+        "file": "plugins/com.pylonproducts.wifiwizard/www/WifiWizard.js",
+        "id": "com.pylonproducts.wifiwizard.WifiWizard",
+        "runs": true
+    },
+    {
+        "file": "plugins/org.hygieiasoft.cordova.uid/www/uid.js",
+        "id": "org.hygieiasoft.cordova.uid.uid",
+        "clobbers": [
+            "cordova.plugins.uid"
+        ]
+    },
+    {
+        "file": "plugins/com.uhuru.cordova.wifiinformation/www/wifiinfo.js",
+        "id": "com.uhuru.cordova.wifiinformation.wifiinfo",
+        "clobbers": [
+            "wifiinfo"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -75,7 +101,11 @@ module.exports.metadata =
     "org.apache.cordova.device": "0.2.12",
     "org.apache.cordova.geolocation": "0.3.10",
     "org.apache.cordova.network-information": "0.2.13",
-    "org.apache.cordova.vibration": "0.3.11"
+    "org.apache.cordova.vibration": "0.3.11",
+    "com.badrit.MacAddress": "0.1.0",
+    "com.pylonproducts.wifiwizard": "0.2.6",
+    "org.hygieiasoft.cordova.uid": "1.1.0",
+    "com.uhuru.cordova.wifiinformation": "0.1.2"
 }
 // BOTTOM OF METADATA
 });

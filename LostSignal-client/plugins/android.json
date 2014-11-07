@@ -31,6 +31,22 @@
                         {
                             "xml": "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MacAddressPlugin\"><param name=\"android-package\" value=\"com.badrit.MacAddress.MacAddressPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"WifiWizard\"><param name=\"android-package\" value=\"com.pylonproducts.wifiwizard.WifiWizard\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"UID\"><param name=\"android-package\" value=\"org.hygieiasoft.cordova.uid.UID\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"WifiInformation\"><param name=\"android-package\" value=\"com.uhuru.cordova.wifiinformation.WifiInformation\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -49,12 +65,20 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+                            "count": 1
                         }
                     ],
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
-                            "count": 1
+                            "count": 4
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
@@ -70,6 +94,10 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
                             "count": 1
                         }
                     ]
@@ -97,6 +125,18 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.badrit.MacAddress": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.pylonproducts.wifiwizard": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "org.hygieiasoft.cordova.uid": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.uhuru.cordova.wifiinformation": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

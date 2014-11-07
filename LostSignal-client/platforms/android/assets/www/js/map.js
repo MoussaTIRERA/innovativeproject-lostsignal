@@ -2,7 +2,6 @@ var map;
 var parameters;
 
 
-var maps = {}
 function initialize() {
     var mapOptions = {
         zoom: 15
@@ -16,10 +15,10 @@ function initialize() {
 
 function handleNoGeolocation(errorFlag) {
     if (errorFlag) {
-        var content = 'Error: The Geolocation service failed.';
+        alert('Error: The Geolocation service failed.');
 
     } else {
-        var content = 'Error: The Geolocation service failed1.';
+        alert('Error: The Geolocation service failed1.');
     }
 }
 
@@ -33,7 +32,7 @@ function getInfo() {
             var infowindow = new google.maps.InfoWindow({
                 content: '<p style="color:black">Location found using HTML5.</p>' +
                 '<p style="color:black">Actual position:' + pos +'</p>' +
-                '<p style="color:black">Date: ' + Date() + '</p>'
+                '<p style="color:black">Date: ' + new Date() + '</p>'
 
             });
 
@@ -52,7 +51,7 @@ function getInfo() {
             parameters = position.coords.latitude + ' ' + position.coords.longitude;
             //alert(parameters);
             view1.innerHTML = parameters;
-            view2.innerHTML = Date();
+            view2.innerHTML = new Date();
 
 
 
@@ -72,7 +71,7 @@ function getInfo() {
             view1.innerHTML = parameters;
         };
 
-        function onError(error) {
+        function onError() {
             alert('Brak zasięgu WiFi, pakietu oraz GPS!');
         }
 
