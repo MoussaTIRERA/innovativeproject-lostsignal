@@ -7,7 +7,6 @@ var app = {
 
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, true);
-        alert('znowu tez smiec nie chodzi...');
     },
 
     onDeviceReady: function() {
