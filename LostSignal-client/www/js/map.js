@@ -1,16 +1,33 @@
 var map;
 var parameters;
-
+var startLatlng;
 
 function initialize() {
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = new google.maps.LatLng(position.coords.latitude,
+            position.coords.longitude);
+        startLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+
+    }, function() {
+        handleNoGeolocation(true);
+    });
+
+
     var mapOptions = {
-        zoom: 15
+        center: startLatlng,
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.HYBRID
     };
+
 
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
 
-    getInfo();
+
+    setInterval(getInfo(),10000);
+//    map.setCenter(pos);
+
 }
 
 function handleNoGeolocation(errorFlag) {
@@ -23,6 +40,9 @@ function handleNoGeolocation(errorFlag) {
 }
 
 function getInfo() {
+
+    //getFromDB()  get and set markers from DB
+
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             var pos = new google.maps.LatLng(position.coords.latitude,
@@ -33,7 +53,7 @@ function getInfo() {
                 content: '<p style="color:black">Location found using HTML5.</p>' +
                 '<p style="color:black">Actual position:' + pos +'</p>' +
                 '<p style="color:black">Date: ' + new Date() + '</p>'
-
+                //'<p style="color:black">Signal strength: ' + getSigStr() + '</p>'
             });
 
             var marker = new google.maps.Marker({
@@ -81,6 +101,9 @@ function getInfo() {
 }
 
 function getFromDB() {
+
+    // get coordinates and signal strength
+
     var record;
 
 

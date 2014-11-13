@@ -10,6 +10,8 @@
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/phonegap/helloworld/R$drawable.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/phonegap/helloworld/BuildConfig.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/phonegap/helloworld/R.class \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/phonegap/plugins/cellularsignal/IbcCellularSignal.class \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/phonegap/plugins/cellularsignal/IbcCellularSignal$1.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/pylonproducts/wifiwizard/WifiWizard.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/PropertyHelper.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub.class \
@@ -35,6 +37,7 @@
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener$1.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/org/apache/cordova/vibration/Vibration.class \

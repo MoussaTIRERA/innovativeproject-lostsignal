@@ -101,6 +101,20 @@ module.exports = [
         "clobbers": [
             "plugin.backgroundMode"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.IbcCellularSignal/www/cellularsignal.js",
+        "id": "com.phonegap.plugins.IbcCellularSignal.cellularsignal",
+        "clobbers": [
+            "cellularsignal"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
+        "id": "org.apache.cordova.splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -118,7 +132,9 @@ module.exports.metadata =
     "org.hygieiasoft.cordova.uid": "1.1.0",
     "com.uhuru.cordova.wifiinformation": "0.1.2",
     "com.red_folder.phonegap.plugin.backgroundservice": "2.0.0",
-    "de.appplant.cordova.plugin.background-mode": "0.5.0"
+    "de.appplant.cordova.plugin.background-mode": "0.5.0",
+    "com.phonegap.plugins.IbcCellularSignal": "0.1.0",
+    "org.apache.cordova.splashscreen": "0.3.4"
 }
 // BOTTOM OF METADATA
 });
