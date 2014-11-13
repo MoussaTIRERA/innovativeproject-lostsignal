@@ -90,6 +90,17 @@ module.exports = [
         "clobbers": [
             "wifiinfo"
         ]
+    },
+    {
+        "file": "plugins/com.red_folder.phonegap.plugin.backgroundservice/www/backgroundService.js",
+        "id": "com.red_folder.phonegap.plugin.backgroundservice.BackgroundService"
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js",
+        "id": "de.appplant.cordova.plugin.background-mode.BackgroundMode",
+        "clobbers": [
+            "plugin.backgroundMode"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -105,7 +116,9 @@ module.exports.metadata =
     "com.badrit.MacAddress": "0.1.0",
     "com.pylonproducts.wifiwizard": "0.2.6",
     "org.hygieiasoft.cordova.uid": "1.1.0",
-    "com.uhuru.cordova.wifiinformation": "0.1.2"
+    "com.uhuru.cordova.wifiinformation": "0.1.2",
+    "com.red_folder.phonegap.plugin.backgroundservice": "2.0.0",
+    "de.appplant.cordova.plugin.background-mode": "0.5.0"
 }
 // BOTTOM OF METADATA
 });

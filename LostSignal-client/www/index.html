@@ -7,17 +7,74 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="/LostSignal-client/bower_components/jquery-mobile-min/jquery.mobile.css" />
     <title>Lost Signal</title>
 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" src="/LostSignal-client/bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/LostSignal-client/bower_components/jquery-mobile-min/jquery.mobile.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+    <style>
+        html, body, #map-canvas {
+            height: 80%;
+            margin: 0px;
+            padding: 0px
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-<div class="app"></div>
-<div id="deviceready" class="blink">
-    <p class="event listening">Connecting to Device</p>
-    <p class="event received">Device is Ready</p>
+<div data-role="page" id="index">
+    <div  data-role="header">
+        <h1>Lost Signal header</h1>
+    </div>
+
+    <div data-role="main" class="ui-content" style="height: 500px">
+
+        <div class="app"></div>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+    </div>
+    <div>
+        <h1><a href="#navigate" data-role="button" style="font-size: 30px">Navigate</a></h1>
+        <h1><a href="#getdata" data-role="button" style="font-size: 30px">Get data</a></h1>
+        <h1><a href="#map" data-role="button" style="font-size: 30px">Show map</a></h1>
+    </div>
 </div>
-<a href="map.html" class="buttons">Show Map</a>
+
+<div data-role="page" id="map">
+
+    <div  data-role="header">
+        <h1>Lost Signal Map</h1>
+    </div>
+
+    <div data-role="main" class="ui-content" style="height: 900px">
+        <div id="map-canvas"></div>
+        <div>
+            <p>Pozycja: <a id="position"><script>var myVar=setInterval(function(){getInfo()},10000);</script></a></p>
+            <p>Data: <a id="date"></a></p>
+        </div>
+    </div>
+
+
+    <div data-role="footer" class="buttPosition">
+        <a href="#index" data-role="button" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style=" font-size: 30px">Back to menu</a>
+        <a href="#map" data-role="button"  class="ui-btn ui-corner-all ui-icon-refresh ui-btn-icon-left" style=" font-size: 30px">Refresh map</a>
+    </div>
+</div>
+
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>

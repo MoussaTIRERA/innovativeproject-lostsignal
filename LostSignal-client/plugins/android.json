@@ -47,6 +47,10 @@
                         {
                             "xml": "<feature name=\"WifiInformation\"><param name=\"android-package\" value=\"com.uhuru.cordova.wifiinformation.WifiInformation\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BackgroundServicePlugin\"><param name=\"android-package\" value=\"com.red_folder.phonegap.plugin.backgroundservice.BackgroundServicePlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -73,6 +77,10 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\" />",
+                            "count": 1
                         }
                     ],
                     "/*": [
@@ -98,6 +106,22 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<receiver android:name=\"com.red_folder.phonegap.plugin.backgroundservice.BootReceiver\"><intent-filter><action android:name=\"android.intent.action.BOOT_COMPLETED\" /></intent-filter></receiver>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<preference name=\"KeepRunning\" value=\"true\" />",
                             "count": 1
                         }
                     ]
@@ -137,6 +161,12 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "com.uhuru.cordova.wifiinformation": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.red_folder.phonegap.plugin.backgroundservice": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "de.appplant.cordova.plugin.background-mode": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

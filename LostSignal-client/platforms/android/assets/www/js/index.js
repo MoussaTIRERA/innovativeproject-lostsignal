@@ -6,7 +6,8 @@ var app = {
     },
 
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('deviceready', this.onDeviceReady, true);
+        alert('znowu tez smiec nie chodzi...');
     },
 
     onDeviceReady: function() {
@@ -60,7 +61,7 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        console.log('Received Event: ' + id);
+        alert('Received Event: ' + id);
     }
 };
 
@@ -90,7 +91,8 @@ function onSuccessCallBack() {
         } );
     wifiinfo.getSSID(
         function(SSID) {
-            alert('SSID: ' + SSID);            },
+            alert('SSID: ' + SSID);
+        },
         function() {
             alert('error');
         } );
