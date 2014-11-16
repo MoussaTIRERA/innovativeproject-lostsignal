@@ -100,7 +100,7 @@ function getDatas() {
             getMac();
 
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
-            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network;
+            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date();
 
             //alert(macaddr);
         }, function() {
@@ -116,7 +116,7 @@ function getDatas() {
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
     if(data != '') {
-        //alert(data);
+        alert(data);
         //alert(obj);
     }
 
