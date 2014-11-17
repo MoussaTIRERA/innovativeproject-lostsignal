@@ -115,10 +115,21 @@ function getDatas() {
 
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
-    if(data != '') {
-        alert(data);
+
+    var callback1 = function(signal) {
+        alert("Listener: "+signal);
+    };
+    var callback2 = function(signal) {
+        alert("Func: "+signal);
+    };
+
+    cellularsignal.enable(callback1, callback2);
+
+
+    //if(data != '') {
+        //alert(data);
         //alert(obj);
-    }
+    //}
 
 }
 

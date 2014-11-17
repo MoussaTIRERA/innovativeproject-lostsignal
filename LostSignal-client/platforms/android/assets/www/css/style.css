@@ -103,3 +103,10 @@ h1 {
     bottom: 0px;
     width: 100%;
 }
+
+#map-canvas {
+    height: 80%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px
+}
