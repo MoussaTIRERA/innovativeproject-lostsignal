@@ -18,8 +18,6 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
-        data = "das" + ';' + "das" + ';' + "asd" + ';' + "das" + ';' + "das" + ';' + "asd" + ';' + "das" + ';' + "das" + ';' + "asd" + ';' + "das"+';' + "alsa'";
-        db.transaction(populateDB, errorCB, successCB);
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
         /*navigator.splashscreen.show();
         setTimeout(function() {
@@ -160,12 +158,12 @@ function populateDB(tx) {
     iccid_db = substr[9];
     network_db = substr[10];
     date_db = substr[11];
-    //for(i = 0; i < 12 ; i++)
-    //   alert(substr[i]);
+    alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
+    + " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
 
     tx.executeSql('CREATE TABLE IF NOT EXISTS phonegap_data (latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text)');
     tx.executeSql('INSERT INTO phonegap_data (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)' [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db] );
-   
+
 }
 
 

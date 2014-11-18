@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/LostSignal-client/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/LostSignal-client/plugins/com.brodysoft.sqlitePlugin/test-www/platforms" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
