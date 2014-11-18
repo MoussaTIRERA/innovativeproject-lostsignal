@@ -12,11 +12,12 @@ var app = {
 
     bindEvents: function() {
 
-        document.addEventListener('deviceready', this.onDeviceReady, true);
+        document.addEventListener('deviceready', this.onDeviceReady, false);
     },
 
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
         /*navigator.splashscreen.show();
         setTimeout(function() {
@@ -70,6 +71,13 @@ var app = {
     }
 };
 
+// Transaction error callback
+function errorCB(err) {
+    alert("Erroressing SQL: " + err.code);
+}
+// Success error callback
+function successCB() {
+}
 
 function getDatas() {
 
@@ -102,7 +110,8 @@ function getDatas() {
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date();
 
-            //alert(macaddr);
+            db.transaction(populateDB, errorCB, successCB);
+
         }, function() {
             handleNoGeolocation(true);
         });
@@ -133,6 +142,32 @@ function getDatas() {
 
 }
 
+//function to create database
+function populateDB(tx) {
+
+    var substr = data.split(';');
+    latitude_db = substr[0];
+    longitude_db = substr[1];
+    model_db = substr[2];
+    uuid_db = substr[3];
+    bssid_db = substr[4];
+    ssid_db = substr[5];
+    mac_db = substr[6];
+    imei_db = substr[7];
+    imsi_db = substr[8];
+    iccid_db = substr[9];
+    network_db = substr[10];
+    date_db = substr[11];
+    //for(i = 0; i < 12 ; i++)
+    //   alert(substr[i]);
+
+    tx.executeSql('CREATE TABLE IF NOT EXISTS phonegap_data (latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text)');
+    tx.executeSql('INSERT INTO phonegap_data (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)' [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db] );
+
+}
+
+
+
 
 function checkConnection() {
     var networkState = navigator.connection.type;
@@ -145,7 +180,7 @@ function checkConnection() {
     states[Connection.CELL_3G]  = '3G';
     states[Connection.CELL_4G]  = '4G';
     states[Connection.CELL]     = 'Cell';
-    states[Connection.NONE]     = 'No';
+    states[Connection.NONE]     = 'No network connection';
 
     return states[networkState];
 }

@@ -4,3 +4,6 @@
 # view AndroidManifest.xml #generated:12
 -keep class com.red_folder.phonegap.plugin.backgroundservice.BootReceiver { <init>(...); }
 
+# view AndroidManifest.xml #generated:17
+-keep class org.pgsqlite.SQLitePlugin { <init>(...); }
+

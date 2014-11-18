@@ -115,6 +115,13 @@ module.exports = [
         "clobbers": [
             "navigator.splashscreen"
         ]
+    },
+    {
+        "file": "plugins/com.brodysoft.sqlitePlugin/www/SQLitePlugin.js",
+        "id": "com.brodysoft.sqlitePlugin.SQLitePlugin",
+        "clobbers": [
+            "SQLitePlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -134,7 +141,8 @@ module.exports.metadata =
     "com.red_folder.phonegap.plugin.backgroundservice": "2.0.0",
     "de.appplant.cordova.plugin.background-mode": "0.5.0",
     "com.phonegap.plugins.IbcCellularSignal": "0.1.0",
-    "org.apache.cordova.splashscreen": "0.3.4"
+    "org.apache.cordova.splashscreen": "0.3.4",
+    "com.brodysoft.sqlitePlugin": "1.0.3"
 }
 // BOTTOM OF METADATA
 });
