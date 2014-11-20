@@ -13,7 +13,6 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
-
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
         /*navigator.splashscreen.show();
          setTimeout(function() {
@@ -22,7 +21,7 @@ var app = {
         window.plugin.backgroundMode.enable();
         getDatas();
         setInterval(getDatas, 10000);
-        //var network = checkConnection();
+//var network = checkConnection();
         /*wifiinfo.getBSSID(
          function(BSSID) {
          alert('BSSID: ' + BSSID);
@@ -32,7 +31,7 @@ var app = {
          } );
          wifiinfo.getSSID(
          function(SSID) {
-         alert('SSID: ' + SSID);            },
+         alert('SSID: ' + SSID); },
          function() {
          alert('error');
          } );
@@ -55,7 +54,7 @@ var app = {
         var receivedElement = parentElement.querySelector('.received');
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-        //alert('Received Event: ' + id);
+//alert('Received Event: ' + id);
     }
 };
 // Transaction error callback
@@ -69,21 +68,20 @@ function getDatas() {
     var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
     deviceInfo.get(function(result) {
         obj = result;
-        //alert(result.account0Name);
-        //alert("result = " + result);
-        //alert(result.deviceId + '\n' + result.netCountry + '\n' + result.netName + '\n' + result.simNo);
-        //alert(result["deviceID"] + '\n' + result["netCountry"] + '\n' + result["netName"] + '\n' + result["simNo"]);
+//alert(result.account0Name);
+//alert("result = " + result);
+//alert(result.deviceId + '\n' + result.netCountry + '\n' + result.netName + '\n' + result.simNo);
+//alert(result["deviceID"] + '\n' + result["netCountry"] + '\n' + result["netName"] + '\n' + result["simNo"]);
     }, function() {
         alert("error");
     });
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-            //window.plugins.cellularsignal.enable();
+//window.plugins.cellularsignal.enable();
             var network = checkConnection();
             getMac();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date();
-
             db.transaction(populateDB, errorCB, successCB);
         }, function() {
             handleNoGeolocation(true);
@@ -102,10 +100,10 @@ function getDatas() {
         alert("Func: "+signal);
     };
     cellularsignal.enable(callback1, callback2);
-    //if(data != '') {
-    //alert(data);
-    //alert(obj);
-    //}
+//if(data != '') {
+//alert(data);
+//alert(obj);
+//}
 }
 // drop, create, insert into table
 // queryDB is just to check if database works, feel free to comment it
@@ -124,13 +122,27 @@ function populateDB(tx) {
     var network_db = substr[10];
     var date_db = substr[11];
 
-    //alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
-    //+ " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
+    /*
+    latitude_db = "ala";
+    longitude_db = "ala";
+    model_db = "ala";
+    uuid_db = "ala";
+    bssid_db = "ala";
+    ssid_db = "ala";
+    mac_db = "ala";
+    imei_db = "ala";
+    imsi_db = "ala";
+    iccid_db = "ala";
+    network_db = "ala";
+    date_db = "ala";
+    */
 
+//alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
+//+ " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
     tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, logitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text)');
     tx.executeSql('INSERT INTO lostsignal_table (latitude, logitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
-    //tx.executeSql('INSERT INTO lostsignal_table (latitude, logitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
+//tx.executeSql('INSERT INTO lostsignal_table (latitude, logitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
     queryDB(tx);
 }
 // form the query
@@ -142,7 +154,7 @@ function queryDB(tx) {
 function querySuccess(tx, results) {
     var len = results.rows.length;
     alert("results.rows.length: " + results.rows.length);
-    //all results from database
+//all results from database
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
         alert(results.rows.item(i).id);
         alert(results.rows.item(i).latitude);
@@ -158,23 +170,44 @@ function querySuccess(tx, results) {
         alert(results.rows.item(i).network);
         alert(results.rows.item(i).date);
     }
-
 }
-
 // Function to create JSON from database tables
 function createJSON(tx, results)
 {
-    alert("into JSON");
     var len = results.rows.length;
     alert("results.rows.length: " + results.rows.length);
     var my_JSON_object = "";
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
-
-        my_JSON_object = my_JSON_object + JSON.stringify({id: results.rows.item(i).id, latitude: results.rows.item(i).latitude, logitude: results.rows.item(i).logitude, model: results.rows.item(i).model, uuid: results.rows.item(i).uuid,  bssid: results.rows.item(i).bssid, ssid: results.rows.item(i).ssid,
-        mac: results.rows.item(i).mac, imei: results.rows.item(i).imei, imsi: results.rows.item(i).imsi, iccid: results.rows.item(i).iccid, network: results.rows.item(i).network, date: results.rows.item(i).date});
-
+        my_JSON_object = my_JSON_object + JSON.stringify({id: results.rows.item(i).id, latitude: results.rows.item(i).latitude, logitude: results.rows.item(i).logitude, model: results.rows.item(i).model, uuid: results.rows.item(i).uuid, bssid: results.rows.item(i).bssid, ssid: results.rows.item(i).ssid,
+            mac: results.rows.item(i).mac, imei: results.rows.item(i).imei, imsi: results.rows.item(i).imsi, iccid: results.rows.item(i).iccid, network: results.rows.item(i).network, date: results.rows.item(i).date});
     }
+    //alert(my_JSON_object);
+    send_JSON_to_serwer(my_JSON_object);
+}
+
+// Function to send JSON from database to server
+//url actually is http://ip.jsontest.com just to check if it works
+function send_JSON_to_serwer(my_JSON_object)
+{
+    alert("into sending");
     alert(my_JSON_object);
+    $.ajax({
+        type       : "GET",
+        url        : "http://ip.jsontest.com",
+        crossDomain: true,
+        beforeSend : function() {$.mobile.loading('show')},
+        complete   : function() {$.mobile.loading('hide')},
+        data       : my_JSON_object,
+        dataType   : 'json',
+        success    : function(response) {
+            //console.error(JSON.stringify(response));
+            alert('Works!');
+        },
+        error      : function() {
+            //console.error("error");
+            alert('Not working!');
+        }
+    });
 }
 
 // Transaction error callback
@@ -189,14 +222,14 @@ function successCB() {
 function checkConnection() {
     var networkState = navigator.connection.type;
     var states = {};
-    states[Connection.UNKNOWN]  = 'Unknown';
+    states[Connection.UNKNOWN] = 'Unknown';
     states[Connection.ETHERNET] = 'Ethernet';
-    states[Connection.WIFI]     = 'WiFi';
-    states[Connection.CELL_2G]  = '2G';
-    states[Connection.CELL_3G]  = '3G';
-    states[Connection.CELL_4G]  = '4G';
-    states[Connection.CELL]     = 'Cell';
-    states[Connection.NONE]     = 'No network connection';
+    states[Connection.WIFI] = 'WiFi';
+    states[Connection.CELL_2G] = '2G';
+    states[Connection.CELL_3G] = '3G';
+    states[Connection.CELL_4G] = '4G';
+    states[Connection.CELL] = 'Cell';
+    states[Connection.NONE] = 'No network connection';
     return states[networkState];
 }
 function onSuccessCallBack() {
@@ -220,7 +253,7 @@ function onSuccess(acceleration) {
     alert('Acceleration X: ' + acceleration.x + '\n' +
     'Acceleration Y: ' + acceleration.y + '\n' +
     'Acceleration Z: ' + acceleration.z + '\n' +
-    'Timestamp: '      + acceleration.timestamp + '\n');
+    'Timestamp: ' + acceleration.timestamp + '\n');
 };
 function onError() {
     alert('Acceleration error!');
@@ -237,9 +270,9 @@ function refreshPage() {
         window.location.href,
         {
             allowSamePageTransition : true,
-            transition              : 'none',
-            showLoadMsg             : false,
-            reloadPage              : true
+            transition : 'none',
+            showLoadMsg : false,
+            reloadPage : true
         }
     );
 }
@@ -248,7 +281,7 @@ function refreshPage() {
         allowSamePageTransition: true,
         transition: 'none',
         reloadPage: true
-        // 'reload' parameter not working yet: //github.com/jquery/jquery-mobile/issues/7406
+// 'reload' parameter not working yet: //github.com/jquery/jquery-mobile/issues/7406
     });
 }
 // Run it with .on
