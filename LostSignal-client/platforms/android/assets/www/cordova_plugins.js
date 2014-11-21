@@ -66,13 +66,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.badrit.MacAddress/www/MacAddress.js",
-        "id": "com.badrit.MacAddress.MacAddress",
-        "clobbers": [
-            "window.MacAddress"
-        ]
-    },
-    {
         "file": "plugins/com.pylonproducts.wifiwizard/www/WifiWizard.js",
         "id": "com.pylonproducts.wifiwizard.WifiWizard",
         "runs": true
@@ -89,17 +82,6 @@ module.exports = [
         "id": "com.uhuru.cordova.wifiinformation.wifiinfo",
         "clobbers": [
             "wifiinfo"
-        ]
-    },
-    {
-        "file": "plugins/com.red_folder.phonegap.plugin.backgroundservice/www/backgroundService.js",
-        "id": "com.red_folder.phonegap.plugin.backgroundservice.BackgroundService"
-    },
-    {
-        "file": "plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js",
-        "id": "de.appplant.cordova.plugin.background-mode.BackgroundMode",
-        "clobbers": [
-            "plugin.backgroundMode"
         ]
     },
     {
@@ -122,6 +104,24 @@ module.exports = [
         "clobbers": [
             "SQLitePlugin"
         ]
+    },
+    {
+        "file": "plugins/com.red_folder.phonegap.plugin.backgroundservice/www/backgroundService.js",
+        "id": "com.red_folder.phonegap.plugin.backgroundservice.BackgroundService"
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js",
+        "id": "de.appplant.cordova.plugin.background-mode.BackgroundMode",
+        "clobbers": [
+            "plugin.backgroundMode"
+        ]
+    },
+    {
+        "file": "plugins/com.red_folder.phonegap.plugin.backgroundservice.sample/www/myService.js",
+        "id": "com.red_folder.phonegap.plugin.backgroundservice.sample.MyService",
+        "clobbers": [
+            "cordova.plugins.myService"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -134,15 +134,15 @@ module.exports.metadata =
     "org.apache.cordova.geolocation": "0.3.10",
     "org.apache.cordova.network-information": "0.2.13",
     "org.apache.cordova.vibration": "0.3.11",
-    "com.badrit.MacAddress": "0.1.0",
     "com.pylonproducts.wifiwizard": "0.2.6",
     "org.hygieiasoft.cordova.uid": "1.1.0",
     "com.uhuru.cordova.wifiinformation": "0.1.2",
-    "com.red_folder.phonegap.plugin.backgroundservice": "2.0.0",
-    "de.appplant.cordova.plugin.background-mode": "0.5.0",
     "com.phonegap.plugins.IbcCellularSignal": "0.1.0",
     "org.apache.cordova.splashscreen": "0.3.4",
-    "com.brodysoft.sqlitePlugin": "1.0.3"
+    "com.brodysoft.sqlitePlugin": "1.0.3",
+    "com.red_folder.phonegap.plugin.backgroundservice": "2.0.0",
+    "de.appplant.cordova.plugin.background-mode": "0.5.0",
+    "com.red_folder.phonegap.plugin.backgroundservice.sample": "2.0.0"
 }
 // BOTTOM OF METADATA
 });

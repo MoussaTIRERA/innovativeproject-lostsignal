@@ -4,7 +4,7 @@
     <description>
         Lost signal project for Nokia
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
+    <author email="marcin.gotszling@gmail.com" href="http://phonegap.com">
         PWr Team
     </author>
     <preference name="permissions" value="none" />
@@ -41,13 +41,15 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
+
+
     <preference name="SplashScreen" value="foo" />
     <preference name="SplashScreenDelay" value="2000" />
     <icon src="icon.png" />
-    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/icon-96-xhdpi.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="www/res/icon/android/icon.png" />
     <icon gap:platform="blackberry" src="www/res/icon/blackberry/icon-80.png" />
     <icon gap:platform="blackberry" gap:state="hover" src="www/res/icon/blackberry/icon-80.png" />
     <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
@@ -68,19 +70,7 @@
     <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
-    <gap:plugin name="de.appplant.cordova.plugin.background-mode" version="0.5.0" />
+
     <access origin="*" />
-
-    <platform name="android">
-        <splash src="/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/www/res/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
-        <splash src="/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/www/res/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
-        <splash src="/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/www/res/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
-        <splash src="/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/www/res/screen/android/screen-xhdpi-landscape.png" density="land-xhdpi"/>
-
-        <splash src="/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/www/res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
-        <splash src="/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/www/res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
-        <splash src="/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/www/res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
-        <splash src="/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/www/res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
-    </platform>
 
 </widget>

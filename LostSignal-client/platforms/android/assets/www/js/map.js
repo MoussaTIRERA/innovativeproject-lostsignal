@@ -25,7 +25,7 @@ function initialize() {
         mapOptions);
 
 
-    setInterval(getInfo(),10000);
+    setInterval(getInfo(),5000);
 //    map.setCenter(pos);
 
 }

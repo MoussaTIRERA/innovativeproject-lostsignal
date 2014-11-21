@@ -16,6 +16,7 @@
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/deviceinformation.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/WifiWizard.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/img \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/myService.html \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/icon.png \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/res \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/js \
@@ -839,10 +840,10 @@
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.phonegap.plugins.IbcCellularSignal \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.uhuru.cordova.wifiinformation \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.vibration \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.red_folder.phonegap.plugin.backgroundservice.sample \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion \
-/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.badrit.MacAddress \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.background-mode \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.brodysoft.sqlitePlugin \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.pylonproducts.wifiwizard \
@@ -862,6 +863,8 @@
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.uhuru.cordova.wifiinformation/www/wifiinfo.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.vibration/www \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.vibration/www/vibration.js \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.red_folder.phonegap.plugin.backgroundservice.sample/www \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.red_folder.phonegap.plugin.backgroundservice.sample/www/myService.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www \
@@ -869,8 +872,6 @@
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js \
-/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.badrit.MacAddress/www \
-/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.badrit.MacAddress/www/MacAddress.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.background-mode/www \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/plugins/com.brodysoft.sqlitePlugin/www \

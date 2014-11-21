@@ -29,6 +29,7 @@
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundService$1.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServicePluginLogic$ServiceDetails.class \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/sample/MyService.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServicePluginLogic$IUpdateListener.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServicePluginLogic$ExecuteResult.class \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundService.class \

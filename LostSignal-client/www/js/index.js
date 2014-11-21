@@ -3,6 +3,9 @@ var ssid = '';
 var bssid = '';
 var data = '';
 var obj = '';
+var myService;
+
+
 var app = {
     initialize: function() {
         this.bindEvents();
@@ -12,41 +15,16 @@ var app = {
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        myService = cordova.plugins.myService;
+
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
-        /*navigator.splashscreen.show();
-         setTimeout(function() {
-         }, 10000);
-         */
-        window.plugin.backgroundMode.enable();
-        getDatas();
-        setInterval(getDatas, 10000);
-//var network = checkConnection();
-        /*wifiinfo.getBSSID(
-         function(BSSID) {
-         alert('BSSID: ' + BSSID);
-         },
-         function() {
-         alert('error');
-         } );
-         wifiinfo.getSSID(
-         function(SSID) {
-         alert('SSID: ' + SSID); },
-         function() {
-         alert('error');
-         } );
-         */
-        /*alert('UUID: ' + device.uuid + '\n' + 'Cordova: ' + device.cordova + '\n' + 'Model ' + device.model + '\n' + 'Platform: ' + device.platform +
-         ' ' + 'Version: ' + device.version + '\nNetwork: ' + network);
-         navigator.notification.vibrate(2500);
-         navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
-         var options = { frequency: 10000 };
-         var wifi = navigator.wifi.watchAccessPoints(onSuccessCallBack, onErrorCallBack, options);
-         window.MacAddress.getMacAddress(
-         function(macAddress) {alert(macAddress);},function(fail) {alert(fail);}
-         );
-         alert('UUID: ' + cordova.plugins.uid.UUID + '\n IMEI: ' + cordova.plugins.uid.IMEI + '\n IMSI: ' + cordova.plugins.uid.IMSI +
-         '\n ICCID: ' + cordova.plugins.uid.ICCID );*/
+
+        //getDatas();
+        setInterval(getDatas, 15000);
+
+
     },
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
@@ -57,6 +35,8 @@ var app = {
 //alert('Received Event: ' + id);
     }
 };
+
+
 // Transaction error callback
 function errorCB(err) {
     alert("Erroressing SQL: " + err.code);
@@ -79,7 +59,6 @@ function getDatas() {
         navigator.geolocation.getCurrentPosition(function(position) {
 //window.plugins.cellularsignal.enable();
             var network = checkConnection();
-            getMac();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date();
             db.transaction(populateDB, errorCB, successCB);
@@ -93,13 +72,14 @@ function getDatas() {
         }
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
+    /*
     var callback1 = function(signal) {
         alert("Listener: "+signal);
     };
     var callback2 = function(signal) {
         alert("Func: "+signal);
     };
-    cellularsignal.enable(callback1, callback2);
+    cellularsignal.enable(callback1, callback2);*/
 //if(data != '') {
 //alert(data);
 //alert(obj);
@@ -153,8 +133,9 @@ function queryDB(tx) {
 //usage tx.executeSql("SELECT id from lostsignal_table;", [], querySuccess, errorCB); in queryDB
 function querySuccess(tx, results) {
     var len = results.rows.length;
-    alert("results.rows.length: " + results.rows.length);
+//    alert("results.rows.length: " + results.rows.length);
 //all results from database
+    alert('all results from DB');
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
         alert(results.rows.item(i).id);
         alert(results.rows.item(i).latitude);
@@ -249,33 +230,8 @@ function onSuccessCallBack() {
 function onErrorCallBack() {
     alert('Network error!');
 };
-function onSuccess(acceleration) {
-    alert('Acceleration X: ' + acceleration.x + '\n' +
-    'Acceleration Y: ' + acceleration.y + '\n' +
-    'Acceleration Z: ' + acceleration.z + '\n' +
-    'Timestamp: ' + acceleration.timestamp + '\n');
-};
-function onError() {
-    alert('Acceleration error!');
-};
-function getMac() {
-    window.MacAddress.getMacAddress(function (macAddress) {
-        macaddr = macAddress;
-    }, function (fail) {
-        alert(fail);
-    });
-}
-function refreshPage() {
-    $.mobile.changePage(
-        window.location.href,
-        {
-            allowSamePageTransition : true,
-            transition : 'none',
-            showLoadMsg : false,
-            reloadPage : true
-        }
-    );
-}
+
+
 function refreshPage() {
     jQuery.mobile.pageContainer.pagecontainer('change', window.location.href, {
         allowSamePageTransition: true,
@@ -288,4 +244,59 @@ function refreshPage() {
 $(document).on( "click", '#refresh', function() {
     refreshPage();
 });
+
+// background service button logic
+$(document).on( "click", '#enableService', function() {
+
+
+    if(!myService.ServiceRunning) {
+        myService.getStatus(function(r){startService(r)}, function(e){handleError(e)});
+        $("span", this).text("Disable background service");
+        alert('Background service is working.');
+    }
+    else {
+        stopService();
+        $("span", this).text("Enable background service");
+        alert('Stopping the background service.');
+    }
+
+});
+
+
+function startService(data) {
+    if (data.ServiceRunning) {
+        enableTimer(data);
+    } else {
+        myService.startService(function(r){enableTimer(r)}, function(e){handleError(e)});
+    }
+}
+
+function stopService() {
+    myService.stopService( function(r){disableTimer()},
+        function(e){handleError(e)});
+}
+
+
+function handleError(data) {
+    alert("Error: " + data.ErrorMessage); //basic error
+    alert(JSON.stringify(data)); //get all the info you need
+}
+
+
+function enableTimer(data) {
+    if (!data.TimerEnabled) {
+        myService.enableTimer(10000, function (r) {
+        }, function (e) {
+            handleError(e)
+        });
+    }
+}
+
+function disableTimer() {
+    myService.disableTimer(function(r){alert('ok');}, function(e){handleError(e)});
+}
+
+
+
+
 app.initialize();
