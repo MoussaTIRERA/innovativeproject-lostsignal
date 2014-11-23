@@ -1,0 +1,7 @@
+{
+  "name": "lostsignal",
+  "version": "0.0.1",
+  "dependencies": {
+    "pg": "3.6.2"
+  }
+}
