@@ -19,6 +19,7 @@ var app = {
         myService = cordova.plugins.myService;
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
+
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
         //getDatas();
@@ -102,21 +103,6 @@ function populateDB(tx) {
     var network_db = substr[10];
     var date_db = substr[11];
 
-    /*
-    latitude_db = "ala";
-    longitude_db = "ala";
-    model_db = "ala";
-    uuid_db = "ala";
-    bssid_db = "ala";
-    ssid_db = "ala";
-    mac_db = "ala";
-    imei_db = "ala";
-    imsi_db = "ala";
-    iccid_db = "ala";
-    network_db = "ala";
-    date_db = "ala";
-    */
-
 //alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
 //+ " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
@@ -170,7 +156,6 @@ function createJSON(tx, results)
 //url actually is http://ip.jsontest.com just to check if it works
 function send_JSON_to_serwer(my_JSON_object)
 {
-    alert("into sending");
     alert(my_JSON_object);
     $.ajax({
         type       : "GET",
@@ -181,12 +166,12 @@ function send_JSON_to_serwer(my_JSON_object)
         data       : my_JSON_object,
         dataType   : 'json',
         success    : function(response) {
-            //console.error(JSON.stringify(response));
-            alert('Works!');
+            alert(JSON.stringify(response));
+            alert('Data send');
         },
         error      : function() {
             //console.error("error");
-            alert('Not working!');
+            alert('Not working! Data cannot be send to server');
         }
     });
 }
