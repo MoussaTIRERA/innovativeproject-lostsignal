@@ -19,7 +19,7 @@ var app = {
         myService = cordova.plugins.myService;
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
-
+        db.transaction(populateDB, errorCB, successCB);
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
         //getDatas();
@@ -158,8 +158,8 @@ function send_JSON_to_serwer(my_JSON_object)
 {
     alert(my_JSON_object);
     $.ajax({
-        type       : "GET",
-        url        : "http://ip.jsontest.com",
+        type       : "POST",
+        url        : "https://polar-falls-4829.herokuapp.com",
         crossDomain: true,
         beforeSend : function() {$.mobile.loading('show')},
         complete   : function() {$.mobile.loading('hide')},
