@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js" line="240" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js" line="237" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd97d424-78e5-476f-bb87-00c7d90920ac" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/WifiWizard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/cordova_plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.brodysoft.sqlitePlugin/www/SQLitePlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.phonegap.plugins.IbcCellularSignal/www/cellularsignal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.pylonproducts.wifiwizard/www/WifiWizard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.red_folder.phonegap.plugin.backgroundservice/www/backgroundService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.uhuru.cordova.wifiinformation/www/wifiinfo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.vibration/www/vibration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.hygieiasoft.cordova.uid/www/uid.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub$Proxy.class" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub$Proxy.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub.class" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/dexedLibs/classes-9066166234b07184dc8661e24db94af6.jar" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/dexedLibs/classes-9066166234b07184dc8661e24db94af6.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/dexedLibs/classes-4c5751d1916e4489879ee297ed517210.jar" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/dexedLibs/classes-4c5751d1916e4489879ee297ed517210.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes.dex" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/classes.jar" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/AndroidManifest.xml.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/AndroidManifest.xml.d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/AndroidManifest.xml.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/AndroidManifest.xml.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk.d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes.dex.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes.dex.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/deviceinformation.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/deviceinformation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="innovativeproject-lostsignal.iws" />
@@ -50,18 +67,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4380">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LostSignal-client/plugins/com.red_folder.phonegap.plugin.backgroundservice.sample/src/android/MyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1260">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state vertical-scroll-proportion="-0.060240965" vertical-offset="2295" max-vertical-offset="4350">
+              <caret line="150" column="40" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -84,11 +91,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1800">
               <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-              <folding>
-                <marker date="1416564766610" expanded="true" signature="1373:1384" placeholder="..." />
-                <marker date="1416564766610" expanded="true" signature="1448:1459" placeholder="..." />
-                <marker date="1416564766610" expanded="true" signature="1522:1533" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,34 +101,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/css/style.css" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/maps.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/css/style.css" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" />
-        <option value="$PROJECT_DIR$/LostSignal-client/platforms/android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/LostSignal-client/config.xml" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/bgService.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/myService.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/myService.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/plugins/com.red_folder.phonegap.plugin.backgroundservice/src/android/MyService.java" />
-        <option value="$PROJECT_DIR$/LostSignal-client/plugins/com.red_folder.phonegap.plugin.backgroundservice/www/myService.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
-      </list>
-    </option>
-  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="1705" />
-    <option name="width" value="1922" />
-    <option name="height" value="1025" />
+    <option name="x" value="1345" />
+    <option name="y" value="24" />
+    <option name="width" value="1535" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -250,165 +233,20 @@
       <recent name="$PROJECT_DIR$/LostSignal-client/plugins/com.red_folder.phonegap.plugin.backgroundservice/src/android" />
     </key>
   </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/.idea/workspace.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/AndroidManifest.xml.d</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/classes.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/AndroidManifest.xml.d</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk.d</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes.dex</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes.dex.d</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub$Proxy.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceListener$Stub$Proxy.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceListener$Stub.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/dexedLibs/classes-4c5751d1916e4489879ee297ed517210.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/cordova_plugins.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/LostSignal-client/www/js/index.js</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/server/.gitignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/server/Procfile</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/server/example.json</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/server/lostsignal.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/server/package.json</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
-  </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/innovativeproject-lostsignal/LostSignal-client/www/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
-      <option name="filePath" />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -418,8 +256,16 @@
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -520,28 +366,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="1705" width="1922" height="1025" extended-state="6" />
+    <frame x="1345" y="24" width="1535" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25989583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25957727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -573,18 +419,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4605">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="439" max-vertical-offset="1485">
+          <caret line="41" column="113" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="113" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1800">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/plugins/com.red_folder.phonegap.plugin.backgroundservice.sample/src/android/MyService.java">
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1260">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4605">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -603,11 +459,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1800">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <marker date="1416564766610" expanded="true" signature="1373:1384" placeholder="..." />
-            <marker date="1416564766610" expanded="true" signature="1448:1459" placeholder="..." />
-            <marker date="1416564766610" expanded="true" signature="1522:1533" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -742,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="284" max-vertical-offset="2400">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1259" max-vertical-offset="1935">
@@ -785,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2400">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/platforms/android/cordova/node_modules/shelljs/src/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2024" max-vertical-offset="2925">
@@ -803,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4556678" vertical-offset="854" max-vertical-offset="2340">
           <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16835018" vertical-offset="585" max-vertical-offset="1815">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -922,11 +753,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <marker date="1416564766610" expanded="true" signature="1373:1384" placeholder="..." />
-            <marker date="1416564766610" expanded="true" signature="1448:1459" placeholder="..." />
-            <marker date="1416564766610" expanded="true" signature="1522:1533" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -940,18 +767,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/plugins/com.red_folder.phonegap.plugin.backgroundservice.sample/src/android/MyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1260">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.060240965" vertical-offset="2295" max-vertical-offset="4350">
+          <caret line="150" column="40" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
           <folding />
         </state>
       </provider>

@@ -18,7 +18,7 @@ var app = {
         myService = cordova.plugins.myService;
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
-        //db.transaction(populateDB, errorCB, successCB);
+        db.transaction(populateDB, errorCB, successCB);
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
         //getDatas();
@@ -166,11 +166,9 @@ function send_JSON_to_serwer(my_JSON_object)
         dataType   : 'json',
         success    : function(response) {
             alert(JSON.stringify(response));
-            alert('Data send');
         },
-        error      : function() {
-            //console.error("error");
-            alert('Not working! Data cannot be send to server');
+        error      : function(response) {
+            alert('Not working! Data cannot be send to server or wrong response from server');
         }
     });
 }
