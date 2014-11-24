@@ -19,7 +19,7 @@ var app = {
         myService = cordova.plugins.myService;
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
-        db.transaction(populateDB, errorCB, successCB);
+        //db.transaction(populateDB, errorCB, successCB);
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
         //getDatas();
