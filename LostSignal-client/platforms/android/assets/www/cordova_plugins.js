@@ -115,6 +115,13 @@ module.exports = [
         "clobbers": [
             "plugin.backgroundMode"
         ]
+    },
+    {
+        "file": "plugins/com.red_folder.phonegap.plugin.backgroundservice.sample/www/myService.js",
+        "id": "com.red_folder.phonegap.plugin.backgroundservice.sample.MyService",
+        "clobbers": [
+            "cordova.plugins.myService"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -134,7 +141,8 @@ module.exports.metadata =
     "org.apache.cordova.splashscreen": "0.3.4",
     "com.brodysoft.sqlitePlugin": "1.0.3",
     "com.red_folder.phonegap.plugin.backgroundservice": "2.0.0",
-    "de.appplant.cordova.plugin.background-mode": "0.5.0"
+    "de.appplant.cordova.plugin.background-mode": "0.5.0",
+    "com.red_folder.phonegap.plugin.backgroundservice.sample": "2.0.0"
 }
 // BOTTOM OF METADATA
 });

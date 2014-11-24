@@ -1,4 +1,3 @@
-var macaddr = '';
 var ssid = '';
 var bssid = '';
 var data = '';
@@ -106,14 +105,14 @@ function populateDB(tx) {
 //alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
 //+ " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
-    tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, logitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text)');
-    tx.executeSql('INSERT INTO lostsignal_table (latitude, logitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
-//tx.executeSql('INSERT INTO lostsignal_table (latitude, logitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
+    tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text)');
+    tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
+//tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
     queryDB(tx);
 }
 // form the query
 function queryDB(tx) {
-    tx.executeSql("SELECT id, latitude, logitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date from lostsignal_table;", [], createJSON, errorCB);
+    tx.executeSql("SELECT id, latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date from lostsignal_table;", [], createJSON, errorCB);
 }
 // Function to check database and display the results
 //usage tx.executeSql("SELECT id from lostsignal_table;", [], querySuccess, errorCB); in queryDB
@@ -125,7 +124,7 @@ function querySuccess(tx, results) {
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
         alert(results.rows.item(i).id);
         alert(results.rows.item(i).latitude);
-        alert(results.rows.item(i).logitude);
+        alert(results.rows.item(i).longitude);
         alert(results.rows.item(i).model);
         alert(results.rows.item(i).uuid);
         alert(results.rows.item(i).bssid);
@@ -145,7 +144,7 @@ function createJSON(tx, results)
     alert("results.rows.length: " + results.rows.length);
     var my_JSON_object = "";
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
-        my_JSON_object = my_JSON_object + JSON.stringify({id: results.rows.item(i).id, latitude: results.rows.item(i).latitude, logitude: results.rows.item(i).logitude, model: results.rows.item(i).model, uuid: results.rows.item(i).uuid, bssid: results.rows.item(i).bssid, ssid: results.rows.item(i).ssid,
+        my_JSON_object = my_JSON_object + JSON.stringify({id: results.rows.item(i).id, latitude: results.rows.item(i).latitude, longitude: results.rows.item(i).longitude, model: results.rows.item(i).model, uuid: results.rows.item(i).uuid, bssid: results.rows.item(i).bssid, ssid: results.rows.item(i).ssid,
             mac: results.rows.item(i).mac, imei: results.rows.item(i).imei, imsi: results.rows.item(i).imsi, iccid: results.rows.item(i).iccid, network: results.rows.item(i).network, date: results.rows.item(i).date});
     }
     //alert(my_JSON_object);
