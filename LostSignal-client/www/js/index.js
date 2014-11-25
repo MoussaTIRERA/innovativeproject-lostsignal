@@ -228,27 +228,7 @@ $(document).on( "click", '#refresh', function() {
 });
 
 // background service button logic
-// background service button logic
-$(document).on( "click", '#enableService', function() {
 
-    cordova.plugins.backgroundMode.enable();
-    cordova.plugins.backgroundMode.configure({ text:'Lost signal background service'});
-    $('#enableservice').attr("disabled", true);
-    $('#disableservice').attr("enabled", true);
-
-    alert('Background service is working.');
-});
-
-$(document).on( "click", '#disableService', function() {
-
-    cordova.plugins.backgroundMode.disable();
-    $('#enableService').attr("enabled", true);
-    $('#disableService').attr("disabled", true);
-
-    alert('Background service is stopped.');
-});
-
-var val = 'on';
 $('select#flag').change(function() {
 
     var myswitch = $(this);
