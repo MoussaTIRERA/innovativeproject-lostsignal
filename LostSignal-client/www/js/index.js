@@ -228,56 +228,42 @@ $(document).on( "click", '#refresh', function() {
 });
 
 // background service button logic
+// background service button logic
 $(document).on( "click", '#enableService', function() {
 
+    cordova.plugins.backgroundMode.enable();
+    cordova.plugins.backgroundMode.configure({ text:'Lost signal background service'});
+    $('#enableservice').attr("disabled", true);
+    $('#disableservice').attr("enabled", true);
 
-    if(!myService.ServiceRunning) {
-        myService.getStatus(function(r){startService(r)}, function(e){handleError(e)});
-        $("span", this).text("Disable background service");
-        alert('Background service is working.');
-    }
-    else {
-        stopService();
-        $("span", this).text("Enable background service");
-        alert('Stopping the background service.');
-    }
-
+    alert('Background service is working.');
 });
 
+$(document).on( "click", '#disableService', function() {
 
-function startService(data) {
-    if (data.ServiceRunning) {
-        enableTimer(data);
-    } else {
-        myService.startService(function(r){enableTimer(r)}, function(e){handleError(e)});
+    cordova.plugins.backgroundMode.disable();
+    $('#enableService').attr("enabled", true);
+    $('#disableService').attr("disabled", true);
+
+    alert('Background service is stopped.');
+});
+
+var val = 'on';
+$('select#flag').change(function() {
+
+    var myswitch = $(this);
+    var show     = myswitch[0].selectedIndex == 1 ? true:false;
+
+    if(show) {
+        cordova.plugins.backgroundMode.enable();
+        cordova.plugins.backgroundMode.configure({ text:'Lost signal background service'});
+        alert('on');
     }
-}
-
-function stopService() {
-    myService.stopService( function(r){disableTimer()},
-        function(e){handleError(e)});
-}
-
-
-function handleError(data) {
-    alert("Error: " + data.ErrorMessage); //basic error
-    alert(JSON.stringify(data)); //get all the info you need
-}
-
-
-function enableTimer(data) {
-    if (!data.TimerEnabled) {
-        myService.enableTimer(10000, function (r) {
-        }, function (e) {
-            handleError(e)
-        });
+    else {
+        cordova.plugins.backgroundMode.disable();
+        alert('off');
     }
-}
-
-function disableTimer() {
-    myService.disableTimer(function(r){alert('ok');}, function(e){handleError(e)});
-}
-
+});
 
 
 

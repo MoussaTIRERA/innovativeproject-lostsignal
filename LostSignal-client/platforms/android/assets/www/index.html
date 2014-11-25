@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
 
-    <meta name="viewport" content="user-scalable=no, initial-scale=3, maximum-scale=3, minimum-scale=3, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
 
     <link rel="stylesheet" type="text/css" href="/LostSignal-client/bower_components/jquery-mobile-min/jquery.mobile.css" />
@@ -42,6 +42,11 @@
         <a data-role="button" id="enableService" style="font-size: 30px"><span id="enableText" id="ui-button-text">Enable background service</span></a>
         <a href="#navigate" data-role="button" style="font-size: 30px">Navigate</a>
         <a href="#map" data-role="button" style="font-size: 30px">Show map</a>
+        <span style="font-size: 30px; width: 100%" align="center"><b>Enable/disable background service:</b></span><br />
+        <select name="flag" id="flag" data-role="slider" style="font-size: 30px">
+            <option value="off" selected="selected">Disabled</option>
+            <option value="on" >Enabled</option>
+        </select>
     </div>
 
 </div>
@@ -55,7 +60,7 @@
     <div data-role="main" style="height: 1000px;">
         <div id="map-canvas"></div>
         <div>
-            <p>Actual position: <a id="position"><script></script></a></p>
+            <p>Actual position: <a id="position"><script>var myVar=setInterval(function(){getInfo()},10000);</script></a></p>
             <p>Date: <a id="date"></a></p>
         </div>
 
@@ -66,6 +71,7 @@
         <a href="#index" data-role="button" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style=" font-size: 30px">Back to menu</a>
         <a href="#map" data-role="button"  class="ui-btn ui-corner-all ui-icon-refresh ui-btn-icon-left" style=" font-size: 30px" id="refresh">Refresh map</a>
     </div>
+
 </div>
 
 
