@@ -3,14 +3,14 @@ var bssid = '';
 var data = '';
 var obj = '';
 var myService;
-
+var signal;
 
 var app = {
     initialize: function() {
         this.bindEvents();
     },
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('deviceready', this.onDeviceReady, true);
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
@@ -19,9 +19,22 @@ var app = {
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
         //db.transaction(populateDB, errorCB, successCB);
+
+        /*
+        (function () {
+            nalert = window.alert;
+            alert("signal " + nalert);
+        })();
+
+
+        signal = cellularsignal.enable("nalert");
+        alert("signal " + signal);
+        */
+
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
         //getDatas();
+
         setInterval(getDatas, 15000);
 
 
@@ -57,7 +70,6 @@ function getDatas() {
     });
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-//window.plugins.cellularsignal.enable();
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date();
@@ -72,18 +84,6 @@ function getDatas() {
         }
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
-    /*
-    var callback1 = function(signal) {
-        alert("Listener: "+signal);
-    };
-    var callback2 = function(signal) {
-        alert("Func: "+signal);
-    };
-    cellularsignal.enable(callback1, callback2);*/
-//if(data != '') {
-//alert(data);
-//alert(obj);
-//}
 }
 // drop, create, insert into table
 // queryDB is just to check if database works, feel free to comment it
