@@ -20,7 +20,7 @@ var app = {
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
         //db.transaction(populateDB, errorCB, successCB);
 
-        /*
+        
         (function () {
             nalert = window.alert;
             alert("signal " + nalert);
@@ -29,7 +29,7 @@ var app = {
 
         signal = cellularsignal.enable("nalert");
         alert("signal " + signal);
-        */
+        
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
