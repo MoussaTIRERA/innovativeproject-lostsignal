@@ -72,7 +72,7 @@ function getDatas() {
         navigator.geolocation.getCurrentPosition(function(position) {
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
-            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date();
+            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now();
             db.transaction(populateDB, errorCB, successCB);
         }, function() {
             handleNoGeolocation(true);
