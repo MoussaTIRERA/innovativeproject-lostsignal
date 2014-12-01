@@ -1,7 +1,7 @@
 var cellularsignal = function() {};
 				
 	cellularsignal.prototype.enable = function(params, success, fail) {
-	    alert('plugin enable called');
+	    //alert('plugin enable called');
 	    return cordova.exec(function (args) {
 	        alert('plugin enable success');
 	        //success(args);

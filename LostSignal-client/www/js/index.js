@@ -5,6 +5,13 @@ var obj = '';
 var myService;
 var signal;
 
+//global function to get signal strength
+function getsignal(currentsignal) {
+    signal = currentsignal;
+    //alert("signal power: " + signal);
+    getDatas(signal);
+}
+
 var app = {
     initialize: function() {
         this.bindEvents();
@@ -18,18 +25,10 @@ var app = {
         myService = cordova.plugins.myService;
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
-        //db.transaction(populateDB, errorCB, successCB);
+        db.transaction(populateDB, errorCB, successCB);
 
-        
-        (function () {
-            nalert = window.alert;
-            alert("signal " + nalert);
-        })();
-
-
-        signal = cellularsignal.enable("nalert");
-        alert("signal " + signal);
-        
+        cellularsignal.enable("getsignal");
+        cellularsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
@@ -57,22 +56,24 @@ function errorCB(err) {
 // Success error callback
 function successCB() {
 }
-function getDatas() {
+function getDatas(signal) {
     var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
     deviceInfo.get(function(result) {
         obj = result;
-//alert(result.account0Name);
-//alert("result = " + result);
-//alert(result.deviceId + '\n' + result.netCountry + '\n' + result.netName + '\n' + result.simNo);
-//alert(result["deviceID"] + '\n' + result["netCountry"] + '\n' + result["netName"] + '\n' + result["simNo"]);
+    //alert(result.account0Name);
+    //alert("result = " + result);
+    //alert(result.deviceId + '\n' + result.netCountry + '\n' + result.netName + '\n' + result.simNo);
+    //alert(result["deviceID"] + '\n' + result["netCountry"] + '\n' + result["netName"] + '\n' + result["simNo"]);
     }, function() {
         alert("error");
     });
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
+            cellularsignal.enable("getsignal");
+            cellularsignal.disable();
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
-            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now();
+            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + signal;
             db.transaction(populateDB, errorCB, successCB);
         }, function() {
             handleNoGeolocation(true);
@@ -101,18 +102,19 @@ function populateDB(tx) {
     var iccid_db = substr[9];
     var network_db = substr[10];
     var date_db = substr[11];
+    var currentSignal_db = substr[12];
 
 //alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
 //+ " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
-    tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text)');
-    tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
+    tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text, signal text)');
+    tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db, currentSignal_db]);
 //tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
     queryDB(tx);
 }
 // form the query
 function queryDB(tx) {
-    tx.executeSql("SELECT id, latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date from lostsignal_table;", [], createJSON, errorCB);
+    tx.executeSql("SELECT id, latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal from lostsignal_table;", [], createJSON, errorCB);
 }
 // Function to check database and display the results
 //usage tx.executeSql("SELECT id from lostsignal_table;", [], querySuccess, errorCB); in queryDB
@@ -135,6 +137,7 @@ function querySuccess(tx, results) {
         alert(results.rows.item(i).iccid);
         alert(results.rows.item(i).network);
         alert(results.rows.item(i).date);
+        alert(results.rows.item(i).signal);
     }
 }
 // Function to create JSON from database tables
@@ -145,7 +148,7 @@ function createJSON(tx, results)
     var my_JSON_object = "";
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
         my_JSON_object = my_JSON_object + JSON.stringify({id: results.rows.item(i).id, latitude: results.rows.item(i).latitude, longitude: results.rows.item(i).longitude, model: results.rows.item(i).model, uuid: results.rows.item(i).uuid, bssid: results.rows.item(i).bssid, ssid: results.rows.item(i).ssid,
-            mac: results.rows.item(i).mac, imei: results.rows.item(i).imei, imsi: results.rows.item(i).imsi, iccid: results.rows.item(i).iccid, network: results.rows.item(i).network, date: results.rows.item(i).date});
+            mac: results.rows.item(i).mac, imei: results.rows.item(i).imei, imsi: results.rows.item(i).imsi, iccid: results.rows.item(i).iccid, network: results.rows.item(i).network, date: results.rows.item(i).date, signal: results.rows.item(i).signal});
     }
     //alert(my_JSON_object);
     send_JSON_to_serwer(my_JSON_object);
