@@ -37,7 +37,7 @@ public class IbcCellularSignal extends CordovaPlugin {
                     @Override
                     public void onSignalStrengthsChanged(SignalStrength signalStrength)
                     {
-                            super.onSignalStrengthsChanged(signalStrength);
+                            //super.onSignalStrengthsChanged(signalStrength);
                            
                             int strengthDbm = -1;
                             if (signalStrength.isGsm()){
@@ -48,13 +48,13 @@ public class IbcCellularSignal extends CordovaPlugin {
                                     if (strengthDbm == -1){
                                             strengthDbm = signalStrength.getEvdoDbm();
                             }}
-                            updateSignalStrength(strengthDbm);
+                            //updateSignalStrength(strengthDbm);
                     }
             };
     
    
     private void updateSignalStrength(int strengthDbm) {
-        this.webView.sendJavascript(callback+"(" + strengthDbm + ")");  
+        this.webView.sendJavascript(callback+"(" + strengthDbm + ")");
     }
    
     @Override

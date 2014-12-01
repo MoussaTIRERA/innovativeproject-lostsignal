@@ -3,12 +3,12 @@ cordova.define("com.phonegap.plugins.IbcCellularSignal.cellularsignal", function
 	cellularsignal.prototype.enable = function(params, success, fail) {
 	    //alert('plugin enable called');
 	    return cordova.exec(function (args) {
-	        alert('plugin enable success');
+	        //alert('plugin enable success');
 	        //success(args);
 		}, function(args) {
-		    alert('plugin enable failure');
+		    //alert('plugin enable failure');
 		    //fail(args);
-		    console.log(args);
+		    //console.log(args);
 		}, 'IbcCellularSignal', 'enable', [params]);
 	};
 	
@@ -23,7 +23,7 @@ cordova.define("com.phonegap.plugins.IbcCellularSignal.cellularsignal", function
 var Cellsignal = function() {};
 	
 	Cellsignal.enable = function(listener, func) {
-	    console.log(window.plugins.cellularsignal);
+	    //console.log(window.plugins.cellularsignal);
 	    window.plugins.cellularsignal.enable({ success: listener },
 			function(returnVal) {if(typeof func == "function"){func(returnVal.returnVal);}}, // Success function
 			function (error) {

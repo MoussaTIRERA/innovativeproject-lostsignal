@@ -2,7 +2,6 @@ var ssid = '';
 var bssid = '';
 var data = '';
 var obj = '';
-var myService;
 var signal;
 
 //global function to get signal strength
@@ -22,13 +21,13 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        myService = cordova.plugins.myService;
+
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
-        db.transaction(populateDB, errorCB, successCB);
+        //db.transaction(populateDB, errorCB, successCB);
 
-        cellularsignal.enable("getsignal");
-        cellularsignal.disable();
+        //cellularsignal.enable("getDatas");
+
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
@@ -69,12 +68,16 @@ function getDatas(signal) {
     });
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
+
             cellularsignal.enable("getsignal");
-            cellularsignal.disable();
+
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + signal;
             db.transaction(populateDB, errorCB, successCB);
+            alert("sprawdzenie->  " + data);
+
+            cellularsignal.disable();
         }, function() {
             handleNoGeolocation(true);
         });
@@ -144,7 +147,7 @@ function querySuccess(tx, results) {
 function createJSON(tx, results)
 {
     var len = results.rows.length;
-    alert("results.rows.length: " + results.rows.length);
+    //alert("results.rows.length: " + results.rows.length);
     var my_JSON_object = "";
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
         my_JSON_object = my_JSON_object + JSON.stringify({id: results.rows.item(i).id, latitude: results.rows.item(i).latitude, longitude: results.rows.item(i).longitude, model: results.rows.item(i).model, uuid: results.rows.item(i).uuid, bssid: results.rows.item(i).bssid, ssid: results.rows.item(i).ssid,
@@ -168,7 +171,7 @@ function send_JSON_to_serwer(my_JSON_object)
         data       : my_JSON_object,
         dataType   : 'json',
         success    : function(response) {
-            alert(JSON.stringify(response));
+            //alert(JSON.stringify(response));
         },
         error      : function(response) {
             alert('Not working! Data cannot be send to server or wrong response from server');
@@ -179,11 +182,10 @@ function send_JSON_to_serwer(my_JSON_object)
 // Transaction error callback
 function errorCB(err) {
     alert("err");
-    console.log("Erroressing SQL: " + err.code);
 }
 // Success error callback
 function successCB() {
-    alert("success");
+    //alert("success");
 }
 function checkConnection() {
     var networkState = navigator.connection.type;
