@@ -2,13 +2,11 @@ var ssid = '';
 var bssid = '';
 var data = '';
 var obj = '';
-var signal;
 
 //global function to get signal strength
 function getsignal(currentsignal) {
-    signal = currentsignal;
-    //alert("signal power: " + signal);
-    getDatas(signal);
+    window.signal = currentsignal;          //global variable used in getDatas
+    alert("signal power: " + signal);
 }
 
 var app = {
@@ -26,8 +24,9 @@ var app = {
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
         //db.transaction(populateDB, errorCB, successCB);
 
-        //cellularsignal.enable("getDatas");
-
+        cellularsignal.enable("getsignal");
+        cellularsignal.disable();
+        //Cellsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
@@ -57,6 +56,7 @@ function successCB() {
 }
 function getDatas(signal) {
     var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
+
     deviceInfo.get(function(result) {
         obj = result;
     //alert(result.account0Name);
@@ -70,14 +70,14 @@ function getDatas(signal) {
         navigator.geolocation.getCurrentPosition(function(position) {
 
             cellularsignal.enable("getsignal");
+            cellularsignal.disable();
 
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
-            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + signal;
+            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
             db.transaction(populateDB, errorCB, successCB);
             alert("sprawdzenie->  " + data);
 
-            cellularsignal.disable();
         }, function() {
             handleNoGeolocation(true);
         });

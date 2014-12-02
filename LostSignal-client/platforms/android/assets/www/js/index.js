@@ -2,13 +2,12 @@ var ssid = '';
 var bssid = '';
 var data = '';
 var obj = '';
-var signal;
+//var signal = 0;
 
 //global function to get signal strength
 function getsignal(currentsignal) {
-    signal = currentsignal;
-    //alert("signal power: " + signal);
-    getDatas(signal);
+    window.signal = currentsignal;
+    alert("signal power: " + signal);
 }
 
 var app = {
@@ -26,8 +25,9 @@ var app = {
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
         //db.transaction(populateDB, errorCB, successCB);
 
-        //cellularsignal.enable("getDatas");
-
+        cellularsignal.enable("getsignal");
+        cellularsignal.disable();
+        //Cellsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
@@ -57,6 +57,11 @@ function successCB() {
 }
 function getDatas(signal) {
     var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
+    alert("into getDatas");
+    cellularsignal.enable("getsignal");
+    alert("signal in getDatas " + window.signal);
+    cellularsignal.disable();
+
     deviceInfo.get(function(result) {
         obj = result;
     //alert(result.account0Name);
@@ -69,7 +74,7 @@ function getDatas(signal) {
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
 
-            cellularsignal.enable("getsignal");
+            //cellularsignal.enable("getsignal");
 
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
@@ -77,7 +82,7 @@ function getDatas(signal) {
             db.transaction(populateDB, errorCB, successCB);
             alert("sprawdzenie->  " + data);
 
-            cellularsignal.disable();
+            //cellularsignal.disable();
         }, function() {
             handleNoGeolocation(true);
         });
