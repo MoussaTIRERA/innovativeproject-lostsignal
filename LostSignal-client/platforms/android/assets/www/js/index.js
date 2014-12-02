@@ -80,7 +80,7 @@ function getDatas(signal) {
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + signal;
             db.transaction(populateDB, errorCB, successCB);
-            alert("sprawdzenie->  " + data);
+            //alert("sprawdzenie->  " + data);
 
             //cellularsignal.disable();
         }, function() {
@@ -166,7 +166,7 @@ function createJSON(tx, results)
 //url actually is http://ip.jsontest.com just to check if it works
 function send_JSON_to_serwer(my_JSON_object)
 {
-    alert(my_JSON_object);
+    //alert(my_JSON_object);
     $.ajax({
         type       : "POST",
         url        : "https://polar-falls-4829.herokuapp.com",

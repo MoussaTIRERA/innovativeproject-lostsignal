@@ -21,6 +21,9 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script type="text/javascript" src="js/map.js"></script>
 
+    <script type="text/javascript" src="js/heatmap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
+
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
@@ -80,8 +83,8 @@
         <h1><b>Navigation</b></h1>
     </div>
 
-    <div data-role="main" class="ui-content" style="height: 900px">
-        Tutaj będzie nawigowanie do punktu.
+    <div data-role="main" style="height: 1000px;">
+        <div id="heatmap-canvas"></div>
     </div>
 
 
