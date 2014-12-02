@@ -1,5 +1,5 @@
 
-var map, pointarray, heatmap;
+var hmap, pointarray, heatmap;
 
 var taxiData = [
     new google.maps.LatLng(37.782551, -122.445368),
@@ -511,7 +511,7 @@ function initialize() {
         mapTypeId: google.maps.MapTypeId.HYBRID
     };
 
-    map = new google.maps.Map(document.getElementById('heatmap-canvas'),
+    hmap = new google.maps.Map(document.getElementById('heatmap-canvas'),
         mapOptions);
 
     var pointArray = new google.maps.MVCArray(taxiData);
@@ -524,7 +524,7 @@ function initialize() {
 }
 
 function toggleHeatmap() {
-    heatmap.setMap(heatmap.getMap() ? null : map);
+    heatmap.setMap(heatmap.getMap() ? null : hmap);
 }
 
 function changeGradient() {

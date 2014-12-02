@@ -145,10 +145,3 @@ h1 {
     padding: 5px;
     border: 1px solid #999;
 }
-
-#heatmap-canvas {
-    height: 80%;
-    width: 100%;
-    margin: 0px;
-    padding: 0px
-}

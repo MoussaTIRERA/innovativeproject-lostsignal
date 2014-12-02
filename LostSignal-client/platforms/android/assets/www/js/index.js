@@ -2,12 +2,12 @@ var ssid = '';
 var bssid = '';
 var data = '';
 var obj = '';
-//var signal = 0;
+var lastPostition;
 
 //global function to get signal strength
 function getsignal(currentsignal) {
-    window.signal = currentsignal;
-    alert("signal power: " + signal);
+    window.signal = currentsignal;          //global variable used in getDatas
+    //alert("signal power: " + signal);
 }
 
 var app = {
@@ -24,6 +24,8 @@ var app = {
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
         //db.transaction(populateDB, errorCB, successCB);
+
+
 
         cellularsignal.enable("getsignal");
         cellularsignal.disable();
@@ -57,10 +59,6 @@ function successCB() {
 }
 function getDatas(signal) {
     var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
-    alert("into getDatas");
-    cellularsignal.enable("getsignal");
-    alert("signal in getDatas " + window.signal);
-    cellularsignal.disable();
 
     deviceInfo.get(function(result) {
         obj = result;
@@ -74,15 +72,17 @@ function getDatas(signal) {
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
 
-            //cellularsignal.enable("getsignal");
+            cellularsignal.enable("getsignal");
+            cellularsignal.disable();
+
+            lastPostition = position;
 
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
-            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + signal;
+            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
             db.transaction(populateDB, errorCB, successCB);
             //alert("sprawdzenie->  " + data);
 
-            //cellularsignal.disable();
         }, function() {
             handleNoGeolocation(true);
         });

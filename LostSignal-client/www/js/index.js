@@ -2,11 +2,12 @@ var ssid = '';
 var bssid = '';
 var data = '';
 var obj = '';
+var lastPostition;
 
 //global function to get signal strength
 function getsignal(currentsignal) {
     window.signal = currentsignal;          //global variable used in getDatas
-    alert("signal power: " + signal);
+    //alert("signal power: " + signal);
 }
 
 var app = {
@@ -23,6 +24,8 @@ var app = {
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
         //db.transaction(populateDB, errorCB, successCB);
+
+
 
         cellularsignal.enable("getsignal");
         cellularsignal.disable();
@@ -71,6 +74,8 @@ function getDatas(signal) {
 
             cellularsignal.enable("getsignal");
             cellularsignal.disable();
+
+            lastPostition = position;
 
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
