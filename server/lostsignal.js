@@ -23,7 +23,7 @@ var queryobj2 = function (lon, lat, provider, str, uuid) { return {
 
 var querytemp = function (lon, lat) { return {
     name: 'select',
-    text: 'select provider, strength, longitude, latitude from lostsignal limit 10'
+    text: 'select provider, signal, longitude, latitude from lostsignal limit 10'
 };};
 
 var querytemp2 = function (lon, lat, provider, str, uuid) { return {
@@ -40,7 +40,7 @@ function insertJson(json) {
             return error('error: ' + err);
         }
         client.query(qfun(json.longitude, json.latitude, "Plus",
-                    "1", "f93db9a0-7482-11e4-b61e-0002a5d5c51b"), function(err, result) {
+            json.signal, "f93db9a0-7482-11e4-b61e-0002a5d5c51b"), function(err, result) {
             done();
 
             if(err) {
