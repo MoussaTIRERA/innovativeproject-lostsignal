@@ -15,11 +15,17 @@ var app = {
         this.bindEvents();
     },
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, true);
+        document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
+        get_data_from_serwer(myCallback);
+
+        function myCallback(result) {
+            alert("Callback " +result);
+            var reply = result;
+        }
 
 
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
@@ -29,7 +35,6 @@ var app = {
 
         cellularsignal.enable("getsignal");
         cellularsignal.disable();
-        //Cellsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
@@ -161,6 +166,29 @@ function createJSON(tx, results)
     //alert(my_JSON_object);
     send_JSON_to_serwer(my_JSON_object);
 }
+
+
+//function to recive data from server- provider, coordinates and signal strength
+function get_data_from_serwer(myCallback)
+{
+    //alert(my_JSON_object);
+    $.ajax({
+        type       : "GET",
+        url        : "https://polar-falls-4829.herokuapp.com?provider=val1&latitude=val2&longitude=val3&signal=val4",
+        crossDomain: true,
+        beforeSend : function() {$.mobile.loading('show')},
+        complete   : function() {$.mobile.loading('hide')},
+        success    : function(response) {
+            //alert("Response " + response);
+            var reply = JSON.stringify(response);
+            myCallback(reply);
+        },
+        error      : function(response) {
+            alert('Not working! Data cannot be received from server');
+        }
+    });
+}
+
 
 // Function to send JSON from database to server
 //url actually is http://ip.jsontest.com just to check if it works
