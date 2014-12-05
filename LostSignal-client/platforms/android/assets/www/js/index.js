@@ -80,7 +80,8 @@ function getDatas(signal) {
             cellularsignal.enable("getsignal");
             cellularsignal.disable();
 
-            lastPostition = position;
+            lastPostition = new google.maps.LatLng(position.coords.latitude,
+                position.coords.longitude);
 
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'

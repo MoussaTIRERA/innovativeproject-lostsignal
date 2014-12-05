@@ -1,5 +1,6 @@
 
 var hmap, pointarray, heatmap;
+var Latlng;
 
 var taxiData = [
     new google.maps.LatLng(37.782551, -122.445368),
@@ -505,22 +506,24 @@ var taxiData = [
 ];
 
 function initialize() {
+
     var mapOptions = {
-        zoom: 13,
         center: new google.maps.LatLng(37.774546, -122.433523),
-        mapTypeId: google.maps.MapTypeId.HYBRID
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
     };
 
     hmap = new google.maps.Map(document.getElementById('heatmap-canvas'),
         mapOptions);
+
+    //setDatas();
 
     var pointArray = new google.maps.MVCArray(taxiData);
 
     heatmap = new google.maps.visualization.HeatmapLayer({
         data: pointArray
     });
-
-    heatmap.setMap(map);
+    heatmap.setMap(hmap);
 }
 
 function toggleHeatmap() {
@@ -553,6 +556,24 @@ function changeRadius() {
 
 function changeOpacity() {
     heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
+}
+
+function setDatas() {
+
+    points = [];
+    // set connection with DB
+    var record; // one record from DB
+
+    /*for(var i = 0; i<ilosc_danych_z_bazy; i++) {
+        var lati = latitude_from_DB;   // FLOAT
+        var longi = longitude_from_DB;   // FLOAT
+        var signal = signal_from_DB  // INTEGER
+        points[i] = {location: new google.maps.LatLng(lati, longi), weight: signal};
+    }
+    var heatmap = new google.maps.visualization.HeatmapLayer({
+        data: points
+    });
+    heatmap.setMap(hmap);*/
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);

@@ -2,26 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd97d424-78e5-476f-bb87-00c7d90920ac" name="Default" comment="offline gui">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub$Proxy.class" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub$Proxy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub.class" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceApi$Stub.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceListener$Stub$Proxy.class" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceListener$Stub$Proxy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceListener$Stub.class" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes/com/red_folder/phonegap/plugin/backgroundservice/BackgroundServiceListener$Stub.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/dexedLibs/classes-9066166234b07184dc8661e24db94af6.jar" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/dexedLibs/classes-9066166234b07184dc8661e24db94af6.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/classes.jar" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/res/drawable/icon.png" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/res/drawable/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/AndroidManifest.xml.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/AndroidManifest.xml.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/AndroidManifest.xml.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/AndroidManifest.xml.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes.dex.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/classes.dex.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/heatmap.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/heatmap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/map.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/map.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="innovativeproject-lostsignal.iws" />
@@ -49,18 +44,18 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="4410">
-              <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="4425">
+              <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7509" max-vertical-offset="8460">
-              <caret line="558" column="0" selection-start-line="558" selection-start-column="0" selection-end-line="558" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.44382024" vertical-offset="7375" max-vertical-offset="8775">
+              <caret line="518" column="6" selection-start-line="518" selection-start-column="6" selection-end-line="518" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -69,7 +64,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="2295">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2295">
               <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
               <folding />
             </state>
@@ -79,18 +74,25 @@
       <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="1800">
-              <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1225" max-vertical-offset="2115">
+              <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
+              <folding>
+                <marker date="1417792962797" expanded="true" signature="1373:1384" placeholder="..." />
+                <marker date="1417792962797" expanded="true" signature="1448:1459" placeholder="..." />
+                <marker date="1417792962797" expanded="true" signature="1522:1533" placeholder="..." />
+                <marker date="1417792962797" expanded="true" signature="3215:3226" placeholder="..." />
+                <marker date="1417792962797" expanded="true" signature="3286:3297" placeholder="..." />
+                <marker date="1417792962797" expanded="true" signature="3357:3368" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3061947" vertical-offset="67" max-vertical-offset="1665">
-              <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+            <state vertical-scroll-proportion="-47.333332" vertical-offset="214" max-vertical-offset="1710">
+              <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -100,6 +102,7 @@
                 <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,9 +117,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LostSignal-client/www/css/style.css" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
       </list>
     </option>
   </component>
@@ -127,7 +131,7 @@
     <option name="x" value="-1" />
     <option name="y" value="1705" />
     <option name="width" value="1922" />
-    <option name="height" value="1026" />
+    <option name="height" value="1025" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -270,118 +274,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="innovativeproject-lostsignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="innovativeproject-lostsignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LostSignal-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="innovativeproject-lostsignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="innovativeproject-lostsignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LostSignal-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.phonegap.plugins.IbcCellularSignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="innovativeproject-lostsignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="innovativeproject-lostsignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LostSignal-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.phonegap.plugins.IbcCellularSignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="innovativeproject-lostsignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="innovativeproject-lostsignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LostSignal-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.phonegap.plugins.IbcCellularSignal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phonegap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cellularsignal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,13 +455,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="1705" width="1922" height="1026" extended-state="6" />
+    <frame x="-1" y="1705" width="1922" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -579,6 +470,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -639,14 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4605">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="439" max-vertical-offset="1485">
@@ -660,6 +544,7 @@
             <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,7 +553,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1800">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
+          <folding>
+            <marker date="1417792962797" expanded="true" signature="1373:1384" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="1448:1459" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="1522:1533" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="3215:3226" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="3286:3297" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="3357:3368" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -967,15 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="1425">
           <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="1800">
-          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,34 +870,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="2295">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2295">
           <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7509" max-vertical-offset="8460">
-          <caret line="558" column="0" selection-start-line="558" selection-start-column="0" selection-end-line="558" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="4410">
-          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3061947" vertical-offset="67" max-vertical-offset="1665">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        <state vertical-scroll-proportion="-47.333332" vertical-offset="214" max-vertical-offset="1710">
+          <caret line="90" column="10" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1024,7 +899,39 @@
             <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="4425">
+          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1225" max-vertical-offset="2115">
+          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
+          <folding>
+            <marker date="1417792962797" expanded="true" signature="1373:1384" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="1448:1459" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="1522:1533" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="3215:3226" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="3286:3297" placeholder="..." />
+            <marker date="1417792962797" expanded="true" signature="3357:3368" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44382024" vertical-offset="7375" max-vertical-offset="8775">
+          <caret line="518" column="6" selection-start-line="518" selection-start-column="6" selection-end-line="518" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

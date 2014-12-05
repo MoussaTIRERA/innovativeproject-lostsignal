@@ -104,10 +104,31 @@ function getFromDB() {
 
     // get coordinates and signal strength
 
-    var record;
+    // set connection with DB
 
+    var record; // get one record
 
-    return record;
+    /*for(var i = 0; i<dlugosc_bazy; i++) {
+        record = wynik_z_bazy;
+
+        var myLatlng = new google.maps.LatLng(record.latitude,record.longitude);
+
+        var infowindow = new google.maps.InfoWindow({
+            content: '<p style="color:black">Location found using HTML5.</p>' +
+            '<p style="color:black">Actual position:' + pos + '</p>' +
+            '<p style="color:black">Date: ' + new Date() + '</p>'
+            //'<p style="color:black">Signal strength: ' + getSigStr() + '</p>'
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map
+        });
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+
+    }*/
 }
 
 
