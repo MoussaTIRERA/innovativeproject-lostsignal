@@ -21,15 +21,27 @@ var app = {
         app.receivedEvent('deviceready');
 
         get_data_from_serwer(myCallback);
-
+        db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
         function myCallback(result) {
-            alert("Callback " +result);
-            var reply = result;
+            //alert("Callback " +result);
+            var reply = JSON.parse(result);
+            for (var i=0; i<reply.length; i++) {
+                data_to_navigate = "";
+                data_to_navigate = reply[i].provider + ';' + reply[i].signal + ';' + reply[i].latitude + ';' +  reply[i].longitude;
+                //alert("provider: " + reply[i].provider);
+                //alert("signal: " + reply[i].signal);
+                //alert("latitude: " + reply[i].latitude);
+                //alert("longitude: " + reply[i].longitude);
+                //alert(data_to_navigate);
+                db_navigate.transaction(populateDB_navigation, errorCB, successCB);
+            }
+
         }
 
 
+
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
-        //db.transaction(populateDB, errorCB, successCB);
+        db.transaction(populateDB, errorCB, successCB);
 
 
 
@@ -100,8 +112,21 @@ function getDatas(signal) {
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
 }
+// drop, create, insert into navigate table - table use to navigete user to point
+function populateDB_navigation(tx) {
+        var substr = data_to_navigate.split(';');
+        var provider_db = substr[0];
+        var signal_db = substr[1];
+        var latitude_db = substr[2];
+        var longitude_db = substr[3];
+        //alert(provider_db + " " + signal_db + " " + latitude_db + " " + longitude_db);
+        //tx.executeSql('DROP TABLE IF EXISTS navigation_table');
+        tx.executeSql('CREATE TABLE IF NOT EXISTS navigation_table (id integer primary key, provider text, signal integer, latitude text, longitude text)');
+        tx.executeSql('INSERT INTO navigation_table (provider, signal, latitude, longitude) VALUES (?,?,?,?)', [provider_db, signal_db, latitude_db, longitude_db]);
+        //queryDB_navigation(tx);
+
+}
 // drop, create, insert into table
-// queryDB is just to check if database works, feel free to comment it
 function populateDB(tx) {
     var substr = data.split(';');
     var latitude_db = substr[0];
@@ -123,35 +148,30 @@ function populateDB(tx) {
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
     tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text, signal text)');
     tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db, currentSignal_db]);
-//tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db]);
     queryDB(tx);
 }
+
+// form the query in populate_navigation
+function queryDB_navigation(tx) {
+    tx.executeSql("SELECT id, provider, signal, latitude, longitude from navigation_table;", [], querySuccess, errorCB);
+}
+
 // form the query
 function queryDB(tx) {
     tx.executeSql("SELECT id, latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal from lostsignal_table;", [], createJSON, errorCB);
 }
+
 // Function to check database and display the results
 //usage tx.executeSql("SELECT id from lostsignal_table;", [], querySuccess, errorCB); in queryDB
 function querySuccess(tx, results) {
     var len = results.rows.length;
-//    alert("results.rows.length: " + results.rows.length);
-//all results from database
-    alert('all results from DB');
+    alert("results.rows.length: " + results.rows.length);
+//results from database
+
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
         alert(results.rows.item(i).id);
         alert(results.rows.item(i).latitude);
         alert(results.rows.item(i).longitude);
-        alert(results.rows.item(i).model);
-        alert(results.rows.item(i).uuid);
-        alert(results.rows.item(i).bssid);
-        alert(results.rows.item(i).ssid);
-        alert(results.rows.item(i).mac);
-        alert(results.rows.item(i).imei);
-        alert(results.rows.item(i).imsi);
-        alert(results.rows.item(i).iccid);
-        alert(results.rows.item(i).network);
-        alert(results.rows.item(i).date);
-        alert(results.rows.item(i).signal);
     }
 }
 // Function to create JSON from database tables

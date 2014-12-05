@@ -108,8 +108,8 @@ function getFromDB() {
 
     var record; // get one record
 
-    // for(var i = 0; i<dlugosc_bazy; i++) {
-        // record = wynik_z_bazy;
+    /*for(var i = 0; i<dlugosc_bazy; i++) {
+        record = wynik_z_bazy;
 
         var myLatlng = new google.maps.LatLng(record.latitude,record.longitude);
 
@@ -128,7 +128,7 @@ function getFromDB() {
             infowindow.open(map, marker);
         });
 
-    //}
+    }*/
 }
 
 

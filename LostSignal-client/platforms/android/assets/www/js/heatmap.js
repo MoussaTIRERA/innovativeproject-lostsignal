@@ -507,17 +507,6 @@ var taxiData = [
 
 function initialize() {
 
-
-    navigator.geolocation.getCurrentPosition(function(position) {
-        var pos = new google.maps.LatLng(position.coords.latitude,
-            position.coords.longitude);
-        Latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-
-    }, function() {
-        handleNoGeolocation(true);
-    });
-
-
     var mapOptions = {
         center: new google.maps.LatLng(37.774546, -122.433523),
         zoom: 15,
@@ -527,14 +516,14 @@ function initialize() {
     hmap = new google.maps.Map(document.getElementById('heatmap-canvas'),
         mapOptions);
 
+    //setDatas();
+
     var pointArray = new google.maps.MVCArray(taxiData);
 
     heatmap = new google.maps.visualization.HeatmapLayer({
         data: pointArray
     });
     heatmap.setMap(hmap);
-    //hmap.setCenter(Latlng);
-    setDatas();
 }
 
 function toggleHeatmap() {
@@ -580,9 +569,11 @@ function setDatas() {
         var longi = longitude_from_DB;   // FLOAT
         var signal = signal_from_DB  // INTEGER
         points[i] = {location: new google.maps.LatLng(lati, longi), weight: signal};
-    }*/
-    points[1] = "{location: new google.maps.LatLng(37.782, -122.447), weight: 0.5}";
-    alert(points[1]);
+    }
+    var heatmap = new google.maps.visualization.HeatmapLayer({
+        data: points
+    });
+    heatmap.setMap(hmap);*/
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
