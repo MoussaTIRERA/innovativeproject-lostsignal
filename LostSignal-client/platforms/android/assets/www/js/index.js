@@ -24,7 +24,7 @@ var app = {
 
         function myCallback(result) {
             alert("Callback " +result);
-            reply = result;
+            var reply = result;
         }
 
 
@@ -35,7 +35,6 @@ var app = {
 
         cellularsignal.enable("getsignal");
         cellularsignal.disable();
-        //Cellsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
@@ -180,7 +179,7 @@ function get_data_from_serwer(myCallback)
         beforeSend : function() {$.mobile.loading('show')},
         complete   : function() {$.mobile.loading('hide')},
         success    : function(response) {
-            alert("Response " + response);
+            //alert("Response " + response);
             var reply = JSON.stringify(response);
             myCallback(reply);
         },
