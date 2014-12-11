@@ -5,6 +5,8 @@ var row;
 
 function initialize() {
 
+    getFromDB();
+
     navigator.geolocation.getCurrentPosition(function(position) {
         var pos = new google.maps.LatLng(position.coords.latitude,
             position.coords.longitude);
