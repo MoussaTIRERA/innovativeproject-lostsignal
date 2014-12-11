@@ -576,4 +576,7 @@ function setDatas() {
     heatmap.setMap(hmap);*/
 }
 
+
+
+
 google.maps.event.addDomListener(window, 'load', initialize);

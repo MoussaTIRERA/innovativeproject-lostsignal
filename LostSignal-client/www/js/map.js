@@ -1,6 +1,7 @@
 var map;
 var parameters;
 var startLatlng;
+var row;
 
 function initialize() {
 
@@ -130,7 +131,6 @@ function getFromDB() {
 
     }*/
 }
-
 
 
 google.maps.event.addDomListener(window, 'load', initialize);

@@ -21,7 +21,8 @@ var app = {
         app.receivedEvent('deviceready');
 
         get_data_from_serwer(myCallback);
-        db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
+
+        db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 2000);
         function myCallback(result) {
             //alert("Callback " +result);
             var reply = JSON.parse(result);
@@ -40,7 +41,7 @@ var app = {
 
 
 
-        db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 10);
+        db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 1000);
         db.transaction(populateDB, errorCB, successCB);
 
 
@@ -49,8 +50,6 @@ var app = {
         cellularsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
-
-        //getDatas();
 
         setInterval(getDatas, 15000);
 
@@ -99,6 +98,7 @@ function getDatas(signal) {
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
             db.transaction(populateDB, errorCB, successCB);
+            db_navigate.transaction(populateDB_navigation, errorCB, successCB);
             //alert("sprawdzenie->  " + data);
 
         }, function() {
@@ -112,7 +112,7 @@ function getDatas(signal) {
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
 }
-// drop, create, insert into navigate table - table use to navigete user to point
+// drop, create, insert into navigate table - table use to navigate user to point
 function populateDB_navigation(tx) {
         var substr = data_to_navigate.split(';');
         var provider_db = substr[0];
@@ -126,7 +126,7 @@ function populateDB_navigation(tx) {
         //queryDB_navigation(tx);
 
 }
-// drop, create, insert into table
+// drop, create, insert into table - table to store coordinates and signal strength and send to server
 function populateDB(tx) {
     var substr = data.split(';');
     var latitude_db = substr[0];
@@ -302,6 +302,10 @@ $('select#flag').change(function() {
         cordova.plugins.backgroundMode.disable();
         alert('off');
     }
+});
+
+$(document).on( "click", '#navButton', function() {
+    alert("o kurwa");
 });
 
 
