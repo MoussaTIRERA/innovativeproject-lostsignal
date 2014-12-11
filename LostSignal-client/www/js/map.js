@@ -5,8 +5,6 @@ var row;
 
 function initialize() {
 
-    getFromDB();
-
     navigator.geolocation.getCurrentPosition(function(position) {
         var pos = new google.maps.LatLng(position.coords.latitude,
             position.coords.longitude);
@@ -27,7 +25,7 @@ function initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
 
-
+    getFromDB();
     setInterval(getInfo(),5000);
 //    map.setCenter(pos);
 
