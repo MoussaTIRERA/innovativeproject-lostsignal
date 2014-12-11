@@ -112,6 +112,7 @@
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.icons-1.4.5.css \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.css \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images \
+/home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/navigation.js \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/textinput \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/jqm-search.php \
 /home/afro/Projekt/innovativeproject-lostsignal/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-column-toggle \

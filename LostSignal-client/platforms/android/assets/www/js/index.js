@@ -20,6 +20,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
+
         get_data_from_serwer(myCallback);
 
         db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 2000);
@@ -44,12 +45,13 @@ var app = {
         db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 1000);
         db.transaction(populateDB, errorCB, successCB);
 
-
-
         cellularsignal.enable("getsignal");
         cellularsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
+
+        document.getElementById("navButt").disabled = false;
+        document.getElementById("showmapButt").disabled = false;
 
         setInterval(getDatas, 15000);
 
@@ -296,7 +298,6 @@ $('select#flag').change(function() {
     if(show) {
         cordova.plugins.backgroundMode.enable();
         cordova.plugins.backgroundMode.configure({ text:'Lost signal background service'});
-        alert('on');
     }
     else {
         cordova.plugins.backgroundMode.disable();

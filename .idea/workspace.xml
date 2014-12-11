@@ -1,705 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd97d424-78e5-476f-bb87-00c7d90920ac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/WifiWizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/cordova.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/cordova_plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/deviceinformation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/button-markup/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/button/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/checkboxradio-checkbox/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/checkboxradio-radio/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/collapsible-dynamic/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/collapsible/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/collapsibleset/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/controlgroup-dynamic/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/controlgroup/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/action-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/action-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/alert-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/alert-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-d-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-d-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-d-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-d-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-d-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-d-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-u-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-u-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-u-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-u-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-u-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/arrow-u-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/audio-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/audio-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/back-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/back-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/bars-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/bars-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/bullets-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/bullets-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/calendar-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/calendar-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/camera-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/camera-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/carat-d-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/carat-d-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/carat-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/carat-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/carat-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/carat-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/carat-u-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/carat-u-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/check-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/check-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/clock-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/clock-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/cloud-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/cloud-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/comment-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/comment-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/delete-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/delete-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/edit-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/edit-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/eye-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/eye-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/forbidden-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/forbidden-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/forward-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/forward-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/gear-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/gear-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/grid-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/grid-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/heart-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/heart-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/home-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/home-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/info-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/info-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/location-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/location-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/lock-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/lock-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/mail-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/mail-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/minus-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/minus-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/navigation-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/navigation-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/phone-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/phone-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/plus-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/plus-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/power-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/power-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/recycle-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/recycle-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/refresh-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/refresh-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/search-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/search-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/shop-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/shop-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/star-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/star-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/tag-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/tag-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/user-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/user-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/video-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-png/video-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/action-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/action-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/alert-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/alert-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-d-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-d-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-d-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-d-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-d-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-d-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-u-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-u-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-u-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-u-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-u-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/arrow-u-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/audio-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/audio-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/back-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/back-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/bars-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/bars-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/bullets-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/bullets-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/calendar-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/calendar-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/camera-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/camera-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/carat-d-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/carat-d-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/carat-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/carat-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/carat-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/carat-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/carat-u-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/carat-u-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/check-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/check-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/clock-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/clock-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/cloud-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/cloud-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/comment-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/comment-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/delete-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/delete-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/edit-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/edit-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/eye-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/eye-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/forbidden-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/forbidden-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/forward-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/forward-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/gear-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/gear-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/grid-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/grid-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/heart-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/heart-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/home-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/home-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/info-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/info-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/location-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/location-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/lock-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/lock-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/mail-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/mail-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/minus-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/minus-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/navigation-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/navigation-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/phone-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/phone-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/plus-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/plus-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/power-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/power-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/recycle-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/recycle-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/refresh-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/refresh-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/search-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/search-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/shop-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/shop-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/star-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/star-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/tag-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/tag-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/user-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/user-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/video-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/images/icons-svg/video-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile.external-png-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile.icons-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile.inline-png-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile.inline-svg-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile.structure-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile.theme-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/datepicker/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/filterable/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/flipswitch/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/forms-disabled/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/forms-field-contain/fieldcontain-hide-label-deprecated.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/forms-field-contain/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/forms-gallery/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/forms-label-hidden-accessible/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/forms/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/grids-buttons/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/grids-custom-responsive/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/grids/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/icons-grunticon/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/icons/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/intro/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/jqm-contents.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/jqm-contents.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/jqm-navmenu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/jqm-navmenu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/jqm-search.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/jqm-search.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/js/jquery.mobile-1.4.5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/js/jquery.mobile-1.4.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/js/jquery.mobile-1.4.5.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-autocomplete-remote/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-autocomplete/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-autodividers-linkbar/autodividers-linkbar-demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-autodividers-linkbar/autodividers-linkbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-autodividers-linkbar/autodividers-linkbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-autodividers-linkbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-autodividers-selector/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-collapsible-item-flat/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-collapsible-item-indented/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-grid/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-grid/listview-grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-grid/listview-grid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview-nested-lists/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/listview/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/loader/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/map-geolocation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/map-list-toggle/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/map-list-toggle/jquery.gmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/map-list-toggle/showMore.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navigation-hash-processing/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navigation-linking-pages/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navigation-php-redirect/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navigation-php-redirect/redirect-target.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navigation-php-redirect/redirect.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navigation-php-redirect/source.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navigation/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/navigation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/controls-in-header-footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/disabling-a-button-does-not-work.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/dom-ready-not-working.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-can-i-stop-auto-enhancement-of-a-block-of-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-can-i-stop-auto-enhancement-of-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-configure-phonegap-cordova.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-do-i-control-page-titles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-do-i-load-a-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-do-i-scroll-to-a-position.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-do-i-turn-off-url-hiding.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-do-i-use-touch-mouse-events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/how-does-theming-work.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/injected-content-is-not-enhanced.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/my-html-5-inputs-look-different-in-browsers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/my-range-search-input-type-is-being-changed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/pass-query-params-to-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/pass-via-the-hash-to-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/scripts-and-styles-not-loading.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/sometimes-custom-select-shows-as-dialog-popup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/the-application-cache-is-not-working.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/triggering-create-on-injected-content-does-not-work.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/updating-the-value-of-enhanced-form-elements-does-not-work.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/why-is-only-the-first-page-loaded.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/old-faq-pages/why-wont-my-css-styles-apply-correctly-to-a-widget.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/alertevents-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/alertevents-2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/alertevents-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/alertevents-3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/alertevents.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/alertevents.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/docs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/docs.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/logevents-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/logevents-2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/logevents-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/logevents-3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/logevents.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/page-events/logevents.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog-alt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog-buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog-corners.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog-noclosebtn.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog-overlay.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog-rightclosebtn.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog-success.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog-with-select.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-dialog/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-multi-page/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages-single-page/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages/samepagetransition.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/pages/startpage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-external-internal/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-external-internal/page-b.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-external-internal/page-c.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-external/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-external/page-b.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-fixed/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-responsive/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel-swipe-open/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/panel/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-alignment/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-alignment/popup.alignment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-arrow-size/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-dynamic/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-iframe/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-iframe/map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-iframe/popup-iframe-map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-iframe/popup-iframe-video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-image-scaling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-image-scaling/popup-image-scaling.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup-outside-multipage/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/popup/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/rangeslider/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/rwd/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/selectmenu-custom-filter/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/selectmenu-custom/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/selectmenu/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/slider-flipswitch/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/slider-tooltip/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/slider/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-list/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/buenosaires.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/capetown.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/newyork.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/paris.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/seoul.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/swipe-page.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/swipe-page.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/swipe-page/sydney.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-column-toggle-example/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-column-toggle-heading-groups/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-column-toggle-options/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-column-toggle/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-reflow-heading-groups/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-reflow-stripes-strokes/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-reflow-styling/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/table-reflow/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/tabs/ajax-content-ignore.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/tabs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/tabs/tabbed-content.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/textinput/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/theme-classic/images/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/theme-classic/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/theme-classic/theme-classic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/theme-default/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-dynamic/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-external/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-external/index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-external/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-forms/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-fullscreen/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-persistent-optimized/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-persistent-optimized/page-b.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-persistent-optimized/page-c.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-persistent-optimized/page-d.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-persistent/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-persistent/page-b.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-persistent/page-c.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed-persistent/page-d.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar-fixed/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/toolbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/transitions/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/transitions/page-transitions-dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/transitions/page-transitions-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/action-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/action-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/alert-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/alert-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-d-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-d-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-d-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-d-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-d-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-d-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-u-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-u-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-u-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-u-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-u-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/arrow-u-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/audio-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/audio-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/back-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/back-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/bars-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/bars-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/bullets-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/bullets-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/calendar-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/calendar-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/camera-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/camera-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/carat-d-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/carat-d-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/carat-l-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/carat-l-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/carat-r-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/carat-r-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/carat-u-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/carat-u-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/check-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/check-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/clock-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/clock-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/cloud-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/cloud-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/comment-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/comment-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/delete-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/delete-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/edit-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/edit-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/eye-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/eye-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/forbidden-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/forbidden-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/forward-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/forward-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/gear-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/gear-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/grid-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/grid-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/heart-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/heart-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/home-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/home-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/info-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/info-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/location-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/location-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/lock-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/lock-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/mail-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/mail-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/minus-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/minus-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/navigation-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/navigation-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/phone-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/phone-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/plus-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/plus-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/power-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/power-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/recycle-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/recycle-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/refresh-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/refresh-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/search-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/search-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/shop-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/shop-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/star-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/star-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/tag-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/tag-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/user-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/user-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/video-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-png/video-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/action-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/action-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/alert-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/alert-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-d-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-d-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-d-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-d-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-d-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-d-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-u-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-u-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-u-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-u-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-u-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/arrow-u-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/audio-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/audio-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/back-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/back-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/bars-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/bars-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/bullets-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/bullets-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/calendar-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/calendar-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/camera-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/camera-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/carat-d-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/carat-d-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/carat-l-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/carat-l-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/carat-r-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/carat-r-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/carat-u-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/carat-u-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/check-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/check-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/clock-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/clock-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/cloud-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/cloud-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/comment-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/comment-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/delete-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/delete-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/edit-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/edit-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/eye-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/eye-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/forbidden-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/forbidden-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/forward-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/forward-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/gear-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/gear-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/grid-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/grid-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/heart-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/heart-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/home-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/home-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/info-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/info-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/location-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/location-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/lock-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/lock-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/mail-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/mail-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/minus-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/minus-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/navigation-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/navigation-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/phone-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/phone-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/plus-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/plus-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/power-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/power-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/recycle-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/recycle-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/refresh-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/refresh-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/search-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/search-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/shop-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/shop-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/star-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/star-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/tag-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/tag-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/user-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/user-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/video-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/images/icons-svg/video-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.external-png-1.4.5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.external-png-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.icons-1.4.5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.icons-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.inline-png-1.4.5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.inline-png-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.inline-svg-1.4.5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.inline-svg-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.brodysoft.sqlitePlugin/www/SQLitePlugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.phonegap.plugins.IbcCellularSignal/www/cellularsignal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.pylonproducts.wifiwizard/www/WifiWizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.red_folder.phonegap.plugin.backgroundservice/www/backgroundService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.uhuru.cordova.wifiinformation/www/wifiinfo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/com.vliesaputra.deviceinformation/www/deviceinformation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/nl.nielsad.cordova.wifiscanner/www/AccessPoint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/nl.nielsad.cordova.wifiscanner/www/WifiScanner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.apache.cordova.vibration/www/vibration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/plugins/org.hygieiasoft.cordova.uid/www/uid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/.pgbomit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/drawable-hdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/drawable-mdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/drawable-xhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/drawable-xxhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/android/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/bada-wac/icon-48-type5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/bada-wac/icon-50-type3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/bada-wac/icon-80-type4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/bada/icon-128.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/blackberry/icon-80.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/ios/icon-57-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/ios/icon-57.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/ios/icon-72-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/ios/icon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/tizen/icon-128.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/webos/icon-64.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/windows-phone/icon-173-tile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/windows-phone/icon-48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/icon/windows-phone/icon-62-tile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/android/screen-hdpi-landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/android/screen-hdpi-portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/android/screen-ldpi-landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/android/screen-ldpi-portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/android/screen-mdpi-landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/android/screen-mdpi-portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/android/screen-xhdpi-landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/android/screen-xhdpi-portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/bada-wac/screen-type3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/bada-wac/screen-type4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/bada-wac/screen-type5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/bada/screen-portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/blackberry/screen-225.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-ipad-landscape-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-ipad-landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-ipad-portrait-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-ipad-portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-iphone-landscape-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-iphone-landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-iphone-portrait-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-iphone-portrait-568h-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/ios/screen-iphone-portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/tizen/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/webos/screen-64.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/res/screen/windows-phone/screen-portrait.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/spec/helper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/spec/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/spec/lib/jasmine-1.2.0/MIT.LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine-html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine.js" afterPath="" />
+    <list default="true" id="bd97d424-78e5-476f-bb87-00c7d90920ac" name="Default" comment="update">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/body-bar-classes/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/body-bar-classes/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/map.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -725,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3908" max-vertical-offset="4785">
-              <caret line="290" column="36" selection-start-line="290" selection-start-column="36" selection-end-line="290" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.75256556" vertical-offset="135" max-vertical-offset="4800">
+              <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -758,25 +72,25 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2295">
-              <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1405" max-vertical-offset="2295">
+              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4550562" vertical-offset="0" max-vertical-offset="2115">
-              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2100">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding>
-                <marker date="1418327850110" expanded="true" signature="1398:1409" placeholder="..." />
-                <marker date="1418327850110" expanded="true" signature="1473:1484" placeholder="..." />
-                <marker date="1418327850110" expanded="true" signature="1547:1558" placeholder="..." />
-                <marker date="1418327850110" expanded="true" signature="3240:3251" placeholder="..." />
-                <marker date="1418327850110" expanded="true" signature="3311:3322" placeholder="..." />
-                <marker date="1418327850110" expanded="true" signature="3382:3393" placeholder="..." />
+                <marker date="1418329989154" expanded="true" signature="1397:1408" placeholder="..." />
+                <marker date="1418329989154" expanded="true" signature="1472:1483" placeholder="..." />
+                <marker date="1418329989154" expanded="true" signature="1546:1557" placeholder="..." />
+                <marker date="1418329989154" expanded="true" signature="3239:3250" placeholder="..." />
+                <marker date="1418329989154" expanded="true" signature="3310:3321" placeholder="..." />
+                <marker date="1418329989154" expanded="true" signature="3381:3392" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -785,20 +99,19 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125" vertical-offset="450" max-vertical-offset="1725">
-              <caret line="51" column="81" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
+            <state vertical-scroll-proportion="-0.625" vertical-offset="615" max-vertical-offset="1725">
+              <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -929,14 +242,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LostSignal-client/www/css/style.css" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/navigation.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/css/style.css" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
       </list>
     </option>
   </component>
@@ -1285,7 +598,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418327807751</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update">
+      <created>1418327860830</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1418327860830</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1669,14 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="2295">
-          <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="57382" max-vertical-offset="70830">
@@ -1805,31 +1116,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1405" max-vertical-offset="2295">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="450" max-vertical-offset="1725">
-          <caret line="51" column="81" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
+        <state vertical-scroll-proportion="-0.625" vertical-offset="615" max-vertical-offset="1725">
+          <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3368" max-vertical-offset="4785">
-          <caret line="290" column="36" selection-start-line="290" selection-start-column="36" selection-end-line="290" selection-end-column="36" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2100">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <marker date="1418329989154" expanded="true" signature="1397:1408" placeholder="..." />
+            <marker date="1418329989154" expanded="true" signature="1472:1483" placeholder="..." />
+            <marker date="1418329989154" expanded="true" signature="1546:1557" placeholder="..." />
+            <marker date="1418329989154" expanded="true" signature="3239:3250" placeholder="..." />
+            <marker date="1418329989154" expanded="true" signature="3310:3321" placeholder="..." />
+            <marker date="1418329989154" expanded="true" signature="3381:3392" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1841,18 +1166,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4550562" vertical-offset="0" max-vertical-offset="2115">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding>
-            <marker date="1418327850110" expanded="true" signature="1398:1409" placeholder="..." />
-            <marker date="1418327850110" expanded="true" signature="1473:1484" placeholder="..." />
-            <marker date="1418327850110" expanded="true" signature="1547:1558" placeholder="..." />
-            <marker date="1418327850110" expanded="true" signature="3240:3251" placeholder="..." />
-            <marker date="1418327850110" expanded="true" signature="3311:3322" placeholder="..." />
-            <marker date="1418327850110" expanded="true" signature="3382:3393" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.75256556" vertical-offset="135" max-vertical-offset="4800">
+          <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>

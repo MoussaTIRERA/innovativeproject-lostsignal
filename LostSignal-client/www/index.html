@@ -49,8 +49,8 @@
         </div>
     </div>
     <div align="center">
-        <a href="#navigate" data-role="button" style="font-size: 30px">Navigation</a>
-        <a href="#map" data-role="button" style="font-size: 30px">Show map</a>
+        <button type="button" ONCLICK="window.location.href='#navigate'" style="font-size: 30px" id="navButt" disabled>Navigation</button>
+        <button type="button" ONCLICK="window.location.href='#map'" style="font-size: 30px" id="showmapButt" disabled>Show map</button>
         <span style="font-size: 30px; width: 100%" align="center"><b>Enable/disable background service:</b></span><br />
         <select name="flag" id="flag" data-role="slider" style="font-size: 30px">
             <option value="off" selected="selected">Disabled</option>
@@ -77,8 +77,8 @@
 
 
     <div data-role="footer" class="buttPosition">
-        <a href="#index" data-role="button" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="width:35%; font-size: 30px;float:left">Back to menu</a>
-        <a data-role="button"  class="ui-btn ui-corner-all ui-icon-refresh ui-btn-icon-left" style="width:35%; font-size: 30px;float:right" id="refresh">Refresh map</a>
+        <button type="button" ONCLICK="window.location.href='#index'" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="width:335px; font-size: 30px;float:left">Back to menu</button>
+        <!---<a data-role="button"  class="ui-btn ui-corner-all ui-icon-refresh ui-btn-icon-left" style="width:35%; font-size: 30px;float:right" id="refresh">Refresh map</a> -->
     </div>
 
 </div>
@@ -96,8 +96,8 @@
 
 
     <div data-role="footer" class="buttPosition" >
-        <a href="#index" data-role="button"  class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="width:35%; font-size: 30px;float:left">Back to menu</a>
-        <a data-role="button"  class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left" style="width:35%; font-size: 30px;float:right" id="navButton">Navigate</a>
+        <button type="button" ONCLICK="window.location.href='#index'" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="width:335px; font-size: 30px;float:left">Back to menu</button>
+        <button type="button" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left" style="width:335px; font-size: 30px;float:right" id="navButton">Navigate</button>
     </div>
 </div>
 
