@@ -14,10 +14,9 @@ SET default_with_oids = false;
 
 
 CREATE TABLE lostsignal (
-    longitude real NOT NULL,
-    latitude real NOT NULL,
+    location geography NOT NULL,
     provider text NOT NULL,
-    strength real NOT NULL,
+    signal real NOT NULL,
     uuid uuid NOT NULL,
     id integer NOT NULL
 );

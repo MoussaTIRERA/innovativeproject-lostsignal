@@ -3,48 +3,34 @@ var fs = require('fs');
 var pg = require('pg');
 var app = require('express')();
 var bodyParser = require('body-parser');
-var conString = "postgres://aleksbg@localhost/lostsignal";
-var conHeroku = process.env.DATABASE_URL;
-var herokuDb = conHeroku != null;
+var condb = process.env.DB_URL;
 
-var queryobj = function (lon, lat) { return {
+var querySelect = function (lon, lat) { return {
     name: 'select-by-distance',
-    text: 'select provider, strength, ST_X(location::geometry) as long,' +
-        'ST_Y(location::geometry) as lat from lostsignal WHERE ' +
+    text: 'SELECT provider, signal, ST_X(location::geometry) AS long,' +
+        'ST_Y(location::geometry) AS lat FROM lostsignal WHERE ' +
         'ST_Distance(ST_Point($1, $2)::geography, location) < 500',
     values: [lon, lat]
 };};
 
-var queryobj2 = function (lon, lat, provider, str, uuid) { return {
+var queryInsert = function (lon, lat, provider, str, uuid) { return {
     name: 'insert',
-    text: 'insert into lostsignal values (ST_Point($1, $2), $3, $4, $5)',
-    values: [lon, lat, provider, str, uuid]
-};};
-
-var querytemp = function (lon, lat) { return {
-    name: 'select',
-    text: 'select provider, signal, longitude, latitude from lostsignal limit 10'
-};};
-
-var querytemp2 = function (lon, lat, provider, str, uuid) { return {
-    name: 'insert',
-    text: 'insert into lostsignal values ($1, $2, $3, $4, $5)',
+    text: 'INSERT INTO lostsignal VALUES (ST_Point($1, $2), $3, $4, $5::bigint)',
     values: [lon, lat, provider, str, uuid]
 };};
 
 function insertJson(json) {
-    var con = herokuDb ? conHeroku : conString;
-    var qfun = herokuDb ? querytemp2 : queryobj2;
-    pg.connect(con, function(err, client, done) {
+    pg.connect(condb, function(err, client, done) {
         if (err) {
-            return error('error: ' + err);
+            return error(err.toString);
         }
-        client.query(qfun(json.longitude, json.latitude, "Plus",
-            json.signal, "f93db9a0-7482-11e4-b61e-0002a5d5c51b"), function(err, result) {
+        client.query(queryInsert(json.longitude, json.latitude, "Plus",
+            json.signal, "1"), function(err, result) {
             done();
 
             if(err) {
-                return error('error running query' + err);
+                error(err.toString());
+                return error(err.detail);
             }
             log('query performed, inserted rows');
         });
@@ -77,20 +63,19 @@ app.post('/', function(req, res) {
 });
 
 app.get('/', function(req, res) {
-    log('get'); log(herokuDb);
-    var con = herokuDb ? conHeroku : conString;
-    var qfun = herokuDb ? querytemp : queryobj;
+    log('get');
     var lat = req.query.latitude;
     var lon = req.query.longitude;
-    pg.connect(con, function(err, client, done) {
+    pg.connect(condb, function(err, client, done) {
         if (err) {
             return error('error: ' + err);
         }
-        client.query(qfun(lon, lat), function(err, result) {
+        client.query(querySelect(lon, lat), function(err, result) {
             done();
 
             if(err) {
-                return error('error running query' + err);
+                error(err.toString());
+                return error(err.detail);
             }
             res.send(result.rows);
             log('query performed, responding with rows');
@@ -98,14 +83,8 @@ app.get('/', function(req, res) {
     });
 });
 
-var port;
-if (process.env.PORT == null) {
-    port = 9501;
-} else {
-    port = parseInt(process.env.PORT);
-}
+var port = process.env.PORT
 app.listen(port, function() {
-    log('Found port:' + port);
-    log('On heroku db: ' + herokuDb);
+    log('Found port: ' + port);
     log('up!');
 });
