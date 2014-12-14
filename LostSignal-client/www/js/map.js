@@ -3,15 +3,13 @@ var parameters;
 var startLatlng;
 var row;
 
-function initialize() {
+function map_initialize() {
     navigator.geolocation.getCurrentPosition(function(position) {
         var pos = new google.maps.LatLng(position.coords.latitude,
             position.coords.longitude);
         startLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
-    }, function() {
-        handleNoGeolocation(true);
-    });
+    }, handleNoGeolocation);
 
 
     var mapOptions = {
@@ -30,12 +28,15 @@ function initialize() {
 
 }
 
-function handleNoGeolocation(errorFlag) {
-    if (errorFlag) {
-        alert('Error: The Geolocation service failed.');
+// Extract info from geoloc error or alert that no geoloc is available
+function handleNoGeolocation(error) {
+    if (error != null) {
+        alert('Error: The Geolocation service failed. \n' +
+              'code: ' + error.code + '\n' +
+              'msg: ' + error.message);
 
     } else {
-        alert('Error: The Geolocation service failed1.');
+        alert('No geoloc service');
     }
 }
 
@@ -76,12 +77,10 @@ function getInfo() {
 
 
             map.setCenter(pos);
-        }, function() {
-            handleNoGeolocation(true);
-        });
+        }, handleNoGeolocation);
 
     } else {
-        handleNoGeolocation(false);
+        handleNoGeolocation();
 
         var view1 = document.getElementById('position');
 
@@ -130,6 +129,3 @@ function getFromDB() {
 
     }*/
 }
-
-
-google.maps.event.addDomListener(window, 'load', initialize);

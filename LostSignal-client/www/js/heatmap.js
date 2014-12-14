@@ -505,7 +505,7 @@ var taxiData = [
     new google.maps.LatLng(37.751266, -122.403355)
 ];
 
-function initialize() {
+function heatmap_initialize() {
 
     var mapOptions = {
         center: new google.maps.LatLng(37.774546, -122.433523),
@@ -524,6 +524,10 @@ function initialize() {
         data: pointArray
     });
     heatmap.setMap(hmap);
+}
+
+function heatmap_populate() {
+    //add points from navigate_db to the heatmap
 }
 
 function toggleHeatmap() {
@@ -575,8 +579,3 @@ function setDatas() {
     });
     heatmap.setMap(hmap);*/
 }
-
-
-
-
-google.maps.event.addDomListener(window, 'load', initialize);

@@ -20,8 +20,10 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
+        map_initialize();           // app works better when maps are initialized here
+        heatmap_initialize();
 
-        get_data_from_serwer(myCallback);
+        get_data_from_serwer(myCallback, 1, 1);
 
         db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 2000);
         function myCallback(result) {
@@ -38,6 +40,7 @@ var app = {
                 db_navigate.transaction(populateDB_navigation, errorCB, successCB);
             }
 
+            heatmap_populate();  //alert the heatmap that the points are ready
         }
 
 
@@ -55,7 +58,6 @@ var app = {
 
         setInterval(getDatas, 15000);
 
-
     },
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
@@ -67,14 +69,6 @@ var app = {
     }
 };
 
-
-// Transaction error callback
-function errorCB(err) {
-    alert("Erroressing SQL: " + err.code);
-}
-// Success error callback
-function successCB() {
-}
 function getDatas(signal) {
     var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
 
@@ -101,13 +95,11 @@ function getDatas(signal) {
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
             db.transaction(populateDB, errorCB, successCB);
             db_navigate.transaction(populateDB_navigation, errorCB, successCB);
-            //alert("sprawdzenie->  " + data);
+            alert("sprawdzenie->  " + data);
 
-        }, function() {
-            handleNoGeolocation(true);
-        });
+        }, handleNoGeolocation );
     } else {
-        handleNoGeolocation(false);
+        handleNoGeolocation();
         function onError() {
             alert('Brak zasięgu WiFi, pakietu oraz GPS!');
         }
@@ -192,19 +184,32 @@ function createJSON(tx, results)
 
 
 //function to recive data from server- provider, coordinates and signal strength
-function get_data_from_serwer(myCallback)
+function get_data_from_serwer(callback, lon, lat, provider)
 {
+    if (lon == null || lat == null) {
+        alert('this should never happen');
+        return;
+    }
+
+    var queryobject;
+    if (provider == null) {
+        queryobject = { longitude: lon, latitude: lat, provider: provider }
+    } else {
+        queryobject = { longitude: lon, latitude: lat }
+    }
+
     //alert(my_JSON_object);
     $.ajax({
         type       : "GET",
-        url        : "https://polar-falls-4829.herokuapp.com?provider=val1&latitude=val2&longitude=val3&signal=val4",
+        url        : "https://polar-falls-4829.herokuapp.com",
+        data       : queryobject,
         crossDomain: true,
         beforeSend : function() {$.mobile.loading('show')},
         complete   : function() {$.mobile.loading('hide')},
         success    : function(response) {
             //alert("Response " + response);
             var reply = JSON.stringify(response);
-            myCallback(reply);
+            callback(reply);
         },
         error      : function(response) {
             alert('Not working! Data cannot be received from server');
