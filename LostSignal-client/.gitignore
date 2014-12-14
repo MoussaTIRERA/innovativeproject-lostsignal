@@ -15,7 +15,7 @@
 # generated files - android project subfolder
 platforms/android/bin/
 platforms/android/gen/
-platforms/android/assets/
+#platforms/android/assets/ -- ignored inside the dir
 
 # OSX
 .DS_Store
