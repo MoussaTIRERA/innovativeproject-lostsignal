@@ -34,7 +34,7 @@ var app = {
                 //alert("latitude: " + reply[i].latitude);
                 //alert("longitude: " + reply[i].longitude);
                 //alert(data_to_navigate);
-                db_navigate.transaction(populateDB_navigation, errorCB, successCB);
+                db_navigate.transaction(populateDB_navigation, errorCB_nav, successCB);
             }
 
             heatmap_populate();  //alert the heatmap that the points are ready
@@ -89,6 +89,7 @@ function getDatas(signal) {
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
             currentSignal = window.signal;
+            data_to_navigate = "" + ';' + window.signal + ';' + position.coords.latitude + ';' + position.coords.longitude;
             db.transaction(populateDB, errorCB, successCB);
             db_navigate.transaction(populateDB_navigation, errorCB_nav, successCB);
             //alert("sprawdzenie->  " + data);
