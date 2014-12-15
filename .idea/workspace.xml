@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bd97d424-78e5-476f-bb87-00c7d90920ac" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/map.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="innovativeproject-lostsignal.iws" />
@@ -57,20 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.0" vertical-offset="615" max-vertical-offset="1740">
-              <caret line="73" column="59" selection-start-line="73" selection-start-column="59" selection-end-line="73" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.5687204" vertical-offset="615" max-vertical-offset="1740">
+              <caret line="73" column="63" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7235023" vertical-offset="347" max-vertical-offset="1725">
+            <state vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1725">
               <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
               <folding>
                 <marker date="1418667580983" expanded="true" signature="1132:1143" placeholder="..." />
@@ -105,8 +104,8 @@
         <option value="$PROJECT_DIR$/LostSignal-client/www/css/style.css" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
       </list>
     </option>
   </component>
@@ -477,7 +476,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418667270275</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="maps">
+      <created>1418667598004</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1418667598004</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -880,18 +885,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1725">
+          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+          <folding>
+            <marker date="1418667580983" expanded="true" signature="1132:1143" placeholder="..." />
+            <marker date="1418667580983" expanded="true" signature="1207:1218" placeholder="..." />
+            <marker date="1418667580983" expanded="true" signature="1281:1292" placeholder="..." />
+            <marker date="1418667580983" expanded="true" signature="1354:1365" placeholder="..." />
+            <marker date="1418667580983" expanded="true" signature="2847:2858" placeholder="..." />
+            <marker date="1418667580983" expanded="true" signature="2918:2929" placeholder="..." />
+            <marker date="1418667580983" expanded="true" signature="2989:3000" placeholder="..." />
+            <marker date="1418667580983" expanded="true" signature="3056:3067" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.444445" vertical-offset="45" max-vertical-offset="4920">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0" vertical-offset="615" max-vertical-offset="1740">
-          <caret line="73" column="59" selection-start-line="73" selection-start-column="59" selection-end-line="73" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -913,20 +927,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7235023" vertical-offset="347" max-vertical-offset="1725">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-          <folding>
-            <marker date="1418667580983" expanded="true" signature="1132:1143" placeholder="..." />
-            <marker date="1418667580983" expanded="true" signature="1207:1218" placeholder="..." />
-            <marker date="1418667580983" expanded="true" signature="1281:1292" placeholder="..." />
-            <marker date="1418667580983" expanded="true" signature="1354:1365" placeholder="..." />
-            <marker date="1418667580983" expanded="true" signature="2847:2858" placeholder="..." />
-            <marker date="1418667580983" expanded="true" signature="2918:2929" placeholder="..." />
-            <marker date="1418667580983" expanded="true" signature="2989:3000" placeholder="..." />
-            <marker date="1418667580983" expanded="true" signature="3056:3067" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.5687204" vertical-offset="615" max-vertical-offset="1740">
+          <caret line="73" column="63" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
