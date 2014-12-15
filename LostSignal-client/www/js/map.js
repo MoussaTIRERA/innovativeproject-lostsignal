@@ -57,12 +57,13 @@ function getInfo() {
 
             var view1 = document.getElementById('position');
             var view2 = document.getElementById('date');
+            var view3 = document.getElementById('signal');
 
             parameters = position.coords.latitude + ' ' + position.coords.longitude;
             //alert(parameters);
             view1.innerHTML = parameters;
             view2.innerHTML = new Date();
-
+            view3.innerHTML = currentSignal;
 
 
             map.setCenter(pos);
