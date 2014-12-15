@@ -17,7 +17,7 @@ function heatmap_initialize() {
     hmap = new google.maps.Map(document.getElementById('heatmap-canvas'),
         mapOptions);
 
-    db_navigate.transaction(queryDB_navigation, errorCB, successCB);
+    db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
 
 
 

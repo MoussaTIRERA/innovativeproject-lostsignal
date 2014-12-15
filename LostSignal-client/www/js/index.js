@@ -45,12 +45,10 @@ var app = {
         }
 
 
-
-        db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
-        db.transaction(populateDB, errorCB, successCB);
-
         cellularsignal.enable("getsignal");
         cellularsignal.disable();
+        db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
+        //db.transaction(populateDB, errorCB, successCB);
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
@@ -92,7 +90,7 @@ function getDatas(signal) {
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
             currentSignal = window.signal;
             db.transaction(populateDB, errorCB, successCB);
-            db_navigate.transaction(populateDB_navigation, errorCB, successCB);
+            db_navigate.transaction(populateDB_navigation, errorCB_nav, successCB);
             //alert("sprawdzenie->  " + data);
         }, handleNoGeolocation );
     } else {
@@ -119,6 +117,7 @@ function populateDB_navigation(tx) {
 }
 // drop, create, insert into table - table to store coordinates and signal strength and send to server
 function populateDB(tx) {
+    //alert("into populate");
     var substr = data.split(';');
     var latitude_db = substr[0];
     var longitude_db = substr[1];
@@ -139,12 +138,12 @@ function populateDB(tx) {
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
     tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text, signal text)');
     tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db, currentSignal_db]);
-    queryDB(tx);
+    //queryDB(tx);
 }
 
 // form the query in populate_navigation
 function queryDB_navigation(tx) {
-    tx.executeSql("SELECT id, provider, signal, latitude, longitude from navigation_table;", [], querySuccess, errorCB);
+    tx.executeSql("SELECT id, provider, signal, latitude, longitude from navigation_table;", [], querySuccess, errorCB_nav);
 }
 
 // form the query
@@ -160,15 +159,15 @@ function querySuccess(tx, results) {
 //results from database
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
         //var record = "";
-        var signal = results.rows.item(i).signal;
         var latitude = results.rows.item(i).latitude;
         var longitude = results.rows.item(i).longitude;
+        var signal = results.rows.item(i).signal;
         //alert(results.rows.item(i).id);
         //alert(results.rows.item(i).latitude);
         //alert(results.rows.item(i).longitude);
         //record = results.rows.item(i).id + ';' + results.rows.item(i).latitude + ';' + results.rows.item(i).longitude + ';';
         setDatas(latitude, longitude, signal);
-        getFromDB(latitude, longitude, signal);
+        //getFromDB(latitude, longitude, signal);
     }
 }
 // Function to create JSON from database tables
@@ -245,7 +244,15 @@ function send_JSON_to_serwer(my_JSON_object)
 
 // Transaction error callback
 function errorCB(err) {
-    alert("err");
+    alert("err_sending");
+}
+// Transaction error callback
+function errorCB_nav(err) {
+    alert("err_nav");
+}
+// Transaction error callback
+function errorCB_nav_heatmap(err) {
+    alert("err_nav_heatmap");
 }
 // Success error callback
 function successCB() {
