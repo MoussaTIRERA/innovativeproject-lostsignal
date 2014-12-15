@@ -159,12 +159,15 @@ function querySuccess(tx, results) {
     //alert("results.rows.length: " + results.rows.length);
 //results from database
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
-        var record = "";
+        //var record = "";
+        var id = results.rows.item(i).id;
+        var latitude = results.rows.item(i).latitude;
+        var longitude = results.rows.item(i).longitude;
         //alert(results.rows.item(i).id);
         //alert(results.rows.item(i).latitude);
         //alert(results.rows.item(i).longitude);
-        record = results.rows.item(i).id + ';' + results.rows.item(i).latitude + ';' + results.rows.item(i).longitude + ';';
-        setDatas(record);
+        //record = results.rows.item(i).id + ';' + results.rows.item(i).latitude + ';' + results.rows.item(i).longitude + ';';
+        setDatas(id, latitude, longitude);
     }
 }
 // Function to create JSON from database tables

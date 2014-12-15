@@ -75,10 +75,11 @@ function heatmap_populate() {
     //add points from navigate_db to the heatmap
 }
 
-function setDatas(record) {
+function setDatas(id, latitude, longitude) {
 
-    alert(record);
-
+    alert(id);
+    alert(latitude);
+    alert(longitude);
 
     /*for(var i = 0; i<ilosc_danych_z_bazy; i++) {
         var lati = latitude_from_DB;   // FLOAT
