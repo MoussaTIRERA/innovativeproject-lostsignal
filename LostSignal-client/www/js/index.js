@@ -321,9 +321,7 @@ $('select#flag').change(function() {
     }
 });
 
-$(document).on( "click", '#navButton', function() {
-    alert("Nawiguję...");
-});
+
 
 
 
