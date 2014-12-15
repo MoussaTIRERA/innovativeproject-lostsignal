@@ -23,7 +23,7 @@ var app = {
 
         get_data_from_serwer(myCallback, 1, 1);
 
-        db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 2000);
+        db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
         function myCallback(result) {
             var reply = JSON.parse(result);
             for (var i=0; i<reply.length; i++) {
@@ -36,7 +36,7 @@ var app = {
                 //alert(data_to_navigate);
                 db_navigate.transaction(populateDB_navigation, errorCB, successCB);
             }
-
+            alert(reply.length);
             heatmap_populate();  //alert the heatmap that the points are ready
             map_initialize();           // app works better when maps are initialized here
             heatmap_initialize();
@@ -46,7 +46,7 @@ var app = {
 
 
 
-        db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 1000);
+        db = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
         db.transaction(populateDB, errorCB, successCB);
 
         cellularsignal.enable("getsignal");
@@ -168,7 +168,7 @@ function querySuccess(tx, results) {
         //alert(results.rows.item(i).longitude);
         //record = results.rows.item(i).id + ';' + results.rows.item(i).latitude + ';' + results.rows.item(i).longitude + ';';
         setDatas(latitude, longitude);
-        getFromDB(latitude, longitude);
+        //getFromDB(latitude, longitude);
     }
 }
 // Function to create JSON from database tables

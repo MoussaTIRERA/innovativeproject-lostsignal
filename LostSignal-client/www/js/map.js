@@ -96,7 +96,7 @@ function getFromDB(latitude,longitude) {
     // set connection with DB
 
 
-    var myLatlng = new google.maps.LatLng(latitude,longitude);
+    /*var myLatlng = new google.maps.LatLng(latitude,longitude);
 
     var infowindow = new google.maps.InfoWindow({
         content: '<p style="color:black">Location found using HTML5.</p>' +
@@ -111,5 +111,5 @@ function getFromDB(latitude,longitude) {
         });
         google.maps.event.addListener(marker, 'click', function () {
             infowindow.open(map, marker);
-        });
+        });*/
 }

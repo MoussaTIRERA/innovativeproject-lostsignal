@@ -77,18 +77,8 @@ function heatmap_populate() {
 
 function setDatas(latitude, longitude) {
 
-    /*alert(id);
-    alert(latitude);
-    alert(longitude);*/
-
-    /*for(var i = 0; i<ilosc_danych_z_bazy; i++) {
-        var lati = latitude_from_DB;   // FLOAT
-        var longi = longitude_from_DB;   // FLOAT
-        var signal = signal_from_DB  // INTEGER
-
-
-    }*/
     var myLatlng = new google.maps.LatLng(latitude,longitude);
+    
     dataPoints.push({location: myLatlng, weight: signal});
     pointArray = new google.maps.MVCArray(dataPoints);
     heatmap.setData(pointArray);
