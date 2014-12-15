@@ -6,6 +6,9 @@ var dataPoints = [
 
 function heatmap_initialize() {
 
+
+    db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
+
     var mapOptions = {
         center: new google.maps.LatLng(0, 0),
         zoom: 13,
@@ -17,7 +20,7 @@ function heatmap_initialize() {
     hmap = new google.maps.Map(document.getElementById('heatmap-canvas'),
         mapOptions);
 
-    db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
+
 
 
 
@@ -41,7 +44,7 @@ function heatmap_initialize() {
                content: '<p style="color:black">Location found using HTML5.</p>' +
                 '<p style="color:black">Actual position:' + myLatlng +'</p>' +
                 '<p style="color:black">Date: ' + new Date() + '</p>'
-                //+'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
+                +'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
             });
 
             var marker = new google.maps.Marker({
@@ -78,6 +81,22 @@ function heatmap_populate() {
 function setDatas(latitude, longitude, signal) {
 
     var myLatlng = new google.maps.LatLng(latitude,longitude);
+
+
+    var infowindow = new google.maps.InfoWindow({
+        content: '<p style="color:black">Location found using HTML5.</p>' +
+        '<p style="color:black">Actual position:' + myLatlng +'</p>' +
+        '<p style="color:black">Date: ' + new Date() + '</p>'
+        +'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: hmap
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(hmap,marker);
+    });
 
     dataPoints.push({location: myLatlng, weight: signal});
     pointArray = new google.maps.MVCArray(dataPoints);

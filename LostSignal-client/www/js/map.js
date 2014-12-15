@@ -35,13 +35,11 @@ function getInfo() {
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             //alert(currentSignal);
-            var pos = new google.maps.LatLng(position.coords.latitude,
-                position.coords.longitude);
             var myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
             var infowindow = new google.maps.InfoWindow({
                 content: '<p style="color:black">Location found using HTML5.</p>' +
-                '<p style="color:black">Actual position:' + pos +'</p>' +
+                '<p style="color:black">Actual position:' + myLatlng +'</p>' +
                 '<p style="color:black">Date: ' + new Date() + '</p>'
                 //+'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
             });
@@ -66,7 +64,7 @@ function getInfo() {
             view3.innerHTML = currentSignal;
 
 
-            map.setCenter(pos);
+            map.setCenter(myLatlng);
         }, handleNoGeolocation);
 
     } else {
@@ -95,15 +93,15 @@ function getFromDB(latitude,longitude, signal) {
 
     var infowindow = new google.maps.InfoWindow({
         content: '<p style="color:black">Location found using HTML5.</p>' +
-            '<p style="color:black">Actual position:' + pos + '</p>' +
+            '<p style="color:black">Actual position:' + myLatlng + '</p>' +
             '<p style="color:black">Date: ' + new Date() + '</p>'
             +'<p style="color:black">Signal strength: ' + signal + '</p>'
-        });
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map
-        });
-        google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map, marker);
-        });
+    });
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map
+    });
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, marker);
+    });
 }

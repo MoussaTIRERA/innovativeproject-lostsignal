@@ -168,7 +168,7 @@ function querySuccess(tx, results) {
         //alert(results.rows.item(i).longitude);
         //record = results.rows.item(i).id + ';' + results.rows.item(i).latitude + ';' + results.rows.item(i).longitude + ';';
         setDatas(latitude, longitude, signal);
-        //getFromDB(latitude, longitude, signal);
+        getFromDB(latitude, longitude, signal);
     }
 }
 // Function to create JSON from database tables
