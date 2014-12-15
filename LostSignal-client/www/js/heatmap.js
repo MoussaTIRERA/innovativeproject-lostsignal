@@ -17,7 +17,7 @@ function heatmap_initialize() {
     hmap = new google.maps.Map(document.getElementById('heatmap-canvas'),
         mapOptions);
 
-    //setDatas();
+    db_navigate.transaction(queryDB_navigation, errorCB, successCB);
 
 
 
@@ -75,10 +75,10 @@ function heatmap_populate() {
     //add points from navigate_db to the heatmap
 }
 
-function setDatas() {
+function setDatas(record) {
 
-    // set connection with DB
-    var record; // one record from DB
+    alert(record);
+
 
     /*for(var i = 0; i<ilosc_danych_z_bazy; i++) {
         var lati = latitude_from_DB;   // FLOAT

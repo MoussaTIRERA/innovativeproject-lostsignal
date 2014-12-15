@@ -16,7 +16,7 @@ var app = {
         this.bindEvents();
     },
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('deviceready', this.onDeviceReady, true);
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
@@ -25,7 +25,6 @@ var app = {
 
         db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 2000);
         function myCallback(result) {
-            //alert("Callback " +result);
             var reply = JSON.parse(result);
             for (var i=0; i<reply.length; i++) {
                 data_to_navigate = "";
@@ -39,6 +38,10 @@ var app = {
             }
 
             heatmap_populate();  //alert the heatmap that the points are ready
+            map_initialize();           // app works better when maps are initialized here
+            heatmap_initialize();
+            document.getElementById("navButt").disabled = false;
+            document.getElementById("showmapButt").disabled = false;
         }
 
 
@@ -50,12 +53,6 @@ var app = {
         cellularsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
-
-        map_initialize();           // app works better when maps are initialized here
-        heatmap_initialize();
-
-        document.getElementById("navButt").disabled = false;
-        document.getElementById("showmapButt").disabled = false;
 
         setInterval(getDatas, 15000);
 
@@ -159,13 +156,15 @@ function queryDB(tx) {
 //usage tx.executeSql("SELECT id from lostsignal_table;", [], querySuccess, errorCB); in queryDB
 function querySuccess(tx, results) {
     var len = results.rows.length;
-    alert("results.rows.length: " + results.rows.length);
+    //alert("results.rows.length: " + results.rows.length);
 //results from database
-
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
-        alert(results.rows.item(i).id);
-        alert(results.rows.item(i).latitude);
-        alert(results.rows.item(i).longitude);
+        var record = "";
+        //alert(results.rows.item(i).id);
+        //alert(results.rows.item(i).latitude);
+        //alert(results.rows.item(i).longitude);
+        record = results.rows.item(i).id + ';' + results.rows.item(i).latitude + ';' + results.rows.item(i).longitude + ';';
+        setDatas(record);
     }
 }
 // Function to create JSON from database tables

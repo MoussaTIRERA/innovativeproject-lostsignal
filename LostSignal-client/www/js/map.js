@@ -95,7 +95,6 @@ function getInfo() {
 function getFromDB() {
 
     // get coordinates and signal strength
-
     // set connection with DB
 
     var record; // get one record
