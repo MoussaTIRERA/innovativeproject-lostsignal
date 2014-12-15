@@ -14,9 +14,7 @@ function map_initialize() {
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
 
-    getFromDB();
     setInterval(getInfo(),5000);
-//    map.setCenter(pos);
 
 }
 
@@ -45,7 +43,7 @@ function getInfo() {
                 content: '<p style="color:black">Location found using HTML5.</p>' +
                 '<p style="color:black">Actual position:' + pos +'</p>' +
                 '<p style="color:black">Date: ' + new Date() + '</p>'
-                //'<p style="color:black">Signal strength: ' + getSigStr() + '</p>'
+                //+'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
             });
 
             var marker = new google.maps.Marker({
@@ -90,26 +88,21 @@ function getInfo() {
 
 }
 
-function getFromDB(latitude,longitude) {
+function getFromDB(latitude,longitude, signal) {
 
-    // get coordinates and signal strength
-    // set connection with DB
-
-
-    /*var myLatlng = new google.maps.LatLng(latitude,longitude);
+    var myLatlng = new google.maps.LatLng(latitude,longitude);
 
     var infowindow = new google.maps.InfoWindow({
         content: '<p style="color:black">Location found using HTML5.</p>' +
             '<p style="color:black">Actual position:' + pos + '</p>' +
             '<p style="color:black">Date: ' + new Date() + '</p>'
-            +'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
+            +'<p style="color:black">Signal strength: ' + signal + '</p>'
         });
-
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map
         });
         google.maps.event.addListener(marker, 'click', function () {
             infowindow.open(map, marker);
-        });*/
+        });
 }

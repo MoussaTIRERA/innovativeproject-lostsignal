@@ -36,7 +36,7 @@ var app = {
                 //alert(data_to_navigate);
                 db_navigate.transaction(populateDB_navigation, errorCB, successCB);
             }
-            alert(reply.length);
+
             heatmap_populate();  //alert the heatmap that the points are ready
             map_initialize();           // app works better when maps are initialized here
             heatmap_initialize();
@@ -160,15 +160,15 @@ function querySuccess(tx, results) {
 //results from database
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
         //var record = "";
-        var id = results.rows.item(i).id;
+        var signal = results.rows.item(i).signal;
         var latitude = results.rows.item(i).latitude;
         var longitude = results.rows.item(i).longitude;
         //alert(results.rows.item(i).id);
         //alert(results.rows.item(i).latitude);
         //alert(results.rows.item(i).longitude);
         //record = results.rows.item(i).id + ';' + results.rows.item(i).latitude + ';' + results.rows.item(i).longitude + ';';
-        setDatas(latitude, longitude);
-        //getFromDB(latitude, longitude);
+        setDatas(latitude, longitude, signal);
+        getFromDB(latitude, longitude, signal);
     }
 }
 // Function to create JSON from database tables

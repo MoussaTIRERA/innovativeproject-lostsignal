@@ -29,30 +29,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.555555" vertical-offset="180" max-vertical-offset="4920">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.41666666" vertical-offset="225" max-vertical-offset="4920">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6048387" vertical-offset="675" max-vertical-offset="2010">
-              <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="512" max-vertical-offset="2010">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
-                <marker date="1418666600642" expanded="true" signature="1133:1144" placeholder="..." />
-                <marker date="1418666600642" expanded="true" signature="1208:1219" placeholder="..." />
-                <marker date="1418666600642" expanded="true" signature="1287:1298" placeholder="..." />
-                <marker date="1418666600642" expanded="true" signature="1358:1369" placeholder="..." />
-                <marker date="1418666600642" expanded="true" signature="3104:3115" placeholder="..." />
-                <marker date="1418666600642" expanded="true" signature="3179:3190" placeholder="..." />
-                <marker date="1418666600642" expanded="true" signature="3258:3269" placeholder="..." />
-                <marker date="1418666600642" expanded="true" signature="3331:3342" placeholder="..." />
+                <marker date="1418667078640" expanded="true" signature="1133:1144" placeholder="..." />
+                <marker date="1418667078640" expanded="true" signature="1208:1219" placeholder="..." />
+                <marker date="1418667078640" expanded="true" signature="1287:1298" placeholder="..." />
+                <marker date="1418667078640" expanded="true" signature="1360:1371" placeholder="..." />
+                <marker date="1418667078640" expanded="true" signature="3110:3121" placeholder="..." />
+                <marker date="1418667078640" expanded="true" signature="3185:3196" placeholder="..." />
+                <marker date="1418667078640" expanded="true" signature="3264:3275" placeholder="..." />
+                <marker date="1418667078640" expanded="true" signature="3335:3346" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -61,16 +61,17 @@
       <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1815">
-              <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
-                <marker date="1418666283594" expanded="true" signature="1175:1186" placeholder="..." />
-                <marker date="1418666283594" expanded="true" signature="1250:1261" placeholder="..." />
-                <marker date="1418666283594" expanded="true" signature="1324:1335" placeholder="..." />
-                <marker date="1418666283594" expanded="true" signature="2853:2864" placeholder="..." />
-                <marker date="1418666283594" expanded="true" signature="2924:2935" placeholder="..." />
-                <marker date="1418666283594" expanded="true" signature="2995:3006" placeholder="..." />
-                <marker date="1418666283594" expanded="true" signature="3062:3073" placeholder="..." />
+                <marker date="1418667242898" expanded="true" signature="1132:1143" placeholder="..." />
+                <marker date="1418667242898" expanded="true" signature="1207:1218" placeholder="..." />
+                <marker date="1418667242898" expanded="true" signature="1281:1292" placeholder="..." />
+                <marker date="1418667242898" expanded="true" signature="1354:1365" placeholder="..." />
+                <marker date="1418667242898" expanded="true" signature="2744:2755" placeholder="..." />
+                <marker date="1418667242898" expanded="true" signature="2815:2826" placeholder="..." />
+                <marker date="1418667242898" expanded="true" signature="2886:2897" placeholder="..." />
+                <marker date="1418667242898" expanded="true" signature="2953:2964" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -94,9 +95,9 @@
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/navigation.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/css/style.css" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
       </list>
     </option>
   </component>
@@ -455,7 +456,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418665117734</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="maps">
+      <created>1418666608282</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1418666608282</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -879,42 +886,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1815">
-          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
-            <marker date="1418666283594" expanded="true" signature="1175:1186" placeholder="..." />
-            <marker date="1418666283594" expanded="true" signature="1250:1261" placeholder="..." />
-            <marker date="1418666283594" expanded="true" signature="1324:1335" placeholder="..." />
-            <marker date="1418666283594" expanded="true" signature="2853:2864" placeholder="..." />
-            <marker date="1418666283594" expanded="true" signature="2924:2935" placeholder="..." />
-            <marker date="1418666283594" expanded="true" signature="2995:3006" placeholder="..." />
-            <marker date="1418666283594" expanded="true" signature="3062:3073" placeholder="..." />
+            <marker date="1418667242898" expanded="true" signature="1132:1143" placeholder="..." />
+            <marker date="1418667242898" expanded="true" signature="1207:1218" placeholder="..." />
+            <marker date="1418667242898" expanded="true" signature="1281:1292" placeholder="..." />
+            <marker date="1418667242898" expanded="true" signature="1354:1365" placeholder="..." />
+            <marker date="1418667242898" expanded="true" signature="2744:2755" placeholder="..." />
+            <marker date="1418667242898" expanded="true" signature="2815:2826" placeholder="..." />
+            <marker date="1418667242898" expanded="true" signature="2886:2897" placeholder="..." />
+            <marker date="1418667242898" expanded="true" signature="2953:2964" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="512" max-vertical-offset="2010">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <marker date="1418667078640" expanded="true" signature="1133:1144" placeholder="..." />
+            <marker date="1418667078640" expanded="true" signature="1208:1219" placeholder="..." />
+            <marker date="1418667078640" expanded="true" signature="1287:1298" placeholder="..." />
+            <marker date="1418667078640" expanded="true" signature="1360:1371" placeholder="..." />
+            <marker date="1418667078640" expanded="true" signature="3110:3121" placeholder="..." />
+            <marker date="1418667078640" expanded="true" signature="3185:3196" placeholder="..." />
+            <marker date="1418667078640" expanded="true" signature="3264:3275" placeholder="..." />
+            <marker date="1418667078640" expanded="true" signature="3335:3346" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.555555" vertical-offset="180" max-vertical-offset="4920">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.41666666" vertical-offset="225" max-vertical-offset="4920">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6048387" vertical-offset="675" max-vertical-offset="2010">
-          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-          <folding>
-            <marker date="1418666600642" expanded="true" signature="1133:1144" placeholder="..." />
-            <marker date="1418666600642" expanded="true" signature="1208:1219" placeholder="..." />
-            <marker date="1418666600642" expanded="true" signature="1287:1298" placeholder="..." />
-            <marker date="1418666600642" expanded="true" signature="1358:1369" placeholder="..." />
-            <marker date="1418666600642" expanded="true" signature="3104:3115" placeholder="..." />
-            <marker date="1418666600642" expanded="true" signature="3179:3190" placeholder="..." />
-            <marker date="1418666600642" expanded="true" signature="3258:3269" placeholder="..." />
-            <marker date="1418666600642" expanded="true" signature="3331:3342" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
