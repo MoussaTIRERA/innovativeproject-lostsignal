@@ -1,19 +1,11 @@
 var map;
 var parameters;
-var startLatlng;
 var row;
 
 function map_initialize() {
-    navigator.geolocation.getCurrentPosition(function(position) {
-        var pos = new google.maps.LatLng(position.coords.latitude,
-            position.coords.longitude);
-        startLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-
-    }, handleNoGeolocation);
-
 
     var mapOptions = {
-        center: startLatlng,
+        center: lastPostition,
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.HYBRID
     };
@@ -46,6 +38,7 @@ function getInfo() {
 
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
+            //alert(currentSignal);
             var pos = new google.maps.LatLng(position.coords.latitude,
                 position.coords.longitude);
             var myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);

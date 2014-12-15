@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd97d424-78e5-476f-bb87-00c7d90920ac" name="Default" comment="update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/HelloWorld.ap_.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/CordovaLib/ant-build/build.prop" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/ant-build/build.prop" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/body-bar-classes/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/jquery.mobile-1.4.5/demos/body-bar-classes/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/index.html" afterPath="$PROJECT_DIR$/LostSignal-client/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/assets/www/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/map.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -33,38 +23,65 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.48844537" vertical-offset="960" max-vertical-offset="4875">
+                    <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.2642487" vertical-offset="0" max-vertical-offset="1950">
+                    <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+                    <folding>
+                      <marker date="1418639342627" expanded="true" signature="1223:1234" placeholder="..." />
+                      <marker date="1418639342627" expanded="true" signature="1298:1309" placeholder="..." />
+                      <marker date="1418639342627" expanded="true" signature="1372:1383" placeholder="..." />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="innovativeproject-lostsignal" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75256556" vertical-offset="135" max-vertical-offset="4800">
-              <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/navigation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7825" max-vertical-offset="8820">
-              <caret line="579" column="0" selection-start-line="579" selection-start-column="0" selection-end-line="579" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-0.21212122" vertical-offset="624" max-vertical-offset="1515">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding>
+                <marker date="1418640837943" expanded="true" signature="1729:1740" placeholder="..." />
+                <marker date="1418640837943" expanded="true" signature="1804:1815" placeholder="..." />
+                <marker date="1418640837943" expanded="true" signature="1883:1894" placeholder="..." />
+                <marker date="1418640837943" expanded="true" signature="1956:1967" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,27 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2100">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding>
-                <marker date="1418329989154" expanded="true" signature="1397:1408" placeholder="..." />
-                <marker date="1418329989154" expanded="true" signature="1472:1483" placeholder="..." />
-                <marker date="1418329989154" expanded="true" signature="1546:1557" placeholder="..." />
-                <marker date="1418329989154" expanded="true" signature="3239:3250" placeholder="..." />
-                <marker date="1418329989154" expanded="true" signature="3310:3321" placeholder="..." />
-                <marker date="1418329989154" expanded="true" signature="3381:3392" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="615" max-vertical-offset="1725">
+            <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1725">
               <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -112,118 +112,6 @@
                 <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.mobile-1.4.5.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.4814816" vertical-offset="680" max-vertical-offset="2385">
-              <caret line="57" column="109" selection-start-line="57" selection-start-column="109" selection-end-line="57" selection-end-column="109" />
-              <folding>
-                <element signature="e#177#986#2" expanded="true" />
-                <element signature="e#1026#1984#2" expanded="true" />
-                <element signature="e#2028#3053#2" expanded="true" />
-                <element signature="e#3097#4122#2" expanded="true" />
-                <element signature="e#4164#5177#2" expanded="true" />
-                <element signature="e#5218#6232#2" expanded="true" />
-                <element signature="e#6273#7286#2" expanded="true" />
-                <element signature="e#7329#8354#2" expanded="true" />
-                <element signature="e#8397#9422#2" expanded="true" />
-                <element signature="e#9463#10477#2" expanded="true" />
-                <element signature="e#10516#11944#2" expanded="true" />
-                <element signature="e#11982#12789#2" expanded="true" />
-                <element signature="e#12827#13883#2" expanded="true" />
-                <element signature="e#13924#15277#2" expanded="true" />
-                <element signature="e#15319#16647#2" expanded="true" />
-                <element signature="e#16687#17859#2" expanded="true" />
-                <element signature="e#17900#18704#2" expanded="true" />
-                <element signature="e#18745#19550#2" expanded="true" />
-                <element signature="e#19591#20395#2" expanded="true" />
-                <element signature="e#20436#21241#2" expanded="true" />
-                <element signature="e#21329#22132#2" expanded="true" />
-                <element signature="e#22171#23425#2" expanded="true" />
-                <element signature="e#23464#24511#2" expanded="true" />
-                <element signature="e#24552#25642#2" expanded="true" />
-                <element signature="e#25682#26743#2" expanded="true" />
-                <element signature="e#26781#27798#2" expanded="true" />
-                <element signature="e#27835#28835#2" expanded="true" />
-                <element signature="e#28878#30436#2" expanded="true" />
-                <element signature="e#30477#31279#2" expanded="true" />
-                <element signature="e#31317#34348#2" expanded="true" />
-                <element signature="e#34386#36572#2" expanded="true" />
-                <element signature="e#36611#37455#2" expanded="true" />
-                <element signature="e#37493#38543#2" expanded="true" />
-                <element signature="e#38581#39746#2" expanded="true" />
-                <element signature="e#39788#40702#2" expanded="true" />
-                <element signature="e#40740#41729#2" expanded="true" />
-                <element signature="e#41767#42535#2" expanded="true" />
-                <element signature="e#42574#43319#2" expanded="true" />
-                <element signature="e#43363#44111#2" expanded="true" />
-                <element signature="e#44150#45578#2" expanded="true" />
-                <element signature="e#45616#46671#2" expanded="true" />
-                <element signature="e#46710#48158#2" expanded="true" />
-                <element signature="e#48199#49225#2" expanded="true" />
-                <element signature="e#49266#50608#2" expanded="true" />
-                <element signature="e#50648#51724#2" expanded="true" />
-                <element signature="e#51762#52817#2" expanded="true" />
-                <element signature="e#52855#53663#2" expanded="true" />
-                <element signature="e#53700#54764#2" expanded="true" />
-                <element signature="e#54802#56336#2" expanded="true" />
-                <element signature="e#56375#57246#2" expanded="true" />
-                <element signature="e#57333#58106#2" expanded="true" />
-                <element signature="e#58191#59113#2" expanded="true" />
-                <element signature="e#59202#60193#2" expanded="true" />
-                <element signature="e#60286#61289#2" expanded="true" />
-                <element signature="e#61382#62385#2" expanded="true" />
-                <element signature="e#62474#63466#2" expanded="true" />
-                <element signature="e#63555#64546#2" expanded="true" />
-                <element signature="e#64635#65627#2" expanded="true" />
-                <element signature="e#65720#66723#2" expanded="true" />
-                <element signature="e#66816#67819#2" expanded="true" />
-                <element signature="e#67904#69310#2" expanded="true" />
-                <element signature="e#69393#70164#2" expanded="true" />
-                <element signature="e#70247#71267#2" expanded="true" />
-                <element signature="e#71356#72670#2" expanded="true" />
-                <element signature="e#72761#74067#2" expanded="true" />
-                <element signature="e#74154#75287#2" expanded="true" />
-                <element signature="e#75376#76144#2" expanded="true" />
-                <element signature="e#76233#77002#2" expanded="true" />
-                <element signature="e#77091#77859#2" expanded="true" />
-                <element signature="e#77948#78717#2" expanded="true" />
-                <element signature="e#78895#79662#2" expanded="true" />
-                <element signature="e#79747#80979#2" expanded="true" />
-                <element signature="e#81064#82075#2" expanded="true" />
-                <element signature="e#82164#83232#2" expanded="true" />
-                <element signature="e#83319#84358#2" expanded="true" />
-                <element signature="e#84441#85436#2" expanded="true" />
-                <element signature="e#85517#86481#2" expanded="true" />
-                <element signature="e#86574#88110#2" expanded="true" />
-                <element signature="e#88199#88965#2" expanded="true" />
-                <element signature="e#89048#92057#2" expanded="true" />
-                <element signature="e#92140#94304#2" expanded="true" />
-                <element signature="e#94389#95200#2" expanded="true" />
-                <element signature="e#95283#96311#2" expanded="true" />
-                <element signature="e#96394#97537#2" expanded="true" />
-                <element signature="e#97628#98506#2" expanded="true" />
-                <element signature="e#98589#99539#2" expanded="true" />
-                <element signature="e#99622#100354#2" expanded="true" />
-                <element signature="e#100439#101148#2" expanded="true" />
-                <element signature="e#101243#101955#2" expanded="true" />
-                <element signature="e#102040#103417#2" expanded="true" />
-                <element signature="e#103500#104533#2" expanded="true" />
-                <element signature="e#104618#106030#2" expanded="true" />
-                <element signature="e#106119#107106#2" expanded="true" />
-                <element signature="e#107195#108515#2" expanded="true" />
-                <element signature="e#108625#109665#2" expanded="true" />
-                <element signature="e#109748#110767#2" expanded="true" />
-                <element signature="e#110850#111622#2" expanded="true" />
-                <element signature="e#111703#112745#2" expanded="true" />
-                <element signature="e#112828#114340#2" expanded="true" />
-                <element signature="e#114425#115257#2" expanded="true" />
-                <element signature="e#548375#548464#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -242,14 +130,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/navigation.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/css/style.css" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
       </list>
     </option>
   </component>
@@ -260,7 +148,7 @@
     <option name="x" value="-1" />
     <option name="y" value="1705" />
     <option name="width" value="1922" />
-    <option name="height" value="1025" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -285,7 +173,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -408,6 +295,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -608,13 +496,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="1705" width="1922" height="1025" extended-state="6" />
+    <frame x="-1" y="1705" width="1922" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715377" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -624,6 +511,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -633,24 +521,24 @@
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715377" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.259375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -865,20 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/.idea/scopes/scope_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="890">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6315">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -992,126 +866,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="57382" max-vertical-offset="70830">
           <caret line="3865" column="13" selection-start-line="3865" selection-start-column="13" selection-end-line="3865" selection-end-column="13" />
-          <folding>
-            <element signature="e#3285#4310#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7825" max-vertical-offset="8820">
-          <caret line="579" column="0" selection-start-line="579" selection-start-column="0" selection-end-line="579" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4814816" vertical-offset="680" max-vertical-offset="2385">
+        <state vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="2385">
           <caret line="57" column="109" selection-start-line="57" selection-start-column="109" selection-end-line="57" selection-end-column="109" />
           <folding>
-            <element signature="e#177#986#2" expanded="true" />
-            <element signature="e#1026#1984#2" expanded="true" />
-            <element signature="e#2028#3053#2" expanded="true" />
-            <element signature="e#3097#4122#2" expanded="true" />
-            <element signature="e#4164#5177#2" expanded="true" />
-            <element signature="e#5218#6232#2" expanded="true" />
-            <element signature="e#6273#7286#2" expanded="true" />
-            <element signature="e#7329#8354#2" expanded="true" />
-            <element signature="e#8397#9422#2" expanded="true" />
-            <element signature="e#9463#10477#2" expanded="true" />
-            <element signature="e#10516#11944#2" expanded="true" />
-            <element signature="e#11982#12789#2" expanded="true" />
-            <element signature="e#12827#13883#2" expanded="true" />
-            <element signature="e#13924#15277#2" expanded="true" />
-            <element signature="e#15319#16647#2" expanded="true" />
-            <element signature="e#16687#17859#2" expanded="true" />
-            <element signature="e#17900#18704#2" expanded="true" />
-            <element signature="e#18745#19550#2" expanded="true" />
-            <element signature="e#19591#20395#2" expanded="true" />
-            <element signature="e#20436#21241#2" expanded="true" />
-            <element signature="e#21329#22132#2" expanded="true" />
-            <element signature="e#22171#23425#2" expanded="true" />
-            <element signature="e#23464#24511#2" expanded="true" />
-            <element signature="e#24552#25642#2" expanded="true" />
-            <element signature="e#25682#26743#2" expanded="true" />
-            <element signature="e#26781#27798#2" expanded="true" />
-            <element signature="e#27835#28835#2" expanded="true" />
-            <element signature="e#28878#30436#2" expanded="true" />
-            <element signature="e#30477#31279#2" expanded="true" />
-            <element signature="e#31317#34348#2" expanded="true" />
-            <element signature="e#34386#36572#2" expanded="true" />
-            <element signature="e#36611#37455#2" expanded="true" />
-            <element signature="e#37493#38543#2" expanded="true" />
-            <element signature="e#38581#39746#2" expanded="true" />
-            <element signature="e#39788#40702#2" expanded="true" />
-            <element signature="e#40740#41729#2" expanded="true" />
-            <element signature="e#41767#42535#2" expanded="true" />
-            <element signature="e#42574#43319#2" expanded="true" />
-            <element signature="e#43363#44111#2" expanded="true" />
-            <element signature="e#44150#45578#2" expanded="true" />
-            <element signature="e#45616#46671#2" expanded="true" />
-            <element signature="e#46710#48158#2" expanded="true" />
-            <element signature="e#48199#49225#2" expanded="true" />
-            <element signature="e#49266#50608#2" expanded="true" />
-            <element signature="e#50648#51724#2" expanded="true" />
-            <element signature="e#51762#52817#2" expanded="true" />
-            <element signature="e#52855#53663#2" expanded="true" />
-            <element signature="e#53700#54764#2" expanded="true" />
-            <element signature="e#54802#56336#2" expanded="true" />
-            <element signature="e#56375#57246#2" expanded="true" />
-            <element signature="e#57333#58106#2" expanded="true" />
-            <element signature="e#58191#59113#2" expanded="true" />
-            <element signature="e#59202#60193#2" expanded="true" />
-            <element signature="e#60286#61289#2" expanded="true" />
-            <element signature="e#61382#62385#2" expanded="true" />
-            <element signature="e#62474#63466#2" expanded="true" />
-            <element signature="e#63555#64546#2" expanded="true" />
-            <element signature="e#64635#65627#2" expanded="true" />
-            <element signature="e#65720#66723#2" expanded="true" />
-            <element signature="e#66816#67819#2" expanded="true" />
-            <element signature="e#67904#69310#2" expanded="true" />
-            <element signature="e#69393#70164#2" expanded="true" />
-            <element signature="e#70247#71267#2" expanded="true" />
-            <element signature="e#71356#72670#2" expanded="true" />
-            <element signature="e#72761#74067#2" expanded="true" />
-            <element signature="e#74154#75287#2" expanded="true" />
-            <element signature="e#75376#76144#2" expanded="true" />
-            <element signature="e#76233#77002#2" expanded="true" />
-            <element signature="e#77091#77859#2" expanded="true" />
-            <element signature="e#77948#78717#2" expanded="true" />
-            <element signature="e#78895#79662#2" expanded="true" />
-            <element signature="e#79747#80979#2" expanded="true" />
-            <element signature="e#81064#82075#2" expanded="true" />
-            <element signature="e#82164#83232#2" expanded="true" />
-            <element signature="e#83319#84358#2" expanded="true" />
-            <element signature="e#84441#85436#2" expanded="true" />
-            <element signature="e#85517#86481#2" expanded="true" />
-            <element signature="e#86574#88110#2" expanded="true" />
-            <element signature="e#88199#88965#2" expanded="true" />
-            <element signature="e#89048#92057#2" expanded="true" />
-            <element signature="e#92140#94304#2" expanded="true" />
-            <element signature="e#94389#95200#2" expanded="true" />
-            <element signature="e#95283#96311#2" expanded="true" />
-            <element signature="e#96394#97537#2" expanded="true" />
-            <element signature="e#97628#98506#2" expanded="true" />
-            <element signature="e#98589#99539#2" expanded="true" />
-            <element signature="e#99622#100354#2" expanded="true" />
-            <element signature="e#100439#101148#2" expanded="true" />
-            <element signature="e#101243#101955#2" expanded="true" />
-            <element signature="e#102040#103417#2" expanded="true" />
-            <element signature="e#103500#104533#2" expanded="true" />
-            <element signature="e#104618#106030#2" expanded="true" />
-            <element signature="e#106119#107106#2" expanded="true" />
-            <element signature="e#107195#108515#2" expanded="true" />
-            <element signature="e#108625#109665#2" expanded="true" />
-            <element signature="e#109748#110767#2" expanded="true" />
-            <element signature="e#110850#111622#2" expanded="true" />
-            <element signature="e#111703#112745#2" expanded="true" />
-            <element signature="e#112828#114340#2" expanded="true" />
-            <element signature="e#114425#115257#2" expanded="true" />
-            <element signature="e#548375#548464#2" expanded="true" />
+            <element signature="e#177#986#2" expanded="false" />
+            <element signature="e#1026#1984#2" expanded="false" />
+            <element signature="e#2028#3053#2" expanded="false" />
+            <element signature="e#3097#4122#2" expanded="false" />
+            <element signature="e#4164#5177#2" expanded="false" />
+            <element signature="e#5218#6232#2" expanded="false" />
+            <element signature="e#6273#7286#2" expanded="false" />
+            <element signature="e#7329#8354#2" expanded="false" />
+            <element signature="e#8397#9422#2" expanded="false" />
+            <element signature="e#9463#10477#2" expanded="false" />
+            <element signature="e#10516#11944#2" expanded="false" />
+            <element signature="e#11982#12789#2" expanded="false" />
+            <element signature="e#12827#13883#2" expanded="false" />
+            <element signature="e#13924#15277#2" expanded="false" />
+            <element signature="e#15319#16647#2" expanded="false" />
+            <element signature="e#16687#17859#2" expanded="false" />
+            <element signature="e#17900#18704#2" expanded="false" />
+            <element signature="e#18745#19550#2" expanded="false" />
+            <element signature="e#19591#20395#2" expanded="false" />
+            <element signature="e#20436#21241#2" expanded="false" />
+            <element signature="e#21329#22132#2" expanded="false" />
+            <element signature="e#22171#23425#2" expanded="false" />
+            <element signature="e#23464#24511#2" expanded="false" />
+            <element signature="e#24552#25642#2" expanded="false" />
+            <element signature="e#25682#26743#2" expanded="false" />
+            <element signature="e#26781#27798#2" expanded="false" />
+            <element signature="e#27835#28835#2" expanded="false" />
+            <element signature="e#28878#30436#2" expanded="false" />
+            <element signature="e#30477#31279#2" expanded="false" />
+            <element signature="e#31317#34348#2" expanded="false" />
+            <element signature="e#34386#36572#2" expanded="false" />
+            <element signature="e#36611#37455#2" expanded="false" />
+            <element signature="e#37493#38543#2" expanded="false" />
+            <element signature="e#38581#39746#2" expanded="false" />
+            <element signature="e#39788#40702#2" expanded="false" />
+            <element signature="e#40740#41729#2" expanded="false" />
+            <element signature="e#41767#42535#2" expanded="false" />
+            <element signature="e#42574#43319#2" expanded="false" />
+            <element signature="e#43363#44111#2" expanded="false" />
+            <element signature="e#44150#45578#2" expanded="false" />
+            <element signature="e#45616#46671#2" expanded="false" />
+            <element signature="e#46710#48158#2" expanded="false" />
+            <element signature="e#48199#49225#2" expanded="false" />
+            <element signature="e#49266#50608#2" expanded="false" />
+            <element signature="e#50648#51724#2" expanded="false" />
+            <element signature="e#51762#52817#2" expanded="false" />
+            <element signature="e#52855#53663#2" expanded="false" />
+            <element signature="e#53700#54764#2" expanded="false" />
+            <element signature="e#54802#56336#2" expanded="false" />
+            <element signature="e#56375#57246#2" expanded="false" />
+            <element signature="e#57333#58106#2" expanded="false" />
+            <element signature="e#58191#59113#2" expanded="false" />
+            <element signature="e#59202#60193#2" expanded="false" />
+            <element signature="e#60286#61289#2" expanded="false" />
+            <element signature="e#61382#62385#2" expanded="false" />
+            <element signature="e#62474#63466#2" expanded="false" />
+            <element signature="e#63555#64546#2" expanded="false" />
+            <element signature="e#64635#65627#2" expanded="false" />
+            <element signature="e#65720#66723#2" expanded="false" />
+            <element signature="e#66816#67819#2" expanded="false" />
+            <element signature="e#67904#69310#2" expanded="false" />
+            <element signature="e#69393#70164#2" expanded="false" />
+            <element signature="e#70247#71267#2" expanded="false" />
+            <element signature="e#71356#72670#2" expanded="false" />
+            <element signature="e#72761#74067#2" expanded="false" />
+            <element signature="e#74154#75287#2" expanded="false" />
+            <element signature="e#75376#76144#2" expanded="false" />
+            <element signature="e#76233#77002#2" expanded="false" />
+            <element signature="e#77091#77859#2" expanded="false" />
+            <element signature="e#77948#78717#2" expanded="false" />
+            <element signature="e#78895#79662#2" expanded="false" />
+            <element signature="e#79747#80979#2" expanded="false" />
+            <element signature="e#81064#82075#2" expanded="false" />
+            <element signature="e#82164#83232#2" expanded="false" />
+            <element signature="e#83319#84358#2" expanded="false" />
+            <element signature="e#84441#85436#2" expanded="false" />
+            <element signature="e#85517#86481#2" expanded="false" />
+            <element signature="e#86574#88110#2" expanded="false" />
+            <element signature="e#88199#88965#2" expanded="false" />
+            <element signature="e#89048#92057#2" expanded="false" />
+            <element signature="e#92140#94304#2" expanded="false" />
+            <element signature="e#94389#95200#2" expanded="false" />
+            <element signature="e#95283#96311#2" expanded="false" />
+            <element signature="e#96394#97537#2" expanded="false" />
+            <element signature="e#97628#98506#2" expanded="false" />
+            <element signature="e#98589#99539#2" expanded="false" />
+            <element signature="e#99622#100354#2" expanded="false" />
+            <element signature="e#100439#101148#2" expanded="false" />
+            <element signature="e#101243#101955#2" expanded="false" />
+            <element signature="e#102040#103417#2" expanded="false" />
+            <element signature="e#103500#104533#2" expanded="false" />
+            <element signature="e#104618#106030#2" expanded="false" />
+            <element signature="e#106119#107106#2" expanded="false" />
+            <element signature="e#107195#108515#2" expanded="false" />
+            <element signature="e#108625#109665#2" expanded="false" />
+            <element signature="e#109748#110767#2" expanded="false" />
+            <element signature="e#110850#111622#2" expanded="false" />
+            <element signature="e#111703#112745#2" expanded="false" />
+            <element signature="e#112828#114340#2" expanded="false" />
+            <element signature="e#114425#115257#2" expanded="false" />
+            <element signature="e#548375#548464#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1126,7 +989,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="615" max-vertical-offset="1725">
+        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1725">
           <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1143,34 +1006,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2100">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <marker date="1418329989154" expanded="true" signature="1397:1408" placeholder="..." />
-            <marker date="1418329989154" expanded="true" signature="1472:1483" placeholder="..." />
-            <marker date="1418329989154" expanded="true" signature="1546:1557" placeholder="..." />
-            <marker date="1418329989154" expanded="true" signature="3239:3250" placeholder="..." />
-            <marker date="1418329989154" expanded="true" signature="3310:3321" placeholder="..." />
-            <marker date="1418329989154" expanded="true" signature="3381:3392" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/jquery.mobile-1.4.5/navigation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state vertical-scroll-proportion="0.13468014" vertical-offset="0" max-vertical-offset="891">
           <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2642487" vertical-offset="0" max-vertical-offset="1950">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <marker date="1418639342627" expanded="true" signature="1223:1234" placeholder="..." />
+            <marker date="1418639342627" expanded="true" signature="1298:1309" placeholder="..." />
+            <marker date="1418639342627" expanded="true" signature="1372:1383" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75256556" vertical-offset="135" max-vertical-offset="4800">
-          <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.48844537" vertical-offset="960" max-vertical-offset="4875">
+          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.21212122" vertical-offset="624" max-vertical-offset="1515">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding>
+            <marker date="1418640837943" expanded="true" signature="1729:1740" placeholder="..." />
+            <marker date="1418640837943" expanded="true" signature="1804:1815" placeholder="..." />
+            <marker date="1418640837943" expanded="true" signature="1883:1894" placeholder="..." />
+            <marker date="1418640837943" expanded="true" signature="1956:1967" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

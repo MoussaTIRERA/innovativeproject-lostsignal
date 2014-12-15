@@ -3,6 +3,7 @@ var bssid = '';
 var data = '';
 var obj = '';
 var lastPostition;
+var currentSignal;
 
 //global function to get signal strength
 function getsignal(currentsignal) {
@@ -19,9 +20,6 @@ var app = {
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
-        map_initialize();           // app works better when maps are initialized here
-        heatmap_initialize();
 
         get_data_from_serwer(myCallback, 1, 1);
 
@@ -52,6 +50,9 @@ var app = {
         cellularsignal.disable();
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
+
+        map_initialize();           // app works better when maps are initialized here
+        heatmap_initialize();
 
         document.getElementById("navButt").disabled = false;
         document.getElementById("showmapButt").disabled = false;
@@ -87,16 +88,15 @@ function getDatas(signal) {
             cellularsignal.enable("getsignal");
             cellularsignal.disable();
 
-            lastPostition = new google.maps.LatLng(position.coords.latitude,
-                position.coords.longitude);
+            lastPostition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
+            //currentSignal = window.signal;
             db.transaction(populateDB, errorCB, successCB);
             db_navigate.transaction(populateDB_navigation, errorCB, successCB);
-            alert("sprawdzenie->  " + data);
-
+            //alert("sprawdzenie->  " + data);
         }, handleNoGeolocation );
     } else {
         handleNoGeolocation();
@@ -311,7 +311,7 @@ $('select#flag').change(function() {
 });
 
 $(document).on( "click", '#navButton', function() {
-    alert("o kurwa");
+    alert("Nawiguję...");
 });
 
 
