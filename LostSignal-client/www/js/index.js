@@ -90,7 +90,7 @@ function getDatas(signal) {
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
-            //currentSignal = window.signal;
+            currentSignal = window.signal;
             db.transaction(populateDB, errorCB, successCB);
             db_navigate.transaction(populateDB_navigation, errorCB, successCB);
             //alert("sprawdzenie->  " + data);
@@ -167,7 +167,8 @@ function querySuccess(tx, results) {
         //alert(results.rows.item(i).latitude);
         //alert(results.rows.item(i).longitude);
         //record = results.rows.item(i).id + ';' + results.rows.item(i).latitude + ';' + results.rows.item(i).longitude + ';';
-        setDatas(id, latitude, longitude);
+        setDatas(latitude, longitude);
+        getFromDB(latitude, longitude);
     }
 }
 // Function to create JSON from database tables

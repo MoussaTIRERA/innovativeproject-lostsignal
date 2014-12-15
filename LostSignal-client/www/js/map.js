@@ -34,8 +34,6 @@ function handleNoGeolocation(error) {
 
 function getInfo() {
 
-    //getFromDB()  get and set markers from DB
-
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             //alert(currentSignal);
@@ -92,23 +90,19 @@ function getInfo() {
 
 }
 
-function getFromDB() {
+function getFromDB(latitude,longitude) {
 
     // get coordinates and signal strength
     // set connection with DB
 
-    var record; // get one record
 
-    /*for(var i = 0; i<dlugosc_bazy; i++) {
-        record = wynik_z_bazy;
+    var myLatlng = new google.maps.LatLng(latitude,longitude);
 
-        var myLatlng = new google.maps.LatLng(record.latitude,record.longitude);
-
-        var infowindow = new google.maps.InfoWindow({
-            content: '<p style="color:black">Location found using HTML5.</p>' +
+    var infowindow = new google.maps.InfoWindow({
+        content: '<p style="color:black">Location found using HTML5.</p>' +
             '<p style="color:black">Actual position:' + pos + '</p>' +
             '<p style="color:black">Date: ' + new Date() + '</p>'
-            //'<p style="color:black">Signal strength: ' + getSigStr() + '</p>'
+            +'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
         });
 
         var marker = new google.maps.Marker({
@@ -118,6 +112,4 @@ function getFromDB() {
         google.maps.event.addListener(marker, 'click', function () {
             infowindow.open(map, marker);
         });
-
-    }*/
 }

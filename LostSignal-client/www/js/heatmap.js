@@ -32,8 +32,8 @@ function heatmap_initialize() {
          navigator.geolocation.getCurrentPosition(function(position) {
              var myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
-            //dataPoints.push({location: myLatlng, weight: currentSignal});
-            dataPoints.push(myLatlng);
+            dataPoints.push({location: myLatlng, weight: currentSignal});
+            //dataPoints.push(myLatlng);
             pointArray = new google.maps.MVCArray(dataPoints);
             heatmap.setData(pointArray);
 
@@ -41,7 +41,7 @@ function heatmap_initialize() {
                content: '<p style="color:black">Location found using HTML5.</p>' +
                 '<p style="color:black">Actual position:' + myLatlng +'</p>' +
                 '<p style="color:black">Date: ' + new Date() + '</p>'
-                //+'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
+                +'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
             });
 
             var marker = new google.maps.Marker({
@@ -75,20 +75,21 @@ function heatmap_populate() {
     //add points from navigate_db to the heatmap
 }
 
-function setDatas(id, latitude, longitude) {
+function setDatas(latitude, longitude) {
 
-    alert(id);
+    /*alert(id);
     alert(latitude);
-    alert(longitude);
+    alert(longitude);*/
 
     /*for(var i = 0; i<ilosc_danych_z_bazy; i++) {
         var lati = latitude_from_DB;   // FLOAT
         var longi = longitude_from_DB;   // FLOAT
         var signal = signal_from_DB  // INTEGER
-        var myLatlng = new google.maps.LatLng(lati,longi);
-        dataPoints.push({location: myLatlng, weight: signal});
-    }*/
 
+
+    }*/
+    var myLatlng = new google.maps.LatLng(latitude,longitude);
+    dataPoints.push({location: myLatlng, weight: signal});
     pointArray = new google.maps.MVCArray(dataPoints);
     heatmap.setData(pointArray);
 }
