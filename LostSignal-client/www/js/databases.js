@@ -1,3 +1,5 @@
+var serverUrl = 'https://lostsignal.herokuapp.com';
+
 // drop, create, insert into navigate table - table use to navigate user to point
 function populateDB_navigation(tx) {
     var substr = data_to_navigate.split(';');
@@ -14,7 +16,6 @@ function populateDB_navigation(tx) {
 }
 // drop, create, insert into table - table to store coordinates, signal strength and other parameters and send to server
 function populateDB(tx) {
-    //alert("into populate");
     var substr = data.split(';');
     var latitude_db = substr[0];
     var longitude_db = substr[1];
@@ -35,9 +36,9 @@ function populateDB(tx) {
     + " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
     */
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
-    tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text, signal text)');
-    tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db, currentSignal_db]);
-    //queryDB(tx);
+    tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text, signal text, provider text)');
+    tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal, provider) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db, currentSignal_db, imsi_db.substr(0, 5)]);
+    queryDB(tx);
 }
 
 // form the query in populate_navigation- just to select everything from database
@@ -47,7 +48,7 @@ function queryDB_navigation(tx) {
 
 // form the queryDB in populateDB- select everything from database
 function queryDB(tx) {
-    tx.executeSql("SELECT id, latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal from lostsignal_table;", [], createJSON, errorCB);
+    tx.executeSql("SELECT * from lostsignal_table;", [], createJSON, errorCB);
 }
 
 // Function to check database and display the results
@@ -66,21 +67,21 @@ function querySuccess(tx, results) {
 // Function to create JSON from database tables
 function createJSON(tx, results) {
     var len = results.rows.length;
-    var my_JSON_object = "";
+    var items = [];
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
-        my_JSON_object = my_JSON_object + JSON.stringify({id: results.rows.item(i).id, latitude: results.rows.item(i).latitude, longitude: results.rows.item(i).longitude, model: results.rows.item(i).model, uuid: results.rows.item(i).uuid, bssid: results.rows.item(i).bssid, ssid: results.rows.item(i).ssid,
-            mac: results.rows.item(i).mac, imei: results.rows.item(i).imei, imsi: results.rows.item(i).imsi, iccid: results.rows.item(i).iccid, network: results.rows.item(i).network, date: results.rows.item(i).date, signal: results.rows.item(i).signal});
+         items.push(JSON.stringify(results.rows.item(i)));
     }
     //alert(my_JSON_object);
-    send_JSON_to_serwer(my_JSON_object);
+    send_JSON_to_serwer('[' + items.join(',') + ']');
 }
 
 //function to recive data from server- provider, coordinates and signal strength
 function get_data_from_serwer(callback, lon, lat, provider) {
-    if (lon == null || lat == null) {
-        alert('this should never happen');
-        return;
-    }
+    // temporarily commented out for sending dump requests
+    //if (lon == null || lat == null) {
+    //    alert('this should never happen');
+    //    return;
+    //}
 
     var queryobject;
     if (provider == null) {
@@ -92,7 +93,7 @@ function get_data_from_serwer(callback, lon, lat, provider) {
     //alert(my_JSON_object);
     $.ajax({
         type       : "GET",
-        url        : "https://polar-falls-4829.herokuapp.com",
+        url        : serverUrl,
         data       : queryobject,
         crossDomain: true,
         beforeSend : function() {$.mobile.loading('show')},
@@ -114,12 +115,13 @@ function send_JSON_to_serwer(my_JSON_object) {
     //alert(my_JSON_object);
     $.ajax({
         type       : "POST",
-        url        : "https://polar-falls-4829.herokuapp.com",
+        url        : serverUrl,
         crossDomain: true,
         beforeSend : function() {$.mobile.loading('show')},
         complete   : function() {$.mobile.loading('hide')},
         data       : my_JSON_object,
         dataType   : 'json',
+        contentType: 'application/json; charset=UTF-8',
         success    : function(response) {
             //alert(JSON.stringify(response));
         },

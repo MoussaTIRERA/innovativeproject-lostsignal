@@ -21,7 +21,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        get_data_from_serwer(myCallback, 1, 1);
+        get_data_from_serwer(myCallback);
 
         db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
         //callback from server
@@ -53,6 +53,7 @@ var app = {
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
+        getDatas();
         setInterval(getDatas, 15000);
 
     },
