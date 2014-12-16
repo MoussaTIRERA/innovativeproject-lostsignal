@@ -1,28 +1,19 @@
 var hmap, heatmap;
 var pointArray;
-var dataPoints = [
-
-];
+var dataPoints = [];
 
 function heatmap_initialize() {
-
 
     db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
 
     var mapOptions = {
-        center: new google.maps.LatLng(0, 0),
+        center: new google.maps.LatLng(51.110022, 17.036365),
         zoom: 13,
         mapTypeId: google.maps.MapTypeId.HYBRID
     };
 
-    //
-
     hmap = new google.maps.Map(document.getElementById('heatmap-canvas'),
         mapOptions);
-
-
-
-
 
     pointArray = new google.maps.MVCArray(dataPoints);
 
@@ -30,64 +21,21 @@ function heatmap_initialize() {
         map: hmap,
         data: pointArray
     });
-    setInterval(function () {
-        if(navigator.geolocation) {
-         navigator.geolocation.getCurrentPosition(function(position) {
-             var myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-
-            dataPoints.push({location: myLatlng, weight: currentSignal});
-            //dataPoints.push(myLatlng);
-            pointArray = new google.maps.MVCArray(dataPoints);
-            heatmap.setData(pointArray);
-
-            var infowindow = new google.maps.InfoWindow({
-               content: '<p style="color:black">Location found using HTML5.</p>' +
-                '<p style="color:black">Actual position:' + myLatlng +'</p>' +
-                '<p style="color:black">Date: ' + new Date() + '</p>'
-                +'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: hmap
-            });
-            google.maps.event.addListener(marker, 'click', function() {
-               infowindow.open(hmap,marker);
-            });
-         hmap.setCenter(myLatlng);
-     }, handleNoGeolocation);
-
-         } else {
-             handleNoGeolocation();
-
-             var onSuccess = function(position) {
-
-             };
-
-             function onError() {
-             alert('Brak zasięgu WiFi, pakietu oraz GPS!');
-             }
-
-             navigator.geolocation.getCurrentPosition(onSuccess, onError);
-         }
-    },5000); // taki interwał chodzi
-    //setInterval(getHeatInfo(),5000); // taki interwał nie chodzi
 }
 
 function heatmap_populate() {
     //add points from navigate_db to the heatmap
 }
 
-function setDatas(latitude, longitude, signal) {
+function setPointOnHeatmap(latitude, longitude, signal) {
 
     var myLatlng = new google.maps.LatLng(latitude,longitude);
-
 
     var infowindow = new google.maps.InfoWindow({
         content: '<p style="color:black">Location found using HTML5.</p>' +
         '<p style="color:black">Actual position:' + myLatlng +'</p>' +
         '<p style="color:black">Date: ' + new Date() + '</p>'
-        +'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
+        +'<p style="color:black">Signal strength: ' + signal + '</p>'
     });
 
     var marker = new google.maps.Marker({
@@ -103,59 +51,14 @@ function setDatas(latitude, longitude, signal) {
     heatmap.setData(pointArray);
 }
 
-function getHeatInfo() {
-
-    if(navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            //alert("dodano");
-            var myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-
-            //dataPoints.push({location: myLatlng, weight: currentSignal});
-            dataPoints.push(myLatlng);
-            pointArray = new google.maps.MVCArray(dataPoints);
-            heatmap.setData(pointArray);
-
-            var infowindow = new google.maps.InfoWindow({
-                content: '<p style="color:black">Location found using HTML5.</p>' +
-                '<p style="color:black">Actual position:' + myLatlng +'</p>' +
-                '<p style="color:black">Date: ' + new Date() + '</p>'
-                +'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: hmap
-            });
-            google.maps.event.addListener(marker, 'click', function() {
-                infowindow.open(hmap,marker);
-            });
-            hmap.setCenter(myLatlng);
-        }, handleNoGeolocation);
-
-    } else {
-        handleNoGeolocation();
-
-        var onSuccess = function(position) {
-
-        };
-
-        function onError() {
-            alert('Brak zasięgu WiFi, pakietu oraz GPS!');
-        }
-
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    }
-}
-
-
 $(document).on( "click", '#navButton', function() {
     alert("Nawiguję...");
 
     var drawCircle = {
-        strokeColor: '#FF0000',
+        strokeColor: 'black',
         strokeOpacity: 0.8,
         strokeWeight: 2,
-        fillColor: '#FF0000',
+        fillColor: 'blue',
         fillOpacity: 0.35,
         map: hmap,
         center: lastPostition,
@@ -163,5 +66,8 @@ $(document).on( "click", '#navButton', function() {
     };
     // Add the circle for this city to the map.
     cityCircle = new google.maps.Circle(drawCircle)
+});
 
+$(document).on( "click", '#centerHeatmap', function() {
+    hmap.setCenter(lastPostition);
 });

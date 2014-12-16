@@ -32,9 +32,9 @@ function populateDB(tx) {
     var currentSignal_db = substr[12];
 
     /*
-    alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
-    + " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
-    */
+     alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
+     + " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
+     */
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
     tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text, signal text, provider text)');
     tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal, provider) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db, currentSignal_db, imsi_db.substr(0, 5)]);
@@ -60,8 +60,8 @@ function querySuccess(tx, results) {
         var latitude = results.rows.item(i).latitude;
         var longitude = results.rows.item(i).longitude;
         var signal = results.rows.item(i).signal;
-        setDatas(latitude, longitude, signal);
-        getFromDB(latitude, longitude, signal);
+        setPointOnHeatmap(latitude, longitude, signal);
+        setPointsOnMap(latitude, longitude, signal);
     }
 }
 // Function to create JSON from database tables
@@ -69,7 +69,7 @@ function createJSON(tx, results) {
     var len = results.rows.length;
     var items = [];
     for (var i = 0; i < len; i++) { // loop as many times as there are row results
-         items.push(JSON.stringify(results.rows.item(i)));
+        items.push(JSON.stringify(results.rows.item(i)));
     }
     //alert(my_JSON_object);
     send_JSON_to_serwer('[' + items.join(',') + ']');

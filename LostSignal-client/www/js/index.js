@@ -72,10 +72,10 @@ function getDatas(signal) {
 
     deviceInfo.get(function(result) {
         obj = result;
-    //alert(result.account0Name);
-    //alert("result = " + result);
-    //alert(result.deviceId + '\n' + result.netCountry + '\n' + result.netName + '\n' + result.simNo);
-    //alert(result["deviceID"] + '\n' + result["netCountry"] + '\n' + result["netName"] + '\n' + result["simNo"]);
+        //alert(result.account0Name);
+        //alert("result = " + result);
+        //alert(result.deviceId + '\n' + result.netCountry + '\n' + result.netName + '\n' + result.simNo);
+        //alert(result["deviceID"] + '\n' + result["netCountry"] + '\n' + result["netName"] + '\n' + result["simNo"]);
     }, function() {
         alert("error");
     });
@@ -89,12 +89,17 @@ function getDatas(signal) {
 
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
-            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' + Date.now() + ';' + window.signal;
+            + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' +Math.floor(Date.now() / 1000) + ';' + window.signal;
             currentSignal = window.signal;
             data_to_navigate = "" + ';' + window.signal + ';' + position.coords.latitude + ';' + position.coords.longitude;
             db.transaction(populateDB, errorCB, successCB);
             db_navigate.transaction(populateDB_navigation, errorCB_nav, successCB);
             //alert("sprawdzenie->  " + data);
+
+
+            setDatas(position.coords.latitude, position.coords.longitude, window.signal);
+            setPointsOnMap(position.coords.latitude, position.coords.longitude, window.signal);
+
         }, handleNoGeolocation );
     } else {
         handleNoGeolocation();
@@ -136,19 +141,17 @@ function onErrorCallBack() {
     alert('Network error!');
 };
 
+// Extract info from geoloc error or alert that no geoloc is available
+function handleNoGeolocation(error) {
+    if (error != null) {
+        alert('Error: The Geolocation service failed. \n' +
+        'code: ' + error.code + '\n' +
+        'msg: ' + error.message);
 
-function refreshPage() {
-    jQuery.mobile.pageContainer.pagecontainer('change', window.location.href, {
-        allowSamePageTransition: true,
-        transition: 'none',
-        reloadPage: true
-// 'reload' parameter not working yet: //github.com/jquery/jquery-mobile/issues/7406
-    });
+    } else {
+        alert('No geoloc service');
+    }
 }
-// Run it with .on
-$(document).on( "click", '#refresh', function() {
-    refreshPage();
-});
 
 // background service button logic
 

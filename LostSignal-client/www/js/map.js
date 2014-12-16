@@ -1,6 +1,4 @@
 var map;
-var parameters;
-var row;
 
 function map_initialize() {
 
@@ -10,92 +8,19 @@ function map_initialize() {
         mapTypeId: google.maps.MapTypeId.HYBRID
     };
 
-
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
-
-    setInterval(getInfo(),5000);
-
 }
 
-// Extract info from geoloc error or alert that no geoloc is available
-function handleNoGeolocation(error) {
-    if (error != null) {
-        alert('Error: The Geolocation service failed. \n' +
-              'code: ' + error.code + '\n' +
-              'msg: ' + error.message);
-
-    } else {
-        alert('No geoloc service');
-    }
-}
-
-function getInfo() {
-
-    if(navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            //alert(currentSignal);
-            var myLatlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-
-            var infowindow = new google.maps.InfoWindow({
-                content: '<p style="color:black">Location found using HTML5.</p>' +
-                '<p style="color:black">Actual position:' + myLatlng +'</p>' +
-                '<p style="color:black">Date: ' + new Date() + '</p>'
-                //+'<p style="color:black">Signal strength: ' + currentSignal + '</p>'
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map
-            });
-            google.maps.event.addListener(marker, 'click', function() {
-                infowindow.open(map,marker);
-            });
-
-
-            var view1 = document.getElementById('position');
-            var view2 = document.getElementById('date');
-            var view3 = document.getElementById('signal');
-
-            parameters = position.coords.latitude + ' ' + position.coords.longitude;
-            //alert(parameters);
-            view1.innerHTML = parameters;
-            view2.innerHTML = new Date();
-            view3.innerHTML = currentSignal;
-
-
-            map.setCenter(myLatlng);
-        }, handleNoGeolocation);
-
-    } else {
-        handleNoGeolocation();
-
-        var view1 = document.getElementById('position');
-
-        var onSuccess = function(position) {
-            parameters = position.coords.latitude +' ' + position.coords.longitude +' 1';
-
-            view1.innerHTML = parameters;
-        };
-
-        function onError() {
-            alert('Brak zasięgu WiFi, pakietu oraz GPS!');
-        }
-
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    }
-
-}
-
-function getFromDB(latitude,longitude, signal) {
+function setPointsOnMap(latitude,longitude, signal) {
 
     var myLatlng = new google.maps.LatLng(latitude,longitude);
 
     var infowindow = new google.maps.InfoWindow({
         content: '<p style="color:black">Location found using HTML5.</p>' +
-            '<p style="color:black">Actual position:' + myLatlng + '</p>' +
-            '<p style="color:black">Date: ' + new Date() + '</p>'
-            +'<p style="color:black">Signal strength: ' + signal + '</p>'
+        '<p style="color:black">Actual position:' + myLatlng + '</p>' +
+        '<p style="color:black">Date: ' + new Date() + '</p>'
+        +'<p style="color:black">Signal strength: ' + signal + '</p>'
     });
     var marker = new google.maps.Marker({
         position: myLatlng,
@@ -105,3 +30,7 @@ function getFromDB(latitude,longitude, signal) {
         infowindow.open(map, marker);
     });
 }
+
+$(document).on( "click", '#centerMap', function() {
+    map.setCenter(lastPostition);
+});
