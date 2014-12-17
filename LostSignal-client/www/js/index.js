@@ -53,7 +53,7 @@ var app = {
 
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
-        getDatas();
+        //getDatas();
         setInterval(getDatas, 15000);
 
     },
@@ -86,7 +86,8 @@ function getDatas(signal) {
             cellularsignal.disable();
 
             lastPostition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-
+            var lati = position.coords.latitude;
+            var longi = position.coords.longitude;
             var network = checkConnection();
             data = position.coords.latitude + ';' + position.coords.longitude + ';' + device.model + ';' + device.uuid + ';' + bssid + ';' + ssid + ';'
             + cordova.plugins.uid.MAC + ';' + cordova.plugins.uid.IMEI + ';' + cordova.plugins.uid.IMSI + ';' + cordova.plugins.uid.ICCID + ';' + network + ';' +Math.floor(Date.now() / 1000) + ';' + window.signal;
@@ -97,8 +98,8 @@ function getDatas(signal) {
             //alert("sprawdzenie->  " + data);
 
 
-            setDatas(position.coords.latitude, position.coords.longitude, window.signal);
-            setPointsOnMap(position.coords.latitude, position.coords.longitude, window.signal);
+            setPointOnHeatmap(lati, longi, window.signal);
+            setPointsOnMap(lati, longi, window.signal);
 
         }, handleNoGeolocation );
     } else {
