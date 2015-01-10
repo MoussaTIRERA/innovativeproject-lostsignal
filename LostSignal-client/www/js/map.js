@@ -3,7 +3,7 @@ var map;
 function map_initialize() {
 
     var mapOptions = {
-        center: lastPostition,
+        center: new google.maps.LatLng(51.110022, 17.036365),
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.HYBRID
     };

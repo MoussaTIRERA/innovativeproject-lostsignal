@@ -38,8 +38,9 @@ var app = {
                 db_navigate.transaction(populateDB_navigation, errorCB_nav, successCB);
             }
 
-            heatmap_populate();  //alert the heatmap that the points are ready
             map_initialize();           // app works better when maps are initialized here
+            heatmap_populate();  //alert the heatmap that the points are ready
+
             heatmap_initialize();
             document.getElementById("navButt").disabled = false;
             document.getElementById("showmapButt").disabled = false;
@@ -79,6 +80,9 @@ function getDatas(signal) {
     }, function() {
         alert("error");
     });
+
+    alert(navigator.compass);
+
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
 
