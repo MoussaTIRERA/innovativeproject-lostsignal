@@ -1,24 +1,10 @@
 var hmap, heatmap;
 var pointArray;
-var dataPoints = [    {location: new google.maps.LatLng(40.33,-111.57),weight: 15},
-    {location: new google.maps.LatLng(47.68,-122.12),weight: 13},
-    {location: new google.maps.LatLng(40.21,-111.61),weight: 8},
-    {location: new google.maps.LatLng(42.73,-73.67),weight: 7},
-    {location: new google.maps.LatLng(42.8,-73.92),weight: 7},
-    {location: new google.maps.LatLng(39.87,-83.07),weight: 7},
-    {location: new google.maps.LatLng(47.11,-88.56),weight: 7},
-    {location: new google.maps.LatLng(55.95,-131.96),weight: 1}];
-
-var triangleCoords = [
-    new google.maps.LatLng(25.774, -80.190),
-    new google.maps.LatLng(18.466, -66.118),
-    new google.maps.LatLng(32.321, -64.757)
-];
-
+var dataPoints = [];
 
 
 function heatmap_initialize() {
-
+    alert("Double click on the map for navigate");
     db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
 
     var mapOptions = {
@@ -37,6 +23,10 @@ function heatmap_initialize() {
         data: pointArray,
         radius:5,
         opacity: 0.5
+    });
+    google.maps.event.addListener(hmap, 'dblclick', function(event)
+    {
+        setInterval(navigate(),15000);
     });
 }
 
@@ -73,34 +63,12 @@ function setTriangleCoord() {
 }
 
 $(document).on( "click", '#navButton', function() {
-    alert("Nawiguję...");
-
-    drawArrow();
-    //actual_lat = Position.coords.latitude;
-    //actual_long = Position.coords.longitude;
-    //db_navigate.transaction(populateDB_searchNearestPoint, errorCB_nav, successCB);
+    actual_lat = Position.coords.latitude;
+    actual_long = Position.coords.longitude;
+    db_navigate.transaction(populateDB_searchNearestPoint, errorCB_nav, successCB);
 });
 
 $(document).on( "click", '#centerHeatmap', function() {
     hmap.setCenter(lastPostition);
 });
 
-function drawArrow() {
-    var lineSymbol = {
-        path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
-    };
-
-    var lineCoordinates = [
-        lastPostition,
-        new google.maps.LatLng(18.291, 153.027)
-    ];
-
-    var line = new google.maps.Polyline({
-        path: lineCoordinates,
-        icons: [{
-            icon: lineSymbol,
-            offset: '100%'
-        }],
-        map: hmap
-    });
-}

@@ -24,7 +24,7 @@ var app = {
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
+        document.addEventListener("backbutton", onBackKeyDown, false);
         get_data_from_serwer(myCallback);
 
         db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
@@ -118,7 +118,6 @@ function getDatas(signal) {
             db_navigate.transaction(populateDB_navigation, errorCB_nav, successCB);
             //alert("sprawdzenie->  " + data);
 
-
             setPointOnHeatmap(lati, longi, window.signal);
             setPointsOnMap(lati, longi, window.signal);
         }, handleNoGeolocation );
@@ -190,6 +189,18 @@ $('select#flag').change(function() {
         alert('off');
     }
 });
+
+function onBackKeyDown() {
+    alert("Closing application...");
+    /*
+
+        TUTAJ CZYŚCIMY BAZE
+
+
+
+     */
+    navigator.app.exitApp();
+}
 
 
 app.initialize();
