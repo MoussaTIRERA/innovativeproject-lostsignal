@@ -77,8 +77,8 @@ function nearestPoint(tx, results){
         }
     }
     bestPosition = new google.maps.LatLng(minLat,minLong);
+    alert(bestPosition);
     alert("Found nearest point");
-
 }
 
 // Function to check database and display the results

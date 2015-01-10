@@ -74,31 +74,25 @@ function setTriangleCoord() {
 
 $(document).on( "click", '#navButton', function() {
     alert("Nawiguję...");
-    actual_lat = Position.coords.latitude;
-    actual_long = Position.coords.longitude;
-    db_navigate.transaction(populateDB_searchNearestPoint, errorCB_nav, successCB);
 
-    var drawCircle = {
-        strokeColor: 'black',
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: 'blue',
-        fillOpacity: 0.35,
-        map: hmap,
-        center: lastPostition,
-        radius: 10
-    };
-    // Add the circle for this city to the map.
-    cityCircle = new google.maps.Circle(drawCircle)
+    drawArrow();
+    //actual_lat = Position.coords.latitude;
+    //actual_long = Position.coords.longitude;
+    //db_navigate.transaction(populateDB_searchNearestPoint, errorCB_nav, successCB);
+});
+
+$(document).on( "click", '#centerHeatmap', function() {
+    hmap.setCenter(lastPostition);
+});
+
+function drawArrow() {
     var lineSymbol = {
         path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
     };
 
-    // Create the polyline and add the symbol via the 'icons' property.
-
     var lineCoordinates = [
         lastPostition,
-        new google.maps.LatLng(51.130022, 17.036365)
+        new google.maps.LatLng(18.291, 153.027)
     ];
 
     var line = new google.maps.Polyline({
@@ -109,8 +103,4 @@ $(document).on( "click", '#navButton', function() {
         }],
         map: hmap
     });
-});
-
-$(document).on( "click", '#centerHeatmap', function() {
-    hmap.setCenter(lastPostition);
-});
+}
