@@ -4,7 +4,6 @@ var dataPoints = [];
 
 
 function heatmap_initialize() {
-    alert("Double click on the map for navigate");
     db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
 
     var mapOptions = {
@@ -24,7 +23,7 @@ function heatmap_initialize() {
         radius:5,
         opacity: 0.5
     });
-    google.maps.event.addListener(hmap, 'dblclick', function(event)
+    google.maps.event.addListener(hmap, 'dblclick', function()
     {
         setInterval(navigate(),15000);
     });
@@ -58,15 +57,16 @@ function setPointOnHeatmap(latitude, longitude, signal) {
     heatmap.setData(pointArray);
 }
 
-function setTriangleCoord() {
-    alert(lastPostition);
-}
-
 $(document).on( "click", '#navButton', function() {
     actual_lat = Position.coords.latitude;
     actual_long = Position.coords.longitude;
     db_navigate.transaction(populateDB_searchNearestPoint, errorCB_nav, successCB);
 });
+
+$(document).on( "click", '#navButt', function() {
+    alert("For navigate You need to click 'Get best point' button and then double click on the map. Thanks for patience.");
+});
+
 
 $(document).on( "click", '#centerHeatmap', function() {
     hmap.setCenter(lastPostition);
