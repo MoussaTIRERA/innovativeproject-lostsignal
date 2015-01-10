@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd97d424-78e5-476f-bb87-00c7d90920ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/plugins/android.json" afterPath="$PROJECT_DIR$/LostSignal-client/plugins/android.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/LostSignal-client/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" afterPath="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="innovativeproject-lostsignal.iws" />
@@ -29,26 +27,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6674473" vertical-offset="810" max-vertical-offset="2955">
+            <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2955">
               <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="heatmap.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="992" max-vertical-offset="1950">
-              <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="1680">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <marker date="1420896607118" expanded="true" signature="2031:2042" placeholder="..." />
-                <marker date="1420896607118" expanded="true" signature="2098:2109" placeholder="..." />
-                <marker date="1420896607118" expanded="true" signature="2169:2180" placeholder="..." />
-                <marker date="1420896607118" expanded="true" signature="2232:2243" placeholder="..." />
+                <marker date="1420906182575" expanded="true" signature="1598:1609" placeholder="..." />
+                <marker date="1420906182575" expanded="true" signature="1665:1676" placeholder="..." />
+                <marker date="1420906182575" expanded="true" signature="1736:1747" placeholder="..." />
+                <marker date="1420906182575" expanded="true" signature="1799:1810" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -128,8 +126,8 @@
         <option value="$PROJECT_DIR$/LostSignal-client/www/css/style.css" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/index.html" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/map.js" />
-        <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
         <option value="$PROJECT_DIR$/LostSignal-client/www/js/index.js" />
+        <option value="$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js" />
       </list>
     </option>
   </component>
@@ -570,7 +568,13 @@
       <option name="project" value="LOCAL" />
       <updated>1420898600205</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="compass">
+      <created>1420901714755</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1420901714755</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -626,7 +630,8 @@
     <MESSAGE value="maps" />
     <MESSAGE value="cleaning + gui update" />
     <MESSAGE value="heatmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="heatmap" />
+    <MESSAGE value="compass" />
+    <option name="LAST_COMMIT_MESSAGE" value="compass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -983,19 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="992" max-vertical-offset="1950">
-          <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
-          <folding>
-            <marker date="1420896607118" expanded="true" signature="2031:2042" placeholder="..." />
-            <marker date="1420896607118" expanded="true" signature="2098:2109" placeholder="..." />
-            <marker date="1420896607118" expanded="true" signature="2169:2180" placeholder="..." />
-            <marker date="1420896607118" expanded="true" signature="2232:2243" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/plugins/android.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3060">
@@ -1014,9 +1006,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6674473" vertical-offset="810" max-vertical-offset="2955">
+        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2955">
           <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LostSignal-client/www/js/heatmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="1680">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1420906182575" expanded="true" signature="1598:1609" placeholder="..." />
+            <marker date="1420906182575" expanded="true" signature="1665:1676" placeholder="..." />
+            <marker date="1420906182575" expanded="true" signature="1736:1747" placeholder="..." />
+            <marker date="1420906182575" expanded="true" signature="1799:1810" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

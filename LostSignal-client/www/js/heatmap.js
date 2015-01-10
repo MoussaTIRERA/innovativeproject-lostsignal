@@ -9,29 +9,12 @@ var dataPoints = [    {location: new google.maps.LatLng(40.33,-111.57),weight: 1
     {location: new google.maps.LatLng(47.11,-88.56),weight: 7},
     {location: new google.maps.LatLng(55.95,-131.96),weight: 1}];
 
-var redCoords = [
+var triangleCoords = [
     new google.maps.LatLng(25.774, -80.190),
     new google.maps.LatLng(18.466, -66.118),
     new google.maps.LatLng(32.321, -64.757)
 ];
 
-
-var gradients = [
-    'rgba(0, 255, 255, 0)',
-    'rgba(0, 255, 255, 1)',
-    'rgba(0, 191, 255, 1)',
-    'rgba(0, 127, 255, 1)',
-    'rgba(0, 63, 255, 1)',
-    'rgba(0, 0, 255, 1)',
-    'rgba(0, 0, 223, 1)',
-    'rgba(0, 0, 191, 1)',
-    'rgba(0, 0, 159, 1)',
-    'rgba(0, 0, 127, 1)',
-    'rgba(63, 0, 91, 1)',
-    'rgba(127, 0, 63, 1)',
-    'rgba(191, 0, 31, 1)',
-    'rgba(255, 0, 0, 1)'
-];
 
 
 function heatmap_initialize() {
@@ -55,7 +38,6 @@ function heatmap_initialize() {
         radius:5,
         opacity: 0.5
     });
-    //heatmap.set('gradient', gradients);
 }
 
 function heatmap_populate() {
@@ -109,7 +91,7 @@ $(document).on( "click", '#navButton', function() {
     setTriangleCoord();
     new google.maps.Polygon({
         map: hmap,
-        paths: redCoords,
+        paths: triangleCoords,
         strokeColor: '#FF0000',
         strokeOpacity: 0.8,
         strokeWeight: 2,
