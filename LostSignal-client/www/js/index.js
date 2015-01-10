@@ -5,6 +5,9 @@ var obj = '';
 var lastPostition;
 var currentSignal;
 var bestPosition;
+var Position;
+
+
 
 //global function to get signal strength
 function getsignal(currentsignal) {
@@ -94,7 +97,7 @@ function getDatas(signal) {
         frequency: 1000
     }; // Update every 3 seconds
 
-    var watchID = navigator.compass.watchHeading(onSuccess1, onError1, options);
+    //var watchID = navigator.compass.watchHeading(onSuccess1, onError1, options);
 
 
     if(navigator.geolocation) {
@@ -102,7 +105,7 @@ function getDatas(signal) {
 
             cellularsignal.enable("getsignal");
             cellularsignal.disable();
-
+            Position = position;
             lastPostition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
             var lati = position.coords.latitude;
             var longi = position.coords.longitude;
@@ -118,7 +121,6 @@ function getDatas(signal) {
 
             setPointOnHeatmap(lati, longi, window.signal);
             setPointsOnMap(lati, longi, window.signal);
-
         }, handleNoGeolocation );
     } else {
         handleNoGeolocation();
