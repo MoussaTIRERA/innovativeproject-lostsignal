@@ -74,7 +74,9 @@ function setTriangleCoord() {
 
 $(document).on( "click", '#navButton', function() {
     alert("Nawiguję...");
-    search_nearest(lastPosition);
+    actual_lat = lastPostition.latitude;
+    actual_long = lastPosition.longitude;
+    db_navigate.transaction(populateDB_searchNearestPoint, errorCB_nav, successCB);
 
     var drawCircle = {
         strokeColor: 'black',

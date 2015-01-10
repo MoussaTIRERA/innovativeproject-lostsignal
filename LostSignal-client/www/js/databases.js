@@ -66,8 +66,6 @@ function nearestPoint(tx, results){
     var len = results.rows.length;
     var minLat = results.rows.item(0).latitude;
     var minLong = results.rows.item(0).longitude;
-    alert(minLat);
-    alert(minLong);
     var minDistance = Math.sqrt(Math.pow(minLat - actual_lat, 2) + Math.pow(minLong - actual_long, 2));
     for (var i = 1; i < len; i++) {
         var latitude = results.rows.item(i).latitude;
