@@ -93,7 +93,7 @@ function getDatas(signal) {
         frequency: 1000
     }; // Update every 3 seconds
 
-    var watchID = navigator.compass.watchHeading(onSuccess1, onError1, options);
+    //var watchID = navigator.compass.watchHeading(onSuccess1, onError1, options);
 
 
     if(navigator.geolocation) {

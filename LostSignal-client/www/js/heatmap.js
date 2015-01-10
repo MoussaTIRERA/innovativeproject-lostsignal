@@ -88,17 +88,24 @@ $(document).on( "click", '#navButton', function() {
     };
     // Add the circle for this city to the map.
     cityCircle = new google.maps.Circle(drawCircle)
-    setTriangleCoord();
-    new google.maps.Polygon({
-        map: hmap,
-        paths: triangleCoords,
-        strokeColor: '#FF0000',
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: '#FF0000',
-        fillOpacity: 0.35,
-        draggable: true,
-        geodesic: true
+    var lineSymbol = {
+        path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
+    };
+
+    // Create the polyline and add the symbol via the 'icons' property.
+
+    var lineCoordinates = [
+        lastPostition,
+        new google.maps.LatLng(51.130022, 17.036365)
+    ];
+
+    var line = new google.maps.Polyline({
+        path: lineCoordinates,
+        icons: [{
+            icon: lineSymbol,
+            offset: '100%'
+        }],
+        map: hmap
     });
 });
 
