@@ -4,6 +4,7 @@ var data = '';
 var obj = '';
 var lastPostition;
 var currentSignal;
+var bestPosition;
 
 //global function to get signal strength
 function getsignal(currentsignal) {
@@ -35,7 +36,7 @@ var app = {
                 //alert("latitude: " + reply[i].latitude);
                 //alert("longitude: " + reply[i].longitude);
                 //alert(data_to_navigate);
-                db_navigate.transaction(populateDB_navigation, errorCB_nav, successCB);
+
             }
 
             map_initialize();           // app works better when maps are initialized here
@@ -93,7 +94,7 @@ function getDatas(signal) {
         frequency: 1000
     }; // Update every 3 seconds
 
-    //var watchID = navigator.compass.watchHeading(onSuccess1, onError1, options);
+    var watchID = navigator.compass.watchHeading(onSuccess1, onError1, options);
 
 
     if(navigator.geolocation) {

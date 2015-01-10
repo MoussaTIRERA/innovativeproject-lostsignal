@@ -41,14 +41,44 @@ function populateDB(tx) {
     queryDB(tx);
 }
 
+function populateDB_searchNearestPoint(tx)
+{
+    queryDB_search(tx);
+}
+
 // form the query in populate_navigation- just to select everything from database
 function queryDB_navigation(tx) {
     tx.executeSql("SELECT id, provider, signal, latitude, longitude from navigation_table;", [], querySuccess, errorCB_nav);
 }
 
+function queryDB_search(tx)  {
+    alert("searching nearest point");
+    tx.executeSql("SELECT * FROM navigation_table", [], nearestPoint, errorCB_nav);
+}
+
 // form the queryDB in populateDB- select everything from database
 function queryDB(tx) {
-    tx.executeSql("SELECT * from lostsignal_table;", [], createJSON, errorCB);
+    tx.executeSql("SELECT latitude, longitude from lostsignal_table;", [], createJSON, errorCB);
+}
+
+//Function return nearest point from actual position
+function nearestPoint(tx, results){
+    var len = results.rows.length;
+    var minLat = results.rows.item(0).latitude;
+    var minLong = results.rows.item(0).longitude;
+    alert(minLat);
+    alert(minLong);
+    var minDistance = Math.sqrt(Math.pow(minLat - actual_lat, 2) + Math.pow(minLong - actual_long, 2));
+    for (var i = 1; i < len; i++) {
+        var latitude = results.rows.item(i).latitude;
+        var longitude = results.rows.item(i).longitude;
+        if(Math.sqrt(Math.pow(latitude - actual_lat, 2) + Math.pow(longitude - actual_long, 2)) < minDistance)
+        {
+            minLat = latitude;
+            minLong = longitude;
+        }
+    }
+    bestPosition = new google.maps.LatLng(minLat,minLong);
 }
 
 // Function to check database and display the results
