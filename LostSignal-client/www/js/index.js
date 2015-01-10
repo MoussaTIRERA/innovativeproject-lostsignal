@@ -81,7 +81,20 @@ function getDatas(signal) {
         alert("error");
     });
 
-    alert(navigator.compass);
+    function onSuccess1(heading) {
+        alert('Heading: ' + heading.magneticHeading);
+    };
+
+    function onError1(error) {
+        alert('CompassError: ' + error.code);
+    };
+
+    var options = {
+        frequency: 1000
+    }; // Update every 3 seconds
+
+    var watchID = navigator.compass.watchHeading(onSuccess1, onError1, options);
+
 
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
