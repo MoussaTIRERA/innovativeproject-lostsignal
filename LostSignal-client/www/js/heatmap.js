@@ -1,9 +1,11 @@
 var hmap, heatmap;
 var pointArray;
 var dataPoints = [];
+var orientation = 0;
 
 
 function heatmap_initialize() {
+    orientation = 0;
     db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
 
     var mapOptions = {
@@ -25,7 +27,7 @@ function heatmap_initialize() {
     });
     google.maps.event.addListener(hmap, 'dblclick', function()
     {
-        setInterval(navigate(),15000);
+        navigate();
     });
 }
 
@@ -64,11 +66,14 @@ $(document).on( "click", '#navButton', function() {
 });
 
 $(document).on( "click", '#navButt', function() {
+
+
     alert("For navigate You need to click 'Get best point' button and then double click on the map. Thanks for patience.");
+    screen.lockOrientation('landscape');
+    setTimeout(function(){screen.unlockOrientation();},1000);
 });
 
 
 $(document).on( "click", '#centerHeatmap', function() {
     hmap.setCenter(lastPostition);
 });
-

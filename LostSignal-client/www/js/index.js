@@ -24,7 +24,7 @@ var app = {
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        document.addEventListener("backbutton", onBackKeyDown, false);
+
         get_data_from_serwer(myCallback);
 
         db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
@@ -190,7 +190,7 @@ $('select#flag').change(function() {
     }
 });
 
-function onBackKeyDown() {
+function closeAPP() {
     alert("Closing application...");
     /*
 
@@ -199,6 +199,7 @@ function onBackKeyDown() {
 
 
      */
+    orientation=0;
     navigator.app.exitApp();
 }
 

@@ -1,5 +1,6 @@
 var arrow;
 function navigate() {
+    setInterval(function(){
     if(arrow != null)
         arrow.setMap(null);
     var lineSymbol = {
@@ -18,6 +19,6 @@ function navigate() {
             offset: '100%'
         }],
         map: hmap
-    });
+    });},2000);
     hmap.setCenter(lastPostition);
 }

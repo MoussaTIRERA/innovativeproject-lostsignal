@@ -34,3 +34,9 @@ function setPointsOnMap(latitude,longitude, signal) {
 $(document).on( "click", '#centerMap', function() {
     map.setCenter(lastPostition);
 });
+
+$(document).on( "click", '#showmapButt', function() {
+
+    screen.lockOrientation('landscape');
+    setTimeout(function(){screen.unlockOrientation();},1000);
+});
