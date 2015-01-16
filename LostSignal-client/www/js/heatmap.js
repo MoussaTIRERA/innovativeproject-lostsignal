@@ -1,11 +1,9 @@
 var hmap, heatmap;
 var pointArray;
 var dataPoints = [];
-var orientation = 0;
 
 
 function heatmap_initialize() {
-    orientation = 0;
     db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
 
     var mapOptions = {
