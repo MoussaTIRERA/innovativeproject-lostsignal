@@ -39,7 +39,7 @@ function setPointOnHeatmap(latitude, longitude, signal) {
 
     var myLatlng = new google.maps.LatLng(latitude,longitude);
 
-    var infowindow = new google.maps.InfoWindow({
+    /*var infowindow = new google.maps.InfoWindow({
         content: '<p style="color:black">Location found using HTML5.</p>' +
         '<p style="color:black">Actual position:' + myLatlng +'</p>' +
         '<p style="color:black">Date: ' + new Date() + '</p>'
@@ -52,7 +52,7 @@ function setPointOnHeatmap(latitude, longitude, signal) {
     });
     google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(hmap,marker);
-    });
+    })*/;
 
     dataPoints.push({location: myLatlng, weight: signal});
     pointArray = new google.maps.MVCArray(dataPoints);
@@ -70,7 +70,10 @@ $(document).on( "click", '#navButt', function() {
 
     alert("For navigate You need to click 'Get best point' button and then double click on the map. Thanks for patience.");
     screen.lockOrientation('landscape');
-    setTimeout(function(){screen.unlockOrientation();},1000);
+    setTimeout(function(){
+        screen.unlockOrientation();
+        window.clearTimeout();
+    },1000);
 });
 
 

@@ -38,5 +38,8 @@ $(document).on( "click", '#centerMap', function() {
 $(document).on( "click", '#showmapButt', function() {
 
     screen.lockOrientation('landscape');
-    setTimeout(function(){screen.unlockOrientation();},1000);
+    setTimeout(function(){
+        screen.unlockOrientation();
+        window.clearTimeout();
+    },1000);
 });
