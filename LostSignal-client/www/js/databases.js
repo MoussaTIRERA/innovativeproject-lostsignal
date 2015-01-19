@@ -46,18 +46,20 @@ function populateDB_searchNearestPoint(tx)
     queryDB_search(tx);
 }
 
+//function to drop navigation_table when app is closing
 function dropTable_cleanDatabaseNav(tx)
 {
     alert("cleaning navDatabase");
     tx.executeSql('DROP TABLE IF EXISTS navigation_table');
-    //queryDB_cleanNav(tx);
+    queryDB_cleanNav(tx);
 }
 
+//function to drop lostsignal_table when app is closing
 function dropTable_cleanDatabaseLost(tx)
 {
     alert("Cleaning LostDatabase");
     tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
-    //queryDB_cleanLost();
+    queryDB_cleanLost(tx);
 }
 
 // form the query in populate_navigation- just to select everything from database
@@ -71,13 +73,11 @@ function queryDB_search(tx)  {
 }
 
 function queryDB_cleanNav(tx)  {
-    alert("cleaning database");
-    tx.executeSql("SELECT * FROM navigation_table", [], cleaned(), errorCB_clean);
+    tx.executeSql("SELECT name FROM sqlite_master WHERE type='table' AND name='navigation_table';", [], cleaned, errorCB_clean);
 }
 
 function queryDB_cleanLost(tx)  {
-    alert("cleaning database");
-    tx.executeSql("SELECT * FROM lostsignal_table", [], cleaned(), errorCB_clean);
+    tx.executeSql("SELECT name FROM sqlite_master WHERE type='table' AND name='lostsignal_table';", [], cleaned, errorCB_clean);
 }
 
 // form the queryDB in populateDB- select everything from database
@@ -105,6 +105,7 @@ function nearestPoint(tx, results){
     alert("Found nearest point");
 }
 
+//function to inform that table does not exists
 function cleaned(tx, results) {
     var len = results.rows.length;
     if(len==0)
@@ -214,7 +215,6 @@ function errorCB_cleaning(err) {
 // Success callback
 function successCB() {
 }
-// Success callback
+// Success callback used in cleaning database
 function successCB_cleanedDB() {
-    alert("success");
 }
