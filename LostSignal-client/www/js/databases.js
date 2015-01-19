@@ -35,7 +35,7 @@ function populateDB(tx) {
      alert(substr[0] + " " + substr[1]+ " " + substr[2]+ " " + substr[3]+ " " + substr[4]+ " " + substr[5]+ " " + substr[6]
      + " " + substr[7]+ " " + substr[8]+ " " + substr[9]+ " " + substr[10]+ " " + substr[11]);
      */
-    tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
+    //tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
     tx.executeSql('CREATE TABLE IF NOT EXISTS lostsignal_table (id integer primary key, latitude text, longitude text, model text, uuid text, bssid text, ssid text, mac text, imei text, imsi text, iccid text, network text, date text, signal text, provider text)');
     tx.executeSql('INSERT INTO lostsignal_table (latitude, longitude, model, uuid, bssid, ssid, mac, imei, imsi, iccid, network, date, signal, provider) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)', [latitude_db, longitude_db, model_db, uuid_db, bssid_db, ssid_db, mac_db, imei_db, imsi_db, iccid_db, network_db, date_db, currentSignal_db, imsi_db.substr(0, 5)]);
     queryDB(tx);
@@ -46,6 +46,18 @@ function populateDB_searchNearestPoint(tx)
     queryDB_search(tx);
 }
 
+function queryDB_cleanDatabaseNav(tx)
+{
+    alert("cleaning navDatabase");
+    tx.executeSQL('DROP TABLE IF EXISTS navigation_table');
+}
+
+function queryDB_cleanDatabaseLost(tx)
+{
+    alert("Cleaning LostDatabase");
+    tx.executeSQL('DROP TABLE IF EXISTS lostsignal_table');
+}
+
 // form the query in populate_navigation- just to select everything from database
 function queryDB_navigation(tx) {
     tx.executeSql("SELECT id, provider, signal, latitude, longitude from navigation_table;", [], querySuccess, errorCB_nav);
@@ -54,6 +66,16 @@ function queryDB_navigation(tx) {
 function queryDB_search(tx)  {
     alert("searching nearest point");
     tx.executeSql("SELECT * FROM navigation_table", [], nearestPoint, errorCB_nav);
+}
+
+function queryDB_cleanNav(tx)  {
+    alert("cleaning database");
+    tx.executeSql("SELECT * FROM navigation_table", [], cleaned(), errorCB_clean);
+}
+
+function queryDB_cleanDB(tx)  {
+    alert("cleaning database");
+    tx.executeSql("SELECT * FROM lostsignal_table", [], cleaned(), errorCB_clean);
 }
 
 // form the queryDB in populateDB- select everything from database
@@ -79,6 +101,12 @@ function nearestPoint(tx, results){
     bestPosition = new google.maps.LatLng(minLat,minLong);
     alert(bestPosition);
     alert("Found nearest point");
+}
+
+function cleaned(tx, results) {
+    var len = results.rows.length;
+    if(len==0)
+        alert("Database empty");
 }
 
 // Function to check database and display the results
@@ -164,6 +192,10 @@ function send_JSON_to_serwer(my_JSON_object) {
 // Transaction error callback from database which store parameters
 function errorCB(err) {
     alert("err_sending");
+}
+// Transaction error callback from database which store parameters
+function errorCB_clean(err) {
+    alert("err_cleaning");
 }
 // Transaction error callback from navigation_database
 function errorCB_nav(err) {

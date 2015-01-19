@@ -192,13 +192,8 @@ $('select#flag').change(function() {
 
 function closeAPP() {
     alert("Closing application...");
-    /*
-
-        TUTAJ CZYŚCIMY BAZE
-
-
-
-     */
+    db_navigate.transaction(queryDB_cleanDatabaseNav, errorCB, successCB);
+    db.transaction(queryDB_cleanDatabaseLost, errorCB, successCB);
     orientation=0;
     navigator.app.exitApp();
 }
