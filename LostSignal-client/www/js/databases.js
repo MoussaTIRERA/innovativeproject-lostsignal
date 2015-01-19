@@ -214,3 +214,7 @@ function errorCB_cleaning(err) {
 // Success callback
 function successCB() {
 }
+// Success callback
+function successCB_cleanedDB() {
+    alert("success");
+}

@@ -192,8 +192,8 @@ $('select#flag').change(function() {
 
 function closeAPP() {
     alert("Closing application...");
-    db_navigate.transaction(dropTable_cleanDatabaseNav, errorCB_cleaning, successCB);
-    db.transaction(dropTable_cleanDatabaseLost, errorCB_cleaning, successCB);
+    db_navigate.transaction(dropTable_cleanDatabaseNav, errorCB_cleaning, successCB_cleanedDB);
+    db.transaction(dropTable_cleanDatabaseLost, errorCB_cleaning, successCB_cleanedDB);
     setTimeout(function() {
         navigator.app.exitApp();
         window.clearTimeout();
