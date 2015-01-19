@@ -46,16 +46,18 @@ function populateDB_searchNearestPoint(tx)
     queryDB_search(tx);
 }
 
-function queryDB_cleanDatabaseNav(tx)
+function dropTable_cleanDatabaseNav(tx)
 {
     alert("cleaning navDatabase");
-    tx.executeSQL('DROP TABLE IF EXISTS navigation_table');
+    tx.executeSql('DROP TABLE IF EXISTS navigation_table');
+    //queryDB_cleanNav(tx);
 }
 
-function queryDB_cleanDatabaseLost(tx)
+function dropTable_cleanDatabaseLost(tx)
 {
     alert("Cleaning LostDatabase");
-    tx.executeSQL('DROP TABLE IF EXISTS lostsignal_table');
+    tx.executeSql('DROP TABLE IF EXISTS lostsignal_table');
+    //queryDB_cleanLost();
 }
 
 // form the query in populate_navigation- just to select everything from database
@@ -73,7 +75,7 @@ function queryDB_cleanNav(tx)  {
     tx.executeSql("SELECT * FROM navigation_table", [], cleaned(), errorCB_clean);
 }
 
-function queryDB_cleanDB(tx)  {
+function queryDB_cleanLost(tx)  {
     alert("cleaning database");
     tx.executeSql("SELECT * FROM lostsignal_table", [], cleaned(), errorCB_clean);
 }
@@ -204,6 +206,10 @@ function errorCB_nav(err) {
 // Transaction error callback from heatmap
 function errorCB_nav_heatmap(err) {
     alert("err_nav_heatmap");
+}
+// Transaction error callback from heatmap
+function errorCB_cleaning(err) {
+    alert("can't clean database");
 }
 // Success callback
 function successCB() {
