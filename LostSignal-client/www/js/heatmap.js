@@ -8,8 +8,8 @@ function heatmap_initialize() {
 
     var mapOptions = {
         center: new google.maps.LatLng(51.110022, 17.036365),
-        zoom: 13
-        //mapTypeId: google.maps.MapTypeId.HYBRID
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.HYBRID
     };
 
     hmap = new google.maps.Map(document.getElementById('heatmap-canvas'),
@@ -21,7 +21,7 @@ function heatmap_initialize() {
         dissipating: true,
         map: hmap,
         data: pointArray,
-        radius:10,
+        radius:20,
         opacity: 0.5
     });
 }
@@ -85,7 +85,7 @@ $(document).on( "click", '#navButton', function() {
 });
 
 $(document).on( "click", '#navButt', function() {
-    alert("For navigate You need to click 'Get best point' button and then double click on the map. Thanks for patience.");
+    //alert("For navigate You need to click 'Get best point' button and then double click on the map. Thanks for patience.");
     screen.lockOrientation('landscape');
     setTimeout(function(){
         screen.unlockOrientation();

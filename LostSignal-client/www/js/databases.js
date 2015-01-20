@@ -101,6 +101,8 @@ function nearestPoint(tx, results){
         }
     }
     bestPosition = new google.maps.LatLng(minLat,minLong);
+    bestLat = minLat;
+    bestLng = minLong;
     alert(bestPosition);
     alert("Found nearest point");
 }

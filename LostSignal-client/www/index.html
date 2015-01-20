@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
+    <script type="text/javascript" src="js/jQueryRotate.js"></script>
 
 
     <script type="text/javascript" src="/LostSignal-client/bower_components/jquery/jquery.js"></script>
@@ -24,13 +24,13 @@
     <script type="text/javascript" src="SQLitePlugin.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization,geometry"></script>
+
 
     <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="js/databases.js"></script>
     <script type="text/javascript" src="js/heatmap.js"></script>
     <script type="text/javascript" src="js/navigation.js"></script>
-    <script type="text/javascript" src="js/gmaps-heatmap.js"></script>
 
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -83,7 +83,7 @@
 
 <div data-role="page" id="navigate">
     <div  data-role="header">
-        <h1 style="font-size: 13em"><b>Navigation</b></h1>
+        <h1 style="font-size: 13em"><b>Heat Map</b></h1>
     </div>
 
     <div data-role="main" style="height: 1000px;">
@@ -92,11 +92,35 @@
 
 
     <div data-role="footer" class="buttPosition" >
-        <button type="button" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left" style="width:100%; font-size: 8em;float:right" id="navButton">Get best point</button>
+        <button type="button" ONCLICK="window.location.href='#compass'" class="ui-btn ui-corner-all ui-icon-navigation ui-btn-icon-left" id="runCompass" style="width:100%; font-size: 8em;float:right" >Compass</button>
+        <button type="button" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-left" style="width:100%; font-size: 8em;float:right" id="navButton">Get best point</button>
         <button type="button" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left" style="width:100%; font-size: 8em;" id="centerHeatmap">Center</button>
         <button type="button" ONCLICK="window.location.href='#index'" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="width:100%; font-size: 8em;float:left">Back to menu</button>
     </div>
 </div>
+
+<div data-role="page" id="compass">
+    <div  data-role="header">
+        <h1 style="font-size: 13em"><b>Compass</b></h1>
+    </div>
+
+    <div data-role="main" style="height: 1000px;" class="compass">
+        <img src="img/directArrow.png" id="directionArrow">
+        <div id="heading">Heading:</div>
+    </div>
+
+
+    <div data-role="footer" class="buttPosition" >
+        <button type="button" ONCLICK="
+        navigator.compass.clearWatch(watchID);
+        window.location.href='#navigate'" class="ui-btn ui-corner-all ui-icon-navigation ui-btn-icon-left" style="width:100%; font-size: 8em;float:right" >Back to heat map</button>
+
+        <button type="button" ONCLICK="
+        navigator.compass.clearWatch(watchID);
+        window.location.href='#index'" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="width:100%; font-size: 8em;float:left">Back to menu</button>
+    </div>
+</div>
+
 
 
 
