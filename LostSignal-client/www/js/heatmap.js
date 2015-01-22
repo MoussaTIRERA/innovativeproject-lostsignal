@@ -1,6 +1,7 @@
 var hmap, heatmap;
 var pointArray;
 var dataPoints = [];
+var actualMarker;
 
 
 function heatmap_initialize() {
@@ -32,22 +33,24 @@ function heatmap_populate() {
 
 function setPointOnHeatmap(latitude, longitude, signal) {
 
+    if(actualMarker != null)
+        actualMarker.setMap(null);
     var myLatlng = new google.maps.LatLng(latitude,longitude);
 
-    /*var infowindow = new google.maps.InfoWindow({
+    var infowindow = new google.maps.InfoWindow({
         content: '<p style="color:black">Location found using HTML5.</p>' +
         '<p style="color:black">Actual position:' + myLatlng +'</p>' +
         '<p style="color:black">Date: ' + new Date() + '</p>'
         +'<p style="color:black">Signal strength: ' + signal + '</p>'
     });
 
-    var marker = new google.maps.Marker({
+    actualMarker = new google.maps.Marker({
         position: myLatlng,
         map: hmap
     });
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(hmap,marker);
-    });*/
+    google.maps.event.addListener(actualMarker, 'click', function() {
+        infowindow.open(hmap,actualMarker);
+    });
 
     dataPoints.push({location: myLatlng, weight: 140+signal});
 

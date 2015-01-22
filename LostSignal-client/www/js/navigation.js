@@ -21,10 +21,10 @@ function onSuccess1(heading) {
     var nav = azimuth(Position.coords.latitude,Position.coords.longitude,bestLat,bestLng);
 
     //var nav = google.maps.geometry.spherical.computeHeading(lastPostition,bestPosition).toFixed(2);
-    direction = nav; // heading.magneticHeading;
+    direction = heading.magneticHeading-nav;
     var angle = document.getElementById('heading');
     angle.innerHTML = 'Heading:' + direction;
-    $("#directionArrow").rotate(nav);
+    $("#directionArrow").rotate(direction);
 };
 
 function onError1(error) {
