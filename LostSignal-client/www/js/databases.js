@@ -68,7 +68,7 @@ function queryDB_navigation(tx) {
 }
 
 function queryDB_search(tx)  {
-    alert("searching nearest point");
+    alert("searching best point");
     tx.executeSql("SELECT * FROM navigation_table", [], nearestPoint, errorCB_nav);
 }
 
@@ -88,6 +88,21 @@ function queryDB(tx) {
 //Function return nearest point from actual position
 function nearestPoint(tx, results){
     var len = results.rows.length;
+    var maxStrength = results.rows.item(0).signal;
+    var minLat = results.rows.item(0).latitude;
+    var minLong = results.rows.item(0).longitude;
+
+    for(var i = 1; i < len; i++)
+    {
+        if(results.rows.item(0).signal > maxStrength) {
+            maxStrength = results.rows.item(i).signal;
+            minLat = results.rows.item(i).latitude;
+            minLong = results.rows.item(i).longitude;
+        }
+    }
+    alert("Found best point");
+
+    /*
     var minLat = results.rows.item(0).latitude;
     var minLong = results.rows.item(0).longitude;
     var minDistance = Math.sqrt(Math.pow(minLat - actual_lat, 2) + Math.pow(minLong - actual_long, 2));
@@ -105,6 +120,7 @@ function nearestPoint(tx, results){
     bestLng = minLong;
     alert(bestPosition);
     alert("Found nearest point");
+    */
 }
 
 //function to inform that table does not exists
