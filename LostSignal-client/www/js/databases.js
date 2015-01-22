@@ -80,9 +80,9 @@ function queryDB_cleanLost(tx)  {
     tx.executeSql("SELECT name FROM sqlite_master WHERE type='table' AND name='lostsignal_table';", [], cleaned, errorCB_clean);
 }
 
-// form the queryDB in populateDB- select everything from database
+// form the queryDB in populateDB- select iteams from database
 function queryDB(tx) {
-    tx.executeSql("SELECT latitude, longitude from lostsignal_table;", [], createJSON, errorCB);
+    tx.executeSql("SELECT longitude, latitude, model, signal, provider, model, uuid, date from lostsignal_table;", [], createJSON, errorCB);
 }
 
 //Function return nearest point from actual position
