@@ -100,7 +100,9 @@ function nearestPoint(tx, results){
             minLong = results.rows.item(i).longitude;
         }
     }
-    alert("Found best point");
+    bestLat = minLat;
+    bestLng = minLong;
+    alert(bestPosition);
 
     /*
     var minLat = results.rows.item(0).latitude;
