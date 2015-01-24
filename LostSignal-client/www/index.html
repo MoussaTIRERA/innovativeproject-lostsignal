@@ -104,19 +104,46 @@
         <h1 style="font-size: 13em"><b>Compass</b></h1>
     </div>
 
-    <div data-role="main" style="height: 1000px;" class="compass">
+    <div data-role="main" style="height: 500px;" class="compass">
         <img src="img/directArrow.png" id="directionArrow">
-        <div id="heading">Heading:</div>
+        <h1><div id="heading">Heading:</div></h1>
+        <h1><div id="azimuth">Azimuth:</div></h1>
+
+        <h1><div ONCLICK="
+        navigator.compass.clearWatch(watchID);
+        window.location.href='#HOWTO'"><p><a>How to calibrate</a></p></div></h1>
     </div>
 
 
     <div data-role="footer" class="buttPosition" >
+        <button type="button" ONCLICK="
+        alert('Calibrate now');"class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left" style="width:100%; font-size: 8em;">Calibrate</button>
+
         <button type="button" ONCLICK="
         navigator.compass.clearWatch(watchID);
         window.location.href='#navigate'" class="ui-btn ui-corner-all ui-icon-navigation ui-btn-icon-left" style="width:100%; font-size: 8em;float:right" >Back to heat map</button>
 
         <button type="button" ONCLICK="
         navigator.compass.clearWatch(watchID);
+        window.location.href='#index'" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="width:100%; font-size: 8em;float:left">Back to menu</button>
+    </div>
+</div>
+
+<div data-role="page" id="HOWTO">
+    <div  data-role="header">
+        <h1 style="font-size: 13em"><b>Compass</b></h1>
+    </div>
+
+    <div data-role="main" style="height: 500px;" class="compass">
+        <p>Tak sie kalibruje. Cwelu.</p>
+    </div>
+
+
+    <div data-role="footer" class="buttPosition" >
+        <button type="button" ONCLICK="
+        window.location.href='#compass'"class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-left" id="runCompass" style="width:100%; font-size: 8em;">Back to compass</button>
+
+        <button type="button" ONCLICK="
         window.location.href='#index'" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="width:100%; font-size: 8em;float:left">Back to menu</button>
     </div>
 </div>
