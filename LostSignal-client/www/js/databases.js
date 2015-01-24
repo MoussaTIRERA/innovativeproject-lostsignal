@@ -88,6 +88,8 @@ function queryDB(tx) {
 //Function return nearest point from actual position
 function nearestPoint(tx, results){
     var len = results.rows.length;
+
+    /*
     var maxStrength = results.rows.item(0).signal;
     var minLat = results.rows.item(0).latitude;
     var minLong = results.rows.item(0).longitude;
@@ -105,8 +107,7 @@ function nearestPoint(tx, results){
     bestLat = minLat;
     bestLng = minLong;
     alert("Found best point");
-
-    /*
+    */
     var minLat = results.rows.item(0).latitude;
     var minLong = results.rows.item(0).longitude;
     var minDistance = Math.sqrt(Math.pow(minLat - actual_lat, 2) + Math.pow(minLong - actual_long, 2));
@@ -124,7 +125,7 @@ function nearestPoint(tx, results){
     bestLng = minLong;
     alert(bestPosition);
     alert("Found nearest point");
-    */
+
 }
 
 //function to inform that table does not exists
