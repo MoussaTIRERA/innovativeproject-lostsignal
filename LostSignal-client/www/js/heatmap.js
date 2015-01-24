@@ -2,7 +2,7 @@ var hmap, heatmap;
 var pointArray;
 var dataPoints = [];
 var actualMarker;
-
+var bestMarker;
 
 function heatmap_initialize() {
     db_navigate.transaction(queryDB_navigation, errorCB_nav_heatmap, successCB);
@@ -67,6 +67,10 @@ $(document).on( "click", '#navButton', function() {
 
     },3000);
 
+
+    if(bestMarker != null)
+        bestMarker.setMap(null);
+
     setTimeout(function() {
         var infowindow = new google.maps.InfoWindow({
             content: '<p style="color:black">Location found using HTML5.</p>' +
@@ -75,14 +79,14 @@ $(document).on( "click", '#navButton', function() {
             +'<p style="color:black">Signal strength: ' + signal + '</p>'
         });
 
-        var marker = new google.maps.Marker({
+        bestMarker = new google.maps.Marker({
             position: bestPosition,
             animation: google.maps.Animation.DROP,
             map: hmap,
             icon: 'img/bestPointImg.png'
         });
         google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(hmap,marker);
+            infowindow.open(hmap,bestMarker);
         });
     }, 5000);
 });

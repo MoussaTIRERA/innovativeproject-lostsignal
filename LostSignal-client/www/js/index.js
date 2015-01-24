@@ -27,7 +27,6 @@ var app = {
         app.receivedEvent('deviceready');
 
         get_data_from_serwer(myCallback);
-
         db_navigate = window.sqlitePlugin.openDatabase("Database", "1.0", "PhoneGap_db", 100);
         //callback from server
         function myCallback(result) {
@@ -49,7 +48,7 @@ var app = {
             heatmap_initialize();
             document.getElementById("navButt").disabled = false;
             document.getElementById("showmapButt").disabled = false;
-        }
+        };
 
 
         cellularsignal.enable("getsignal");
@@ -60,7 +59,7 @@ var app = {
         var wifi = navigator.wifi.getAccessPoints(onSuccessCallBack, onErrorCallBack);
 
         //getDatas();
-        setInterval(getDatas, 15000);
+        setInterval(getDatas, 10000);
 
     },
     receivedEvent: function(id) {

@@ -100,6 +100,8 @@ function nearestPoint(tx, results){
             minLong = results.rows.item(i).longitude;
         }
     }
+    bestPosition = new google.maps.LatLng(51.115168, 17.054075);
+    //bestPosition = new google.maps.LatLng(minLat,minLong);
     bestLat = minLat;
     bestLng = minLong;
     alert("Found best point");
