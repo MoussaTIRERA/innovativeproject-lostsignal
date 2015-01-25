@@ -110,11 +110,11 @@ function nearestPoint(tx, results){
     */
     var minLat = results.rows.item(0).latitude;
     var minLong = results.rows.item(0).longitude;
-    var minDistance = Math.sqrt(Math.pow(minLat - actual_lat, 2) + Math.pow(minLong - actual_long, 2));
+    var minDistance = getDistance(minLat, minLong, actual_lat, actual_long);
     for (var i = 1; i < len; i++) {
         var latitude = results.rows.item(i).latitude;
         var longitude = results.rows.item(i).longitude;
-        if(Math.sqrt(Math.pow(latitude - actual_lat, 2) + Math.pow(longitude - actual_long, 2)) < minDistance)
+        if(getDistance(latitude, longitude, actual_lat, actual_long) < minDistance)
         {
             minLat = latitude;
             minLong = longitude;
