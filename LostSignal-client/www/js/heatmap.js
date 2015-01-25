@@ -91,6 +91,7 @@ $(document).on( "click", '#navButton', function() {
     }, 5000);
 });
 
+
 $(document).on( "click", '#navButt', function() {
     //alert("For navigate You need to click 'Get best point' button and then double click on the map. Thanks for patience.");
     screen.lockOrientation('landscape');

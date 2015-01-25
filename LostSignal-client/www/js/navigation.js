@@ -10,8 +10,9 @@ function navigate() {
 }
 
 function onSuccess1(heading) {
-    if(bestPosition == lastPostition)
-        alert("Jestes u celu");
+    var distance = getDistance(Position.coords.latitude,Position.coords.longitude,bestLat,bestLng);
+    if(distance < 10)
+        alert("You are on the spot!");
 
     var nav = azimuth(Position.coords.latitude,Position.coords.longitude,bestLat,bestLng);
 
@@ -19,9 +20,11 @@ function onSuccess1(heading) {
     var direction = Math.round(360-heading.magneticHeading-nav);
     var angle = document.getElementById('heading');
     var azim = document.getElementById('azimuth');
+    var dist = document.getElementById('distance');
 
     angle.innerHTML = 'Heading:' + direction;
     azim.innerHTML = 'Azimuth:' + Math.round(nav);
+    dist.innerHTML = 'Distance:' + Math.round(distance);
 
 
     $("#directionArrow").rotate(direction);
@@ -60,6 +63,12 @@ function azimuth(x1,y1,x2,y2) {
     return az;
 }
 
+
+function getDistance(x1,y1,x2,y2) {
+    var distance = Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+    return distance;
+}
+
 $(document).on( "click", '#runCompass', function() {
     if(bestPosition == null) {
         setTimeout(function(){
@@ -67,7 +76,30 @@ $(document).on( "click", '#runCompass', function() {
             actual_long = Position.coords.longitude;
             db_navigate.transaction(populateDB_searchNearestPoint, errorCB_nav, successCB);
 
-        },1000);
+        },3000);
+
+
+        if(bestMarker != null)
+            bestMarker.setMap(null);
+
+        setTimeout(function() {
+            var infowindow = new google.maps.InfoWindow({
+                content: '<p style="color:black">Location found using HTML5.</p>' +
+                '<p style="color:black">Actual position:' + bestPosition +'</p>' +
+                '<p style="color:black">Date: ' + new Date() + '</p>'
+                +'<p style="color:black">Signal strength: ' + signal + '</p>'
+            });
+
+            bestMarker = new google.maps.Marker({
+                position: bestPosition,
+                animation: google.maps.Animation.DROP,
+                map: hmap,
+                icon: 'img/bestPointImg.png'
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(hmap,bestMarker);
+            });
+        }, 5000);
     }
     alert("Calibrate Your compass then click 'Ok'");
     setTimeout(function(){
