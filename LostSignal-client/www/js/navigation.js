@@ -11,7 +11,7 @@ function navigate() {
 
 function onSuccess1(heading) {
     var distance = getDistance(Position.coords.latitude,Position.coords.longitude,bestLat,bestLng);
-    if(distance < 10)
+    if(distance < 20)
         alert("You are on the spot!");
 
     var nav = azimuth(Position.coords.latitude,Position.coords.longitude,bestLat,bestLng);
@@ -24,7 +24,7 @@ function onSuccess1(heading) {
 
     angle.innerHTML = 'Heading:' + direction;
     azim.innerHTML = 'Azimuth:' + Math.round(nav);
-    dist.innerHTML = 'Distance:' + Math.round(distance);
+    dist.innerHTML = 'Distance:' + distance + ' m' ;
 
 
     $("#directionArrow").rotate(direction);
@@ -65,7 +65,12 @@ function azimuth(x1,y1,x2,y2) {
 
 
 function getDistance(x1,y1,x2,y2) {
-    var distance = Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
+    var dz=12756.274;
+    var y, x, distance;
+    y = (y2-y1)*Math.cos(x1*Math.PI/180.0);
+    x = (x2-x1);
+    distance = Math.sqrt(y*y+x*x)*Math.PI*dz/360.0;//[km]
+    distance = Math.round((distance * 1000)); // conversion to meters
     return distance;
 }
 
@@ -96,7 +101,7 @@ $(document).on( "click", '#runCompass', function() {
                 map: hmap,
                 icon: 'img/bestPointImg.png'
             });
-            google.maps.event.addListener(marker, 'click', function() {
+            google.maps.event.addListener(bestMarker, 'click', function() {
                 infowindow.open(hmap,bestMarker);
             });
         }, 5000);
