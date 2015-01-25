@@ -11,8 +11,11 @@ function navigate() {
 
 function onSuccess1(heading) {
     var distance = getDistance(Position.coords.latitude,Position.coords.longitude,bestLat,bestLng);
-    if(distance < 20)
-        alert("You are on the spot!");
+    if(distance < 20) {
+        //alert("You are on the spot!");
+        var onSpot = document.getElementById('destination');
+        onSpot.innerHTML = 'You are on the spot!';
+    }
 
     var nav = azimuth(Position.coords.latitude,Position.coords.longitude,bestLat,bestLng);
 
@@ -106,6 +109,8 @@ $(document).on( "click", '#runCompass', function() {
             });
         }, 5000);
     }
+    var onSpot = document.getElementById('destination');
+    onSpot.innerHTML = '';
     alert("Calibrate Your compass then click 'Ok'");
     setTimeout(function(){
         navigate();
