@@ -38,7 +38,7 @@ function setPointOnHeatmap(latitude, longitude, signal) {
     var myLatlng = new google.maps.LatLng(latitude,longitude);
 
     var infowindow = new google.maps.InfoWindow({
-        content: '<p style="color:black">Location found using HTML5.</p>' +
+        content: '<p style="color:black">Actual position.</p>' +
         '<p style="color:black">Actual position:' + myLatlng +'</p>' +
         '<p style="color:black">Date: ' + new Date() + '</p>'
         +'<p style="color:black">Signal strength: ' + signal + '</p>'
